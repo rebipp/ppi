@@ -35,5 +35,3 @@ markdown: kramdown
 remote_theme: BioComp-USP/tdwg-theme-jekyll
 plugins:
   - jekyll-feed
-
-theme: jekyll-theme-cayman
