@@ -238,7 +238,7 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/dynamicProperties">http://rs.tdwg.org/dwc/terms/dynamicProperties</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A list of additional measurements, facts, characteristics, or assertions about the record. Meant to provide a mechanism for structured content.</td></tr>
         <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a key:value encoding schema for a data interchange format such as JSON.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>{"heightInMeters":1.5}</code>, <code>{"tragusLengthInMeters":0.014, "weightInGrams":120}</code>, <code>{"natureOfID":"expert identification", "identificationEvidence":"cytochrome B sequence"}</code>, <code>{"relativeHumidity":28, "airTemperatureInCelsius":22, "sampleSizeInKilograms":10}</code>, <code>{"aspectHeading":277, "slopeInDegrees":6}</code>, <code>{"iucnStatus":"vulnerable", "taxonDistribution":"Neuquén, Argentina"}</code></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>{"heightInMeters":1.5}</code>, <code>{"tragusLengthInMeters":0.014, "weightInGrams":120}</code>, <code>{"natureOfID":"expert identification", "identificationEvidence":"cytochrome B sequence"}</code>, <code>{"relativeHumidity":28, "airTemperatureInCelsius":22, "sampleSizeInKilograms":10}</code>, <code>{"aspectHeading":277, "slopeInDegrees":6}</code>, <code>{"iucnStatus":"vulnerable", "taxonDistribution":"Neuqu√©n, Argentina"}</code></td></tr>
     </tbody>
 </table>
 
@@ -320,7 +320,7 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/recordedBy">http://rs.tdwg.org/dwc/terms/recordedBy</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of names of people, groups, or organizations responsible for recording the original Occurrence. The primary collector or observer, especially one who applies a personal identifier (recordNumber), should be listed first.</td></tr>
         <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>José E. Crespo</code>. <code>Oliver P. Pearson | Anita K. Pearson</code> (where the value in recordNumber <code>OPP 7101</code> corresponds to the collector number for the specimen in the field catalog of Oliver P. Pearson).</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>Jos√© E. Crespo</code>. <code>Oliver P. Pearson | Anita K. Pearson</code> (where the value in recordNumber <code>OPP 7101</code> corresponds to the collector number for the specimen in the field catalog of Oliver P. Pearson).</td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -671,7 +671,7 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/Event">http://rs.tdwg.org/dwc/terms/Event</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>An action that occurs at some location during some time.</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td>A specimen collection process. A camera trap image capture.  A marine trawl.</td></tr>
+        <tr><td class="theme-label">Examples</td><td>A specimen collection process. A camera trap image capture. A marine trawl.</td></tr>
     </tbody>
 </table>
 
@@ -825,7 +825,7 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
         <tr class="table-secondary"><th colspan="2">sampleSizeValue <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/sampleSizeValue">http://rs.tdwg.org/dwc/terms/sampleSizeValue</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A numeric value for a measurement of the size (time duration, length, area, or volume) of a sample in a sampling event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>A sampleSizeValue must have a corresponding sampleSizeUnit. </td></tr>
+        <tr><td class="theme-label">Comments</td><td>A sampleSizeValue must have a corresponding sampleSizeUnit.</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>5</code> for sampleSizeValue with <code>metre</code> for sampleSizeUnit.</td></tr>
     </tbody>
 </table>
@@ -930,7 +930,7 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
         <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/dc/terms/Location">http://purl.org/dc/terms/Location</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A spatial region or named place.</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td>The municipality of San Carlos de Bariloche, Río Negro, Argentina. The place defined by a georeference.</td></tr>
+        <tr><td class="theme-label">Examples</td><td>The municipality of San Carlos de Bariloche, R√≠o Negro, Argentina. The place defined by a georeference.</td></tr>
     </tbody>
 </table>
 
@@ -953,7 +953,7 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/higherGeographyID">http://rs.tdwg.org/dwc/terms/higherGeographyID</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>An identifier for the geographic region within which the Location occurred.</td></tr>
         <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a persistent identifier from a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code><a href="http://vocab.getty.edu/tgn/1002002">http://vocab.getty.edu/tgn/1002002</a></code> (Antártida e Islas del Atlántico Sur, Territorio Nacional de la Tierra del Fuego, Argentina).</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code><a href="http://vocab.getty.edu/tgn/1002002">http://vocab.getty.edu/tgn/1002002</a></code> (Ant√°rtida e Islas del Atl√°ntico Sur, Territorio Nacional de la Tierra del Fuego, Argentina).</td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -964,7 +964,7 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/higherGeography">http://rs.tdwg.org/dwc/terms/higherGeography</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of geographic names less specific than the information captured in the locality term.</td></tr>
         <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>), with terms in order from least specific to most specific.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>North Atlantic Ocean</code>. <code>South America | Argentina | Patagonia | Parque Nacional Nahuel Huapi | Neuquén | Los Lagos</code> (with accompanying values <code>South America</code> in continent, <code>Argentina</code> in country, <code>Neuquén</code> in stateProvince, and <code>Los Lagos</code> in county.</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>North Atlantic Ocean</code>. <code>South America | Argentina | Patagonia | Parque Nacional Nahuel Huapi | Neuqu√©n | Los Lagos</code> (with accompanying values <code>South America</code> in continent, <code>Argentina</code> in country, <code>Neuqu√©n</code> in stateProvince, and <code>Los Lagos</code> in county.</td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -997,7 +997,7 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/islandGroup">http://rs.tdwg.org/dwc/terms/islandGroup</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The name of the island group in which the Location occurs.</td></tr>
         <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Alexander Archipelago</code>, <code>Archipiélago Diego Ramírez</code>, <code>Seychelles</code></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>Alexander Archipelago</code>, <code>Archipi√©lago Diego Ram√≠rez</code>, <code>Seychelles</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -1019,7 +1019,7 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/country">http://rs.tdwg.org/dwc/terms/country</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The name of the country or major administrative unit in which the Location occurs.</td></tr>
         <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Denmark</code>, <code>Colombia</code>, <code>España</code></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>Denmark</code>, <code>Colombia</code>, <code>Espa√±a</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -1041,7 +1041,7 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/stateProvince">http://rs.tdwg.org/dwc/terms/stateProvince</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The name of the next smaller administrative region than country (state, province, canton, department, region, etc.) in which the Location occurs.</td></tr>
         <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Montana</code>, <code>Minas Gerais</code>, <code>Córdoba</code></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>Montana</code>, <code>Minas Gerais</code>, <code>C√≥rdoba</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -1052,7 +1052,7 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/county">http://rs.tdwg.org/dwc/terms/county</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The full, unabbreviated name of the next smaller administrative region than stateProvince (county, shire, department, etc.) in which the Location occurs.</td></tr>
         <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Missoula</code>, <code>Los Lagos</code>, <code>Mataró</code></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>Missoula</code>, <code>Los Lagos</code>, <code>Matar√≥</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -1063,7 +1063,7 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/municipality">http://rs.tdwg.org/dwc/terms/municipality</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The full, unabbreviated name of the next smaller administrative region than county (city, municipality, etc.) in which the Location occurs. Do not use this term for a nearby named place that does not contain the actual location.</td></tr>
         <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Holzminden</code>, <code>Araçatuba</code>, <code>Ga-Segonyana</code></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>Holzminden</code>, <code>Ara√ßatuba</code>, <code>Ga-Segonyana</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -1695,7 +1695,7 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationQualifier">http://rs.tdwg.org/dwc/terms/identificationQualifier</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A brief phrase or a standard term ("cf.", "aff.") to express the determiner's doubts about the Identification.</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>aff. agrifolia var. oxyadenia</code> (for <code>Quercus aff. agrifolia var. oxyadenia</code> with accompanying values <code>Quercus</code> in genus, <code>agrifolia</code>  in specificEpithet, <code>oxyadenia</code>  in infraspecificEpithet, and <code>var.</code> in taxonRank. <code>cf. var. oxyadenia</code> for <code>Quercus agrifolia cf. var. oxyadenia</code> with accompanying values <code>Quercus</code> in genus, <code>agrifolia</code> in specificEpithet, <code>oxyadenia</code> in infraspecificEpithet, and <code>var.</code> in taxonRank.</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>aff. agrifolia var. oxyadenia</code> (for <code>Quercus aff. agrifolia var. oxyadenia</code> with accompanying values <code>Quercus</code> in genus, <code>agrifolia</code> in specificEpithet, <code>oxyadenia</code> in infraspecificEpithet, and <code>var.</code> in taxonRank. <code>cf. var. oxyadenia</code> for <code>Quercus agrifolia cf. var. oxyadenia</code> with accompanying values <code>Quercus</code> in genus, <code>agrifolia</code> in specificEpithet, <code>oxyadenia</code> in infraspecificEpithet, and <code>var.</code> in taxonRank.</td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -1761,7 +1761,7 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationRemarks">http://rs.tdwg.org/dwc/terms/identificationRemarks</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>Comments or notes about the Identification.</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Distinguished between Anthus correndera and Anthus hellmayri based on the comparative lengths of the uñas.</code></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>Distinguished between Anthus correndera and Anthus hellmayri based on the comparative lengths of the u√±as.</code></td></tr>
     </tbody>
 </table>
 
@@ -1810,7 +1810,7 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/Taxon">http://rs.tdwg.org/dwc/terms/Taxon</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A group of organisms (sensu <a href="http://purl.obolibrary.org/obo/OBI_0100026">http://purl.obolibrary.org/obo/OBI_0100026</a>) considered by taxonomists to form a homogeneous unit.</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td>The genus Truncorotaloides as published by Brönnimann et al. in 1953 in the Journal of Paleontology Vol. 27(6) p. 817-820.</td></tr>
+        <tr><td class="theme-label">Examples</td><td>The genus Truncorotaloides as published by Br√∂nnimann et al. in 1953 in the Journal of Paleontology Vol. 27(6) p. 817-820.</td></tr>
     </tbody>
 </table>
 
@@ -1910,7 +1910,7 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/scientificName">http://rs.tdwg.org/dwc/terms/scientificName</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The full scientific name, with authorship and date information if known. When forming part of an Identification, this should be the name in lowest level taxonomic rank that can be determined. This term should not contain identification qualifications, which should instead be supplied in the IdentificationQualifier term.</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Coleoptera</code> (order). <code>Vespertilionidae</code> (family). <code>Manis</code> (genus). <code>Ctenomys sociabilis</code> (genus + specificEpithet). <code>Ambystoma tigrinum diaboli</code> (genus + specificEpithet + infraspecificEpithet). <code>Roptrocerus typographi (Györfi, 1952)</code> (genus + specificEpithet + scientificNameAuthorship), <code>Quercus agrifolia var. oxyadenia (Torr.) J.T. Howell</code> (genus + specificEpithet + taxonRank + infraspecificEpithet + scientificNameAuthorship).</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>Coleoptera</code> (order). <code>Vespertilionidae</code> (family). <code>Manis</code> (genus). <code>Ctenomys sociabilis</code> (genus + specificEpithet). <code>Ambystoma tigrinum diaboli</code> (genus + specificEpithet + infraspecificEpithet). <code>Roptrocerus typographi (Gy√∂rfi, 1952)</code> (genus + specificEpithet + scientificNameAuthorship), <code>Quercus agrifolia var. oxyadenia (Torr.) J.T. Howell</code> (genus + specificEpithet + taxonRank + infraspecificEpithet + scientificNameAuthorship).</td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -1965,7 +1965,7 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/namePublishedIn">http://rs.tdwg.org/dwc/terms/namePublishedIn</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A reference for the publication in which the scientificName was originally established under the rules of the associated nomenclaturalCode.</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388</code>, <code>Forel, Auguste, Diagnosies provisoires de quelques espèces nouvelles de fourmis de Madagascar, récoltées par M. Grandidier., Annales de la Societe Entomologique de Belgique, Comptes-rendus des Seances 30, 1886</code></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388</code>, <code>Forel, Auguste, Diagnosies provisoires de quelques esp√®ces nouvelles de fourmis de Madagascar, r√©colt√©es par M. Grandidier., Annales de la Societe Entomologique de Belgique, Comptes-rendus des Seances 30, 1886</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -2119,7 +2119,7 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/scientificNameAuthorship">http://rs.tdwg.org/dwc/terms/scientificNameAuthorship</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The authorship information for the scientificName formatted according to the conventions of the applicable nomenclaturalCode.</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>(Torr.) J.T. Howell</code>, <code>(Martinovský) Tzvelev</code>, <code>(Györfi, 1952)</code></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>(Torr.) J.T. Howell</code>, <code>(Martinovsk√Ω) Tzvelev</code>, <code>(Gy√∂rfi, 1952)</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -2130,7 +2130,7 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/vernacularName">http://rs.tdwg.org/dwc/terms/vernacularName</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A common or vernacular name.</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Andean Condor</code>, <code>Condor Andino</code>, <code>American Eagle</code>, <code>Gänsegeier</code></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>Andean Condor</code>, <code>Condor Andino</code>, <code>American Eagle</code>, <code>G√§nsegeier</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -2568,7 +2568,7 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
     <tbody>
         <tr class="table-secondary"><th colspan="2">earliestGeochronologicalEra <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/earliestGeochronologicalEra">http://rs.tdwg.org/dwc/iri/earliestGeochronologicalEra</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Use to link a dwc:GeologicalContext instance to chronostratigraphic time periods at the lowest possible level in a standardized hierarchy.   Use this property to point to the earliest possible geological time period from which the cataloged item was collected.</td></tr>
+        <tr><td class="theme-label">Definition</td><td>Use to link a dwc:GeologicalContext instance to chronostratigraphic time periods at the lowest possible level in a standardized hierarchy. Use this property to point to the earliest possible geological time period from which the cataloged item was collected.</td></tr>
         <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. A "convenience property" that replaces Darwin Core literal-value terms related to geological context. See Section 2.7.6 of the Darwin Core RDF Guide for details.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
@@ -2744,7 +2744,7 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
     <tbody>
         <tr class="table-secondary"><th colspan="2">latestGeochronologicalEra <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/latestGeochronologicalEra">http://rs.tdwg.org/dwc/iri/latestGeochronologicalEra</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Use to link a dwc:GeologicalContext instance to chronostratigraphic time periods at the lowest possible level in a standardized hierarchy.   Use this property to point to the latest possible geological time period from which the cataloged item was collected.</td></tr>
+        <tr><td class="theme-label">Definition</td><td>Use to link a dwc:GeologicalContext instance to chronostratigraphic time periods at the lowest possible level in a standardized hierarchy. Use this property to point to the latest possible geological time period from which the cataloged item was collected.</td></tr>
         <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. A "convenience property" that replaces Darwin Core literal-value terms related to geological context. See Section 2.7.6 of the Darwin Core RDF Guide for details.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
@@ -3000,7 +3000,7 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/HumanObservation">http://rs.tdwg.org/dwc/terms/HumanObservation</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>An output of a human observation process.</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td>Evidence of an Occurrence taken from field notes or literature. A record of an Occurrence without physical evidence nor evidence captured with a machine. </td></tr>
+        <tr><td class="theme-label">Examples</td><td>Evidence of an Occurrence taken from field notes or literature. A record of an Occurrence without physical evidence nor evidence captured with a machine.</td></tr>
     </tbody>
 </table>
 
@@ -3021,4 +3021,1147 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
     </tbody>
 </table>
 
+
+
+## PlantTrait
+
+<div class="my-4">
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:habit">habit</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerOpening">flowerOpening</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:functionalFlowerLifespan">functionalFlowerLifespan</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:totalFlowerLifespan">totalFlowerLifespan</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floralSymmetry">floralSymmetry</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerType">flowerType</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerOrientation">flowerOrientation</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:attractiveBract">attractiveBract</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:bractsColor">bractsColor</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:calyx">calyx</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:sepalsLength">sepalsLength</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:sepalsWidth">sepalsWidth</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:sepalsColor">sepalsColor</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:sepalsFusion">sepalsFusion</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:corolla">corolla</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:petalsLength">petalsLength</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:petalsWidth">petalsWidth</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:petalsColor">petalsColor</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:petalsFusion">petalsFusion</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:androecium">androecium</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:numberOfStamens">numberOfStamens</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:numberOfStaminodes">numberOfStaminodes</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:stamenHeight">stamenHeight</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:antherDehiscenceType">antherDehiscenceType</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:numberOfPollenGrains">numberOfPollenGrains</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:gynoecium">gynoecium</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:numberOfStigmas">numberOfStigmas</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:stigmaticArea">stigmaticArea</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:styleLength">styleLength</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:ovulesCount">ovulesCount</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floralResource">floralResource</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:accumulatedNectarVolumeOpeningFlower">accumulatedNectarVolumeOpeningFlower</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:nectarConcentrationFlowerOpening">nectarConcentrationFlowerOpening</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:accumulatedNectarVolumeFlowerLifespan">accumulatedNectarVolumeFlowerLifespan</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:nectarConcentrationFlowerLifespan">nectarConcentrationFlowerLifespan</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:phenologyPattern">phenologyPattern</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floweringSeason">floweringSeason</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floweringDuration">floweringDuration</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowersCount">flowersCount</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floralAbundance">floralAbundance</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floweringPlantsSampled">floweringPlantsSampled</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:selfIncompatibility">selfIncompatibility</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:selfIncompatibilityType">selfIncompatibilityType</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:isi">isi</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:autogamyIndex">autogamyIndex</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:apomixis">apomixis</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerSexuality">flowerSexuality</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:plantSexuality">plantSexuality</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:herkogamy">herkogamy</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:stylarHeteromorphism">stylarHeteromorphism</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:heterostyly">heterostyly</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:enantiostyly">enantiostyly</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:heteranthery">heteranthery</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:dichogamy">dichogamy</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flexistyly">flexistyly</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerMovement">flowerMovement</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floralAdvertisement">floralAdvertisement</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:attractiveStructureColor">attractiveStructureColor</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:conspecificPollenGrains">conspecificPollenGrains</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:conspecificPollenGrainsMultipleVisits">conspecificPollenGrainsMultipleVisits</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:heterospecificPollenGrains">heterospecificPollenGrains</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:removedPollenGrains">removedPollenGrains</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:removedPollenGrainsMultipleVisits">removedPollenGrainsMultipleVisits</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:pollenTubesCount">pollenTubesCount</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:pollenTubesCountMultipleVisits">pollenTubesCountMultipleVisits</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:fertilizedOvulesCount">fertilizedOvulesCount</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:fruitSet">fruitSet</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:seedSet">seedSet</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:fruitMass">fruitMass</a>
+    </div>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">PlantTrait <span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/PlantTrait">http://rs.rebipp.org.br/rebipp/terms/PlantTrait</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A plant trait (morphological, behavoral, biochemical, phenological or any other trait that describe the plant)</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+
+<p class="invisible">
+    <a id="rebipp:habit"></a><a id="habit"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">habit <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/habit">http://rs.rebipp.org.br/rebipp/terms/habit</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The general appearance, characteristic form, or mode of growth of a plant. Also refer to the substrate where the plant grows of by which the aerial parts are supported</td></tr>
+        <tr><td class="theme-label">Comments</td><td>The most usual terms are tree, bush, climber, herb. Additionally, the mode of growth (aquatic, terrestrial, rupiculous, epiphytic) can be included here. Examples: aquatic herb, epiphytic herb, rupiculous bush. Term reference (literature): Gonçalves and Lorenzi (2011)</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>árvore</code>, 'arbusto<code>, </code>erva<code>, </code>liana`</td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:flowerOpening"></a><a id="flowerOpening"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">flowerOpening <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/flowerOpening">http://rs.rebipp.org.br/rebipp/terms/flowerOpening</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Whether the corolla of the flower opens or not, exposing its reproductive organs to floral visitors</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Term reference (literature): Faegri and van der Pijl (1979); Willmer (2011); Rech et al. (2014)</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>cleistogamous</code> (non-opening flower), <code>chasmogamous</code> (opening flower)</td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:functionalFlowerLifespan"></a><a id="functionalFlowerLifespan"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">functionalFlowerLifespan <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/functionalFlowerLifespan">http://rs.rebipp.org.br/rebipp/terms/functionalFlowerLifespan</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The time when female and male flower whorls [IGV1] are functioning. Specifically, the period of time when stigma is receptive to the germination of pollen grains, and/or anthers present viable pollen grains</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Term reference (literature): Dafni et al. (2005); Willmer (2011); Rech et al. (2014).</td></tr>
+        <tr><td class="theme-label">Examples</td><td>ISO 8601</td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:totalFlowerLifespan"></a><a id="totalFlowerLifespan"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">totalFlowerLifespan <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/totalFlowerLifespan">http://rs.rebipp.org.br/rebipp/terms/totalFlowerLifespan</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Period in days comprising the time of flower opening up to flower senescence, when floral parts begin to wilt and fall off (Willmer 2011; Rech et al. 2014).</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>1</code>, <code>2</code>, <code>3</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:floralSymmetry"></a><a id="floralSymmetry"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">floralSymmetry <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/flowerSymmetry">http://rs.rebipp.org.br/rebipp/terms/flowerSymmetry</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Floral symmetry describes whether, and how, a flower, in particular its perianth, can be divided into two or more identical or mirror-image parts [AN1]</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Term reference (literature): Faegri and van der Pijl (1979); Willmer (2011); Rech et al. (2014); Neal et al. (1998). According to Willmer (2011), there are essentially two main types of symmetry in flowers: bilateral symmetry (also termed zygomorphic, dorsiventral, lateral or irregular) and radial symmetry (also termed actinomorphic or regular).</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>zygomorphic</code>(bilateral symmetry), <code>actinomorphic</code> (radial symmetry), <code>asymmetric</code> (no plain of symmetry)</td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:flowerType"></a><a id="flowerType"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">flowerType <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/flowerType">http://rs.rebipp.org.br/rebipp/terms/flowerType</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td></td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>brush</code>, <code>campanulate</code>, <code>bell-shaped</code>, <code>trumpet-shaped</code>, <code>open disk</code>, <code>tube keel</code>, <code>trap</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:flowerOrientation"></a><a id="flowerOrientation"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">flowerOrientation <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/flowerOrientation">http://rs.rebipp.org.br/rebipp/terms/flowerOrientation</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The position (plan in relation to the ground surface) )in which the open flower is presented to floral visitors</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Term reference (literature): Faegri and van der Pijl (1979); Willmer (2011); Rech et al. (2014).</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>pendent</code>, <code>erect</code>, <code>horizontal</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:attractiveBract"></a><a id="attractiveBract"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">attractiveBract <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/attractiveBract">http://rs.rebipp.org.br/rebipp/terms/attractiveBract</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Modified or specialized leaf, especially that associated with a reproductive structure such as a flower, inflorescence axis or cone scale. Bracts are often (but not always) different from foliage leaves. They may be smaller, larger, or of a different color, shape, or texture. Typically, they also look different from the parts of the flower, such as the petals or sepals. The state of having bracts is referred to as bracteate or bracteolate, and conversely the state of lacking them is referred to as ebracteate and ebracteolate, without bracts</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>present</code>, <code>absent</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:bractsColor"></a><a id="bractsColor"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">bractsColor <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/bractsColor">http://rs.rebipp.org.br/rebipp/terms/bractsColor</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The approximate predominant color of the bracts.</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>red</code>, <code>orange, </code>yellow<code>, </code>violet`</td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:calyx"></a><a id="calyx"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">calyx <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/calyx">http://rs.rebipp.org.br/rebipp/terms/calyx</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Outermost whorl of the flower; collective term for all sepals of a flower.[JAS1]</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Applied only to whorled flowers and not to flowers with spiral phyllotaxis.</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>present</code>, <code>absent</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:sepalsLength"></a><a id="sepalsLength"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">sepalsLength <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/sepalsLength">http://rs.rebipp.org.br/rebipp/terms/sepalsLength</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Length from the base to the tip of the largest sepal, or length of a single sepal if sepals are the same size.</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>2.2</code>, <code>10</code>, <code>15.3</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:sepalsWidth"></a><a id="sepalsWidth"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">sepalsWidth <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/sepalsWidth">http://rs.rebipp.org.br/rebipp/terms/sepalsWidth</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Width of the largest free sepal, or width of a single free sepal if they are the same size (wider portion of the measured sepal).</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>2.2</code>, <code>10</code>, <code>15.3</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:sepalsColor"></a><a id="sepalsColor"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">sepalsColor <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/sepalsColor">http://rs.rebipp.org.br/rebipp/terms/sepalsColor</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Predominant color of sepals</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>green</code>, <code>red</code>, <code>yellow</code>, <code>purple</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:sepalsFusion"></a><a id="sepalsFusion"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">sepalsFusion <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/sepalsFusion">http://rs.rebipp.org.br/rebipp/terms/sepalsFusion</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Dialysepalous - calyx with free sepals (synonymous: aposepalous). Gamosepalous - calyx with joined sepals (synonymous: synsepalous).[JAS1]</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Term reference (literature): Harris and Harris (2001)</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>gamosepalous</code>, <code>dialysepalous</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:corolla"></a><a id="corolla"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">corolla <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/corolla">http://rs.rebipp.org.br/rebipp/terms/corolla</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The second whorl of the flower, inside or above the calyx and outside the stamens; the collective name for all petals of a flower.[JAS1]</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Applied only to whorled flowers and not to flowers with spiral phyllotaxis. Term reference (literature): Beentje (2016); Harris & Harris (2001)</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>present</code>, <code>absent</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:petalsLength"></a><a id="petalsLength"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">petalsLength <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/petalsLength">http://rs.rebipp.org.br/rebipp/terms/petalsLength</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Length from the base to the tip of the largest petal, or length of a single petal if petals are the same size.</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>2.2</code>, <code>10</code>, <code>15.3</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:petalsWidth"></a><a id="petalsWidth"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">petalsWidth <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/petalsWidth">http://rs.rebipp.org.br/rebipp/terms/petalsWidth</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Width of the largest free petal (wider portion of the petal), or width of a single free petal if they are the same size.</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>2.2</code>, <code>10</code>, <code>15.3</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:petalsColor"></a><a id="petalsColor"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">petalsColor <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/petalsColor">http://rs.rebipp.org.br/rebipp/terms/petalsColor</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Predominant color of petals.</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>green</code>, <code>red</code>, <code>yellow</code>, <code>purple</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:petalsFusion"></a><a id="petalsFusion"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">petalsFusion <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/petalsFusion">http://rs.rebipp.org.br/rebipp/terms/petalsFusion</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Dialypetalous – corolla with free petals (synonymous: apopetalous). Gamopetalous corolla with joined petals (synonymous: synpetalous).[JAS1]</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Term reference (literature): Harris & Harris (2001)</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>gamopetalous</code>, <code>dialypetalous</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:androecium"></a><a id="androecium"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">androecium <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/androecium">http://rs.rebipp.org.br/rebipp/terms/androecium</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>All stamens (male sexual whorl) in a flower, collectively.[JAS1]</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Term reference (literature): Harris & Harris (2001).</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>present</code>, <code>absent</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:numberOfStamens"></a><a id="numberOfStamens"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">numberOfStamens <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/numberOfStamens">http://rs.rebipp.org.br/rebipp/terms/numberOfStamens</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Average Number of stamens (male sporophyll) of a flower. (colocar n, sd)</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>4</code>, <code>6</code>, <code>3</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:numberOfStaminodes"></a><a id="numberOfStaminodes"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">numberOfStaminodes <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/numberOfStaminodes">http://rs.rebipp.org.br/rebipp/terms/numberOfStaminodes</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Number of sterile or abortive stamens, usually much smaller than a stamen and not producing pollen grains. (Colocar n, media e desvio padrão)</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>4</code>, <code>6</code>, <code>3</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:stamenHeight"></a><a id="stamenHeight"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">stamenHeight <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/stamenHeight">http://rs.rebipp.org.br/rebipp/terms/stamenHeight</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Length from the base to the tipof the largest stamen, or length of a single stamen if they are the same size.</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>2</code>, <code>4.4</code>, <code>6.1</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:antherDehiscenceType"></a><a id="antherDehiscenceType"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">antherDehiscenceType <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/antherDehiscenceType">http://rs.rebipp.org.br/rebipp/terms/antherDehiscenceType</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Anther dehiscence refers to the opening of the anther in releasing pollen grains, and anther dehiscence type is the physical mechanism of anther dehiscence</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Term reference (literature): Simpson (2010); Kearns &Inoyye (1993).</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>longitudinal</code>, <code>poricidal</code>, <code>transverse</code>, <code>valvar</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:numberOfPollenGrains"></a><a id="numberOfPollenGrains"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">numberOfPollenGrains <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/numberOfPollenGrains">http://rs.rebipp.org.br/rebipp/terms/numberOfPollenGrains</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Number of pollen grains (male gametophytes) per floral bud  (colocar n, media e desvio )</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:gynoecium"></a><a id="gynoecium"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">gynoecium <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/gynoecium">http://rs.rebipp.org.br/rebipp/terms/gynoecium</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>All carpels (female sexual whorl) of a flower, collectively</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>present</code>, <code>absent</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:numberOfStigmas"></a><a id="numberOfStigmas"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">numberOfStigmas <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/numberOfStigmas">http://rs.rebipp.org.br/rebipp/terms/numberOfStigmas</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Number of stigmas (pollen receptor on the gynoecium, which may be either sessile on the ovary or on top of the style or style arms). (n, media e desvio)</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>1</code>, <code>2</code>, <code>3</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:stigmaticArea"></a><a id="stigmaticArea"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">stigmaticArea <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/stigmaticArea">http://rs.rebipp.org.br/rebipp/terms/stigmaticArea</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Stigmatic surface or area is the part of the gynoecium receptive to pollen</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>10</code>, <code>20.5</code>, <code>3.2</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:styleLength"></a><a id="styleLength"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">styleLength <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/styleLength">http://rs.rebipp.org.br/rebipp/terms/styleLength</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Length from the base to the tipof the style, part of the gynoecium between the ovary and the stigma</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Term reference (literature): Beentje (2016).</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>2.5</code>, <code>13</code>, <code>5</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:ovulesCount"></a><a id="ovulesCount"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">ovulesCount <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/ovulesCount">http://rs.rebipp.org.br/rebipp/terms/ovulesCount</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Ovules (megasporangium enveloped by integuments), after fertilization originates the seeds</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Term reference (literature): Simpson (2010); Judd et al. (2009).</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>8</code>, <code>16</code>, <code>25</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:floralResource"></a><a id="floralResource"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">floralResource <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/floralResource">http://rs.rebipp.org.br/rebipp/terms/floralResource</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Floral resource available to anthophilous animals.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Term reference (literature): Willmer et al. 2011</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>nectar</code>, <code>pollen</code>, <code>oil</code>, <code>gum</code>, <code>resin</code>, <code>perfume</code>, <code>floral tissues</code>, <code>none</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:accumulatedNectarVolumeOpeningFlower"></a><a id="accumulatedNectarVolumeOpeningFlower"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">accumulatedNectarVolumeOpeningFlower <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/accumalatedNectarVolumeOpeningFlower">http://rs.rebipp.org.br/rebipp/terms/accumalatedNectarVolumeOpeningFlower</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Average volume of nectar accumulated at the beginning of anthesis on flowers that were prevented from visitation</td></tr>
+        <tr><td class="theme-label">Comments</td><td>General guidelines for filling fields: Values must be in microliters.</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>10</code>, <code>22</code>, <code>30.4</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:nectarConcentrationFlowerOpening"></a><a id="nectarConcentrationFlowerOpening"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">nectarConcentrationFlowerOpening <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/nectarConcentrationFlowerOpening">http://rs.rebipp.org.br/rebipp/terms/nectarConcentrationFlowerOpening</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Average nectar concentration measured at the beginning of anthesis on flowers that were prevented from visitation Concentration of nectar accumulated by a flower that was prevented from visitation after it is fully opened</td></tr>
+        <tr><td class="theme-label">Comments</td><td>General guidelines for filling fields: Values must be in % Brix</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>3.2</code>, <code>5.0</code>, <code>12.1</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:accumulatedNectarVolumeFlowerLifespan"></a><a id="accumulatedNectarVolumeFlowerLifespan"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">accumulatedNectarVolumeFlowerLifespan <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/accumulatedNectarVolumeFlowerLifespan">http://rs.rebipp.org.br/rebipp/terms/accumulatedNectarVolumeFlowerLifespan</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Volume of nectar accumulated by a flower that was prevented from visitation at the end of its lifespan</td></tr>
+        <tr><td class="theme-label">Comments</td><td>General guidelines for filling fields: Values must be in microliters</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>2.0</code>, <code>3.4</code>, <code>22.3</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:nectarConcentrationFlowerLifespan"></a><a id="nectarConcentrationFlowerLifespan"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">nectarConcentrationFlowerLifespan <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/nectarConcentrationFlowerLifespan">http://rs.rebipp.org.br/rebipp/terms/nectarConcentrationFlowerLifespan</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Concentration of nectar accumulated by a flower that was prevented from visitation at the end of its lifespan</td></tr>
+        <tr><td class="theme-label">Comments</td><td>General guidelines for filling fields: Values must be in % Brix</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>3.2</code>, <code>5.0</code>, <code>12.1</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:phenologyPattern"></a><a id="phenologyPattern"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">phenologyPattern <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/phenologyPattern">http://rs.rebipp.org.br/rebipp/terms/phenologyPattern</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>General classification for the timing of flowering of a species at a given population across years.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>We adopted Newstron et al. 1994 classification for tropical plant phenology, based on the frequency that a species flowers across years</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>continual</code>, <code>sub-annual</code>, <code>annual</code>, <code>supra-annual</code>, <code>irregular</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:floweringSeason"></a><a id="floweringSeason"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">floweringSeason <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/floweringSeason">http://rs.rebipp.org.br/rebipp/terms/floweringSeason</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The season of the year when the species is flowering (broadly defined as wet season, dry season or both). Na localização da ocorrência.</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>wet</code>, <code>dry</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:floweringDuration"></a><a id="floweringDuration"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">floweringDuration <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/floweringDuration">http://rs.rebipp.org.br/rebipp/terms/floweringDuration</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The total number of months the species is flowering in a year</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>0</code>, <code>1</code>, <code>2</code>, <code>3</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:flowersCount"></a><a id="flowersCount"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">flowersCount <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/flowersCount">http://rs.rebipp.org.br/rebipp/terms/flowersCount</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The number of open flowers available to visiting animals by one plant individual in the population of a given species at a particular time</td></tr>
+        <tr><td class="theme-label">Comments</td><td>General guidelines for filling fields: Fill with the number of flowers.</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>10</code>, <code>50</code>, <code>100</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:floralAbundance"></a><a id="floralAbundance"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">floralAbundance <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/floralAbundance">http://rs.rebipp.org.br/rebipp/terms/floralAbundance</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The number of flowers sampled by all individuals sampled in the population of a given species during its flowering</td></tr>
+        <tr><td class="theme-label">Comments</td><td>General guidelines for filling fields: Fill with the number of flowers</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>10</code>, <code>50</code>, <code>100</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:floweringPlantsSampled"></a><a id="floweringPlantsSampled"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">floweringPlantsSampled <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/floweringPlantsSampled">http://rs.rebipp.org.br/rebipp/terms/floweringPlantsSampled</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The number of flowering individuals sampled in the population of a given species during its flowering</td></tr>
+        <tr><td class="theme-label">Comments</td><td><code>10</code>, <code>30</code>, <code>50</code></td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:selfIncompatibility"></a><a id="selfIncompatibility"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">selfIncompatibility <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/selfIncompatibility">http://rs.rebipp.org.br/rebipp/terms/selfIncompatibility</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A recognition process between pollen and pistil followed by selective inhibition of the self-pollen development</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>present</code>, <code>absent</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:selfIncompatibilityType"></a><a id="selfIncompatibilityType"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">selfIncompatibilityType <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/selfIncompatibilityType">http://rs.rebipp.org.br/rebipp/terms/selfIncompatibilityType</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td></td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>gametophytic</code>, <code>sporophytic</code>, <code>late-action</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:isi"></a><a id="isi"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">isi <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/isi">http://rs.rebipp.org.br/rebipp/terms/isi</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The ratio of the percentage of fruit or seed set after manual self-pollination and cross-pollination (ISI)</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>0.3</code>, <code>0.45</code>, <code>0.97</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:autogamyIndex"></a><a id="autogamyIndex"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">autogamyIndex <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/autogamyIndex">http://rs.rebipp.org.br/rebipp/terms/autogamyIndex</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The ratio of the percentage fruit or seed set after autonomous self-pollination and cross pollination (IA)</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>0.3</code>, <code>0.45</code>, <code>0.97</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:apomixis"></a><a id="apomixis"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">apomixis <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/apomixis">http://rs.rebipp.org.br/rebipp/terms/apomixis</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Capacity of seed set without sexual reproduction</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>present</code>, <code>absent</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:flowerSexuality"></a><a id="flowerSexuality"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">flowerSexuality <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/flowerSexuality">http://rs.rebipp.org.br/rebipp/terms/flowerSexuality</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Presence of male (androecium), female (gynoecium) or both whorls in a flower. Unisexual flowers present only one gender while bisexual flowers present both</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>bisexual</code>, <code>unisexual</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:plantSexuality"></a><a id="plantSexuality"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">plantSexuality <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/plantSexuality">http://rs.rebipp.org.br/rebipp/terms/plantSexuality</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Number and types of (functional) gender in the individuals of a plant population.</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>monoecious</code>, <code>ginomonoecious</code>, <code>andromonoecious</code>, <code>trimonoecious</code>, <code>dioecious</code>, <code>temporal dioecious</code> (monoecious + dichogamy), <code>ginodioecious</code>, <code>androdioecious</code>, <code>tridioecious</code>, <code>poligamodioecious</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:herkogamy"></a><a id="herkogamy"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">herkogamy <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/herkogamy">http://rs.rebipp.org.br/rebipp/terms/herkogamy</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Pollen presentation (anther height) and pollen receipt (stigma height) spatially separated</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Term reference (literature): Webb & Lloyd, 1986</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>reverse</code>, <code>approach</code>, <code>absent</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:stylarHeteromorphism"></a><a id="stylarHeteromorphism"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">stylarHeteromorphism <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/stylarHeteromorphism">http://rs.rebipp.org.br/rebipp/terms/stylarHeteromorphism</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Presence of at least two style morphs in the population (individuals with long styles and individuals with short styles).</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>dimorphism</code>, <code>polymorphism</code>, <code>absent</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:heterostyly"></a><a id="heterostyly"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">heterostyly <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/heterostyly">http://rs.rebipp.org.br/rebipp/terms/heterostyly</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Reciprocal arrangement of sex-whorls heights in the floral morphs. Webb & Lloyd 1986</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>dystyly</code>, <code>tristyly</code>, <code>absent</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:enantiostyly"></a><a id="enantiostyly"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">enantiostyly <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/enantiostyly">http://rs.rebipp.org.br/rebipp/terms/enantiostyly</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Reciprocal and mirrored arrangement of sex-organ positions in the floral morphs. Webb & Lloyd 1986.</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>monomorphic</code>, <code>dimorphic</code>, <code>absent</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:heteranthery"></a><a id="heteranthery"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">heteranthery <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/heteranthery">http://rs.rebipp.org.br/rebipp/terms/heteranthery</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Presence of two stamens whorls with distinct anther heights in a flower.</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>present</code>, <code>absent</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:dichogamy"></a><a id="dichogamy"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">dichogamy <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/dichogamy">http://rs.rebipp.org.br/rebipp/terms/dichogamy</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Pollen presentation (anther dehiscence) and pollen receipt (stigma receptivity) temporally separated. Webb & Lloyd 1986</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>protandry</code>, <code>protogyny</code>, <code>absent</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:flexistyly"></a><a id="flexistyly"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">flexistyly <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/flexistyly">http://rs.rebipp.org.br/rebipp/terms/flexistyly</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A form of polymorphism in which the style and stigma of hermaphroditic flowers move over time; A system of multiple floral morphologies which promote outbreeding by a combination of dichogamy and herkogamy</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:flowerMovement"></a><a id="flowerMovement"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">flowerMovement <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/floralMovement">http://rs.rebipp.org.br/rebipp/terms/floralMovement</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td></td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>styles movement</code>, <code>anthers movement</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:floralAdvertisement"></a><a id="floralAdvertisement"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">floralAdvertisement <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/floralAdvertisement">http://rs.rebipp.org.br/rebipp/terms/floralAdvertisement</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Structures and substances that function advertising the flower and its rewards to pollinators; usually as visual, olfactory and tactile stimuli.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Term reference (literature): Willmer et al. 2011</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>colored structure</code>; <code>presence of perfume</code> (diurnal); <code>presence of perfume</code> (nocturnal); <code>presence of osmophores</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:attractiveStructureColor"></a><a id="attractiveStructureColor"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">attractiveStructureColor <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/attractiveStructureColor">http://rs.rebipp.org.br/rebipp/terms/attractiveStructureColor</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The predominant color of the attractive structures</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>green</code>, <code>white</code>, <code>red</code>, <code>yellow</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:conspecificPollenGrains"></a><a id="conspecificPollenGrains"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">conspecificPollenGrains <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/conspecificPollenGrains">http://rs.rebipp.org.br/rebipp/terms/conspecificPollenGrains</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Number of conspecific pollen grains deposited on the stigma after one visit</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Should be filled with the number of conspecific pollen grains counted on the stigma.</td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:conspecificPollenGrainsMultipleVisits"></a><a id="conspecificPollenGrainsMultipleVisits"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">conspecificPollenGrainsMultipleVisits <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/conspecificPollenGrainsMultipleVisits">http://rs.rebipp.org.br/rebipp/terms/conspecificPollenGrainsMultipleVisits</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Number of conspecific pollen grains deposited on the stigma after multiple visits</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Should be filled with the number of conspecific pollen grains counted on the stigma after a period of multiple visits</td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:heterospecificPollenGrains"></a><a id="heterospecificPollenGrains"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">heterospecificPollenGrains <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/heterospecificPollenGrains">http://rs.rebipp.org.br/rebipp/terms/heterospecificPollenGrains</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Number of heterospecific pollen grains deposited on the stigmas</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Should be filled with the number of heterospecific pollen grains counted on the stigma.</td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:removedPollenGrains"></a><a id="removedPollenGrains"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">removedPollenGrains <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/removedPollenGrains">http://rs.rebipp.org.br/rebipp/terms/removedPollenGrains</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Number of pollen grains removed from anthers after one visit</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Should be filled with the number of pollen grains removed from the anthers after one visit.</td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:removedPollenGrainsMultipleVisits"></a><a id="removedPollenGrainsMultipleVisits"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">removedPollenGrainsMultipleVisits <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/removedPollenGrainsMultipleVisits">http://rs.rebipp.org.br/rebipp/terms/removedPollenGrainsMultipleVisits</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Number of pollen grains removed from anthers after multiple visits</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Should be filled with the number of pollen grains removed from the anthers after a period of multiple visits.</td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:pollenTubesCount"></a><a id="pollenTubesCount"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">pollenTubesCount <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/pollenTubesCount">http://rs.rebipp.org.br/rebipp/terms/pollenTubesCount</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Number of pollen tubes after one visit</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Should be filled with the number of pollen tubes growing in the style after one visit.</td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:pollenTubesCountMultipleVisits"></a><a id="pollenTubesCountMultipleVisits"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">pollenTubesCountMultipleVisits <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/pollenTubesCountMultipleVisits">http://rs.rebipp.org.br/rebipp/terms/pollenTubesCountMultipleVisits</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Number of pollen tubes after multiple visits</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Should be filled with the number of pollen tubes growing in the style after a period of multiple visits</td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:fertilizedOvulesCount"></a><a id="fertilizedOvulesCount"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">fertilizedOvulesCount <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/fertilizedOvulesCount">http://rs.rebipp.org.br/rebipp/terms/fertilizedOvulesCount</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Number of fertilized ovules after one visit</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Should be filled with the number of pollen tubes growing in the style and fertilizing ovules after one visit</td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:fruitSet"></a><a id="fruitSet"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">fruitSet <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/fruitSet">http://rs.rebipp.org.br/rebipp/terms/fruitSet</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Percentage of flowers that set fruit after exposition to a single visit</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:seedSet"></a><a id="seedSet"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">seedSet <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/seedSet">http://rs.rebipp.org.br/rebipp/terms/seedSet</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Number of mature seeds per fruit from flowers exposed to a single visit</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Should be filled with the seed number per fruit</td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:fruitMass"></a><a id="fruitMass"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">fruitMass <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/fruitMass">http://rs.rebipp.org.br/rebipp/terms/fruitMass</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Mass of fruits from flowers exposed to a single visit in grams (g)</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Should be filled with the fruit mass</td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+
+
+## AnimalTrait
+
+<div class="my-4">
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:sociality">sociality</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:behavior">behavior</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:bodySize">bodySize</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:bodyMass">bodyMass</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:lengthOrganAccessingFloraResource">lengthOrganAccessingFloraResource</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:intertegularDistance">intertegularDistance</a>
+    </div>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">AnimalTrait <span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/AnimalTrait">http://rs.rebipp.org.br/rebipp/terms/AnimalTrait</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A animal trait (morphological, behavoral, biochemical, phenological or any other trait that describe the animal)</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+
+<p class="invisible">
+    <a id="rebipp:sociality"></a><a id="sociality"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">sociality <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/sociality">http://rs.rebipp.org.br/rebipp/terms/sociality</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Level of sociality of the flower visitor or pollinator</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Michener C.D. (1974) The Social Behavior of Bees. Harvard Univ. Press, Cambridge, MA. 404p.Rubenstein D.R., Abbot P. (2017) Comparative social evolution. Cambridge University Press, New York.Wilson E.O. (1971) The Insect Societies. The Belknap Press of Harvard University Press, Cambridge</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>social</code>, <code>solitary</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:behavior"></a><a id="behavior"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">behavior <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/behavior">http://rs.rebipp.org.br/rebipp/terms/behavior</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A description of the behavior shown by the visitor at the time the interaction with the flower was recorded. Recommended best practice if there is a controlled vocabulary</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>roosting</code>, <code>foraging</code>, <code>running</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:bodySize"></a><a id="bodySize"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">bodySize <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/bodySize">http://rs.rebipp.org.br/rebipp/terms/bodySize</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td></td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:bodyMass"></a><a id="bodyMass"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">bodyMass <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/bodyMass">http://rs.rebipp.org.br/rebipp/terms/bodyMass</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td></td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:lengthOrganAccessingFloraResource"></a><a id="lengthOrganAccessingFloraResource"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">lengthOrganAccessingFloraResource <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/lengthOrganAcessingFloralResource">http://rs.rebipp.org.br/rebipp/terms/lengthOrganAcessingFloralResource</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Length of the organ used to access the floral resource (mm)</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Glossa length (bees), bill length (birds and hummingbirds), tongue length (bats), proboscis length (butterfly and moth)</td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:intertegularDistance"></a><a id="intertegularDistance"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">intertegularDistance <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/intertegularDistance">http://rs.rebipp.org.br/rebipp/terms/intertegularDistance</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Distance between the insertion points of the wings and a standard measure of adult body size in bees</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+
+
+## Interaction
+
+<div class="my-4">
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:ecologicalInteraction">ecologicalInteraction</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:visitorBehavior">visitorBehavior</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:resourceUsed">resourceUsed</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:durationOfInteraction">durationOfInteraction</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:structuredTouched">structuredTouched</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:placeOfContact">placeOfContact</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:heightInThePlant">heightInThePlant</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowersVisited">flowersVisited</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:collectingMethod">collectingMethod</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:collectingTechnique">collectingTechnique</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:numberOfCollectingTechniqueUnits">numberOfCollectingTechniqueUnits</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:trapColor">trapColor</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:round">round</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:methodReference">methodReference</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:collectingEffort">collectingEffort</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:periodicity">periodicity</a>
+    </div>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">Interaction <span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/Interaction">http://rs.rebipp.org.br/rebipp/terms/Interaction</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Describes a interaction between an animal and a plant</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+
+<p class="invisible">
+    <a id="rebipp:ecologicalInteraction"></a><a id="ecologicalInteraction"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">ecologicalInteraction <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/ecologicalInteraction">http://rs.rebipp.org.br/rebipp/terms/ecologicalInteraction</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The mutual or reciprocal action or influence among organisms Simple closed field; only one option is possible.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Identification of the interaction</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>plant-flower visitor</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:visitorBehavior"></a><a id="visitorBehavior"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">visitorBehavior <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/visitorBehavior">http://rs.rebipp.org.br/rebipp/terms/visitorBehavior</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The behavior presented by an animal in a flower for a given record</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>breeding</code>, <code>oviposition</code>, <code>ingesting</code>, <code>collecting</code>, <code>resting</code>, <code>touch reproductive structures</code>, <code>robbery</code>, <code>theft</code>, <code>sucking</code>, <code>buzzing</code>, <code>cleaning</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:resourceUsed"></a><a id="resourceUsed"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">resourceUsed <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/resourceUsed">http://rs.rebipp.org.br/rebipp/terms/resourceUsed</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The floral resource used or removed by an animal</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>pollen</code>, <code>nectar</code>, <code>floral resin</code>, <code>oil</code>, <code>fragrance</code>, <code>ovules</code>, <code>shelter</code>, <code>stigma exudates</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:durationOfInteraction"></a><a id="durationOfInteraction"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">durationOfInteraction <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/durationOfInteraction">http://rs.rebipp.org.br/rebipp/terms/durationOfInteraction</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The time from the arrival of the animal into the focal (sampling) unit (flower, inflorescence, individual plant) to it’s departure.</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:structuredTouched"></a><a id="structuredTouched"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">structuredTouched <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/structureTouched">http://rs.rebipp.org.br/rebipp/terms/structureTouched</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The plant structure touched by visitors</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>flower</code>, <code>infrlorescence</code>, <code>leaves</code>, <code>branch</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:placeOfContact"></a><a id="placeOfContact"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">placeOfContact <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/placeOfContact">http://rs.rebipp.org.br/rebipp/terms/placeOfContact</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The place of the animal body or flower reproductive verticil (stigma and/or stamens, anther) that contacts its interacting partners, related to pollen removal and/or pollen deposition</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Place of the visitor’s body that contacts the plant and vice-versa: touches stigma</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>throat</code>, <code>wing</code>, <code>probocis</code>, <code>feet</code>, <code>thorax</code>, <code>abdomen</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:heightInThePlant"></a><a id="heightInThePlant"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">heightInThePlant <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/heightInThePlant">http://rs.rebipp.org.br/rebipp/terms/heightInThePlant</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The height where the interaction occurs in a vertical projection from the ground to the recorded interaction, reported in meters</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:flowersVisited"></a><a id="flowersVisited"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">flowersVisited <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/flowersVisited">http://rs.rebipp.org.br/rebipp/terms/flowersVisited</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Number of flowers visited by a single pollinator individual</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:collectingMethod"></a><a id="collectingMethod"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">collectingMethod <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/collectingMethod">http://rs.rebipp.org.br/rebipp/terms/collectingMethod</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Detailed description of the data sample protocol used in the field. Was it based on sampling by plots, transects, or fortuitous observation?</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>plot</code>, <code>transect, </code>opportunistic`</td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:collectingTechnique"></a><a id="collectingTechnique"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">collectingTechnique <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/collectingTechnique">http://rs.rebipp.org.br/rebipp/terms/collectingTechnique</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Describe whether some widely known technique was used for data collection (e.g., pan trap, bowl trap, Moerick trap, funnel trap, netting, malaise)</td></tr>
+        <tr><td class="theme-label">Comments</td><td>pan trap<code>, </code>bowl trap<code>, </code>Moerick trap<code>, </code>funnel trap<code>, </code>netting<code>, </code>malaise`</td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:numberOfCollectingTechniqueUnits"></a><a id="numberOfCollectingTechniqueUnits"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">numberOfCollectingTechniqueUnits <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/numberOfCollectingTechniqueUnits">http://rs.rebipp.org.br/rebipp/terms/numberOfCollectingTechniqueUnits</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>If any specific technique was used (e.g. pan traps), then add the number of sampling units used for sampling (e.g. traps).</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Number of traps</td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:trapColor"></a><a id="trapColor"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">trapColor <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/trapColor">http://rs.rebipp.org.br/rebipp/terms/trapColor</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Depending on the traps used, then specify their color if relevant.</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>red</code>,<code>blue</code>, <code>green</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:round"></a><a id="round"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">round <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/round">http://rs.rebipp.org.br/rebipp/terms/round</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Number of the visit to collect data, when there is more than one. Number of times related to sample an evaluation unit</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:methodReference"></a><a id="methodReference"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">methodReference <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/methodReference">http://rs.rebipp.org.br/rebipp/terms/methodReference</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Bibliographic reference of the method, citation. If a specific method described in the literature was used, then a bibliographic reference of the method should be provided</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:collectingEffort"></a><a id="collectingEffort"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">collectingEffort <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/collectingEffort">http://rs.rebipp.org.br/rebipp/terms/collectingEffort</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Sampling effort can be expressed many ways: as search time per site, as search within a given distance of a reference point or line, or as total number of sites or replicates needed to find a pattern</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Continuous numerical value, time (hours)</td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:periodicity"></a><a id="periodicity"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">periodicity <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/periodicity">http://rs.rebipp.org.br/rebipp/terms/periodicity</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The frequency with which observations were conducted</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Days. Interval in days between observations.</td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
 

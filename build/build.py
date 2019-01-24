@@ -20,7 +20,8 @@ NAMESPACES = {
     'http://rs.rebipp.org.br/rebipp/terms/' : 'rebipp',
     'http://purl.org/dc/elements/1.1/' : 'dc',
     'http://purl.org/dc/terms/' : 'dcterms',
-    'http://rs.tdwg.org/dwc/terms/attributes/' : 'tdwgutility'}
+    'http://rs.tdwg.org/dwc/terms/attributes/' : 'tdwgutility'
+}
 
 
 class ProvidedTermsError(Exception):
@@ -151,6 +152,7 @@ class RebippDigester(object):
         term_data["rdf_type"] = vs_term['rdf_type']
         namespace_url, _ = self.split_iri(term_iri)
         term_data["namespace"] = self.resolve_namespace_abbrev(namespace_url)
+
         return term_data
 
     @staticmethod
