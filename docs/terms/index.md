@@ -2,3615 +2,209 @@
 container: fluid
 ---
 
-# REBIPP terms quick reference guide
+# Plant-Pollinator Interactions terms quick reference guide
 
-This page provides a list of all currently recommended terms of the REBIPP Plant-Pollinator Interactions standard. Categories such as `Occurrence` or `Event` correspond to Darwin Core classes which group other terms. Convenient [files of these terms](https://github.com/tdwg/dwc/tree/master/dist) and [their full history](https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv) can be found in the [Darwin Core repository](https://github.com/tdwg/dwc).
-
-
-## Record-level
-
-<div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:type">type</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:modified">modified</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:language">language</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:license">license</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:rightsHolder">rightsHolder</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:accessRights">accessRights</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:bibliographicCitation">bibliographicCitation</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:references">references</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:institutionID">institutionID</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:collectionID">collectionID</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:datasetID">datasetID</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:institutionCode">institutionCode</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:collectionCode">collectionCode</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:datasetName">datasetName</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:ownerInstitutionCode">ownerInstitutionCode</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:basisOfRecord">basisOfRecord</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:informationWithheld">informationWithheld</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:dataGeneralizations">dataGeneralizations</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:dynamicProperties">dynamicProperties</a>
-    </div>
-
-
-<p class="invisible">
-    <a id="dcterms:type"></a><a id="type"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">type <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/dc/terms/type">http://purl.org/dc/terms/type</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The nature or genre of the resource.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Must be populated with a value from the DCMI type vocabulary (<a href="http://dublincore.org/documents/2010/10/11/dcmi-type-vocabulary/">http://dublincore.org/documents/2010/10/11/dcmi-type-vocabulary/</a>).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>StillImage</code>, <code>MovingImage</code>, <code>Sound</code>, <code>PhysicalObject</code>, <code>Event</code>, <code>Text</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dcterms:modified"></a><a id="modified"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">modified <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/dc/terms/modified">http://purl.org/dc/terms/modified</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The most recent date-time on which the resource was changed.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601:2004(E).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018). <code>1809-02-12</code> (some time during 12 February 1809). <code>1906-06</code> (some time in June 1906). <code>1971</code> (some time in the year 1971). <code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). <code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909). <code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007).</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dcterms:language"></a><a id="language"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">language <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/dc/terms/language">http://purl.org/dc/terms/language</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A language of the resource.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use RFC 5646 as a controlled vocabulary.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>en</code> (for English), <code>es</code> (for Spanish)</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dcterms:license"></a><a id="license"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">license <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/dc/terms/license">http://purl.org/dc/terms/license</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A legal document giving official permission to do something with the resource.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code><a href="http://creativecommons.org/publicdomain/zero/1.0/legalcode">http://creativecommons.org/publicdomain/zero/1.0/legalcode</a></code>, <code><a href="http://creativecommons.org/licenses/by/4.0/legalcode">http://creativecommons.org/licenses/by/4.0/legalcode</a></code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dcterms:rightsHolder"></a><a id="rightsHolder"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">rightsHolder <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/dc/terms/rightsHolder">http://purl.org/dc/terms/rightsHolder</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A person or organization owning or managing rights over the resource.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>The Regents of the University of California</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dcterms:accessRights"></a><a id="accessRights"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">accessRights <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/dc/terms/accessRights">http://purl.org/dc/terms/accessRights</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Information about who can access the resource or an indication of its security status. Access Rights may include information regarding access or restrictions based on privacy, security, or other policies.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>not-for-profit use only</code>, <code><a href="https://www.fieldmuseum.org/field-museum-natural-history-conditions-and-suggested-norms-use-collections-data-and-images">https://www.fieldmuseum.org/field-museum-natural-history-conditions-and-suggested-norms-use-collections-data-and-images</a></code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dcterms:bibliographicCitation"></a><a id="bibliographicCitation"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">bibliographicCitation <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/dc/terms/bibliographicCitation">http://purl.org/dc/terms/bibliographicCitation</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A bibliographic reference for the resource as a statement indicating how this record should be cited (attributed) when used.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible.</td></tr>
-        <tr><td class="theme-label">Examples</td><td>Specimen example: <code>Museum of Vertebrate Zoology, UC Berkeley. MVZ Mammal Collection (Arctos). Record ID: <a href="http://arctos.database.museum/guid/MVZ:Mamm:165861?seid=101356">http://arctos.database.museum/guid/MVZ:Mamm:165861?seid=101356</a>. Source: <a href="http://ipt.vertnet.org:8080/ipt/resource.do?r=mvz_mammal">http://ipt.vertnet.org:8080/ipt/resource.do?r=mvz_mammal</a></code>. Taxon example: <code>Oliver P. Pearson. 1985. Los tuco-tucos (genera Ctenomys) de los Parques Nacionales Lanin y Nahuel Huapi, Argentina Historia Natural, 5(37):337-343.</code>.</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dcterms:references"></a><a id="references"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">references <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/dc/terms/references">http://purl.org/dc/terms/references</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A related resource that is referenced, cited, or otherwise pointed to by the described resource.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code><a href="http://arctos.database.museum/guid/MVZ:Mamm:165861">http://arctos.database.museum/guid/MVZ:Mamm:165861</a></code>, <code><a href="http://www.catalogueoflife.org/annual-checklist/show_species_details.php?record_id=6197868">http://www.catalogueoflife.org/annual-checklist/show_species_details.php?record_id=6197868</a></code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:institutionID"></a><a id="institutionID"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">institutionID <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/institutionID">http://rs.tdwg.org/dwc/terms/institutionID</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier for the institution having custody of the object(s) or information referred to in the record.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>For physical specimens, the recommended best practice is to use an identifier from a collections registry such as the Global Registry of Biodiversity Repositories (<a href="http://grbio.org/">http://grbio.org/</a>).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code><a href="http://biocol.org/urn:lsid:biocol.org:col:34777">http://biocol.org/urn:lsid:biocol.org:col:34777</a></code>, <code><a href="http://grbio.org/cool/km06-gtbn">http://grbio.org/cool/km06-gtbn</a></code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:collectionID"></a><a id="collectionID"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">collectionID <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/collectionID">http://rs.tdwg.org/dwc/terms/collectionID</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier for the collection or dataset from which the record was derived.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>For physical specimens, the recommended best practice is to use an identifier from a collections registry such as the Global Registry of Biodiversity Repositories (<a href="http://grbio.org/">http://grbio.org/</a>).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code><a href="http://biocol.org/urn:lsid:biocol.org:col:1001">http://biocol.org/urn:lsid:biocol.org:col:1001</a></code>, <code><a href="http://grbio.org/cool/p5fp-c036">http://grbio.org/cool/p5fp-c036</a></code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:datasetID"></a><a id="datasetID"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">datasetID <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/datasetID">http://rs.tdwg.org/dwc/terms/datasetID</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier for the set of data. May be a global unique identifier or an identifier specific to a collection or institution.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>b15d4952-7d20-46f1-8a3e-556a512b04c5</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:institutionCode"></a><a id="institutionCode"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">institutionCode <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/institutionCode">http://rs.tdwg.org/dwc/terms/institutionCode</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The name (or acronym) in use by the institution having custody of the object(s) or information referred to in the record.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>MVZ</code>, <code>FMNH</code>, <code>CLO</code>, <code>UCMP</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:collectionCode"></a><a id="collectionCode"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">collectionCode <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/collectionCode">http://rs.tdwg.org/dwc/terms/collectionCode</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The name, acronym, coden, or initialism identifying the collection or data set from which the record was derived.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Mammals</code>, <code>Hildebrandt</code>, <code>EBIRD</code>, <code>VP</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:datasetName"></a><a id="datasetName"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">datasetName <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/datasetName">http://rs.tdwg.org/dwc/terms/datasetName</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The name identifying the data set from which the record was derived.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Grinnell Resurvey Mammals</code>, <code>Lacey Ctenomys Recaptures</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:ownerInstitutionCode"></a><a id="ownerInstitutionCode"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">ownerInstitutionCode <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/ownerInstitutionCode">http://rs.tdwg.org/dwc/terms/ownerInstitutionCode</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The name (or acronym) in use by the institution having ownership of the object(s) or information referred to in the record.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>NPS</code>, <code>APN</code>, <code>InBio</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:basisOfRecord"></a><a id="basisOfRecord"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">basisOfRecord <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/basisOfRecord">http://rs.tdwg.org/dwc/terms/basisOfRecord</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The specific nature of the data record.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use the standard label of one of the Darwin Core classes.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>PreservedSpecimen</code>, <code>FossilSpecimen</code>, <code>LivingSpecimen</code>, <code>MaterialSample</code>, <code>Event</code>, <code>HumanObservation</code>, <code>MachineObservation</code>, <code>Taxon</code>, <code>Occurrence</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:informationWithheld"></a><a id="informationWithheld"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">informationWithheld <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/informationWithheld">http://rs.tdwg.org/dwc/terms/informationWithheld</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Additional information that exists, but that has not been shared in the given record.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>location information not given for endangered species</code>, <code>collector identities withheld | ask about tissue samples</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:dataGeneralizations"></a><a id="dataGeneralizations"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">dataGeneralizations <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/dataGeneralizations">http://rs.tdwg.org/dwc/terms/dataGeneralizations</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Actions taken to make the shared data less specific or complete than in its original form. Suggests that alternative data of higher quality may be available on request.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Coordinates generalized from original GPS coordinates to the nearest half degree grid cell</code>.</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:dynamicProperties"></a><a id="dynamicProperties"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">dynamicProperties <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/dynamicProperties">http://rs.tdwg.org/dwc/terms/dynamicProperties</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A list of additional measurements, facts, characteristics, or assertions about the record. Meant to provide a mechanism for structured content.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a key:value encoding schema for a data interchange format such as JSON.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>{"heightInMeters":1.5}</code>, <code>{"tragusLengthInMeters":0.014, "weightInGrams":120}</code>, <code>{"natureOfID":"expert identification", "identificationEvidence":"cytochrome B sequence"}</code>, <code>{"relativeHumidity":28, "airTemperatureInCelsius":22, "sampleSizeInKilograms":10}</code>, <code>{"aspectHeading":277, "slopeInDegrees":6}</code>, <code>{"iucnStatus":"vulnerable", "taxonDistribution":"Neuqu√©n, Argentina"}</code></td></tr>
-    </tbody>
-</table>
-
-
-## Occurrence
-
-<div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:occurrenceID">occurrenceID</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:catalogNumber">catalogNumber</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:recordNumber">recordNumber</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:recordedBy">recordedBy</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:individualCount">individualCount</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:organismQuantity">organismQuantity</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:organismQuantityType">organismQuantityType</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:sex">sex</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:lifeStage">lifeStage</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:reproductiveCondition">reproductiveCondition</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:behavior">behavior</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:establishmentMeans">establishmentMeans</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:occurrenceStatus">occurrenceStatus</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:preparations">preparations</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:disposition">disposition</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:associatedMedia">associatedMedia</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:associatedReferences">associatedReferences</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:associatedSequences">associatedSequences</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:associatedTaxa">associatedTaxa</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:otherCatalogNumbers">otherCatalogNumbers</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:occurrenceRemarks">occurrenceRemarks</a>
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">Occurrence <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/Occurrence">http://rs.tdwg.org/dwc/terms/Occurrence</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An existence of an Organism (sensu <a href="http://rs.tdwg.org/dwc/terms/Organism">http://rs.tdwg.org/dwc/terms/Organism</a>) at a particular place at a particular time.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td>A wolf pack on the shore of Kluane Lake in 1988. A virus in a plant leaf in a the New York Botanical Garden at 15:29 on 2014-10-23. A fungus in Central Park in the summer of 1929.</td></tr>
-    </tbody>
-</table>
-
-<p class="invisible">
-    <a id="dwc:occurrenceID"></a><a id="occurrenceID"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">occurrenceID <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/occurrenceID">http://rs.tdwg.org/dwc/terms/occurrenceID</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier for the Occurrence (as opposed to a particular digital record of the occurrence). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the occurrenceID globally unique.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a persistent, globally unique identifier.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code><a href="http://arctos.database.museum/guid/MSB:Mamm:233627">http://arctos.database.museum/guid/MSB:Mamm:233627</a></code>, <code>000866d2-c177-4648-a200-ead4007051b9</code>, <code>urn:catalog:UWBM:Bird:89776</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:catalogNumber"></a><a id="catalogNumber"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">catalogNumber <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/catalogNumber">http://rs.tdwg.org/dwc/terms/catalogNumber</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier (preferably unique) for the record within the data set or collection.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>145732</code>, <code>145732a</code>, <code>2008.1334</code>, <code>R-4313</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:recordNumber"></a><a id="recordNumber"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">recordNumber <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/recordNumber">http://rs.tdwg.org/dwc/terms/recordNumber</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier given to the Occurrence at the time it was recorded. Often serves as a link between field notes and an Occurrence record, such as a specimen collector's number.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>OPP 7101</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:recordedBy"></a><a id="recordedBy"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">recordedBy <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/recordedBy">http://rs.tdwg.org/dwc/terms/recordedBy</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of names of people, groups, or organizations responsible for recording the original Occurrence. The primary collector or observer, especially one who applies a personal identifier (recordNumber), should be listed first.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Jos√© E. Crespo</code>. <code>Oliver P. Pearson | Anita K. Pearson</code> (where the value in recordNumber <code>OPP 7101</code> corresponds to the collector number for the specimen in the field catalog of Oliver P. Pearson).</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:individualCount"></a><a id="individualCount"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">individualCount <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/individualCount">http://rs.tdwg.org/dwc/terms/individualCount</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The number of individuals represented present at the time of the Occurrence.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>0</code>, <code>1</code>, <code>25</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:organismQuantity"></a><a id="organismQuantity"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">organismQuantity <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/organismQuantity">http://rs.tdwg.org/dwc/terms/organismQuantity</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A number or enumeration value for the quantity of organisms.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>A dwc:organismQuantity must have a corresponding dwc:organismQuantityType.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>27</code> (organismQuantity) with <code>individuals</code> (organismQuantityType). <code>12.5</code> (organismQuantity) with <code>%biomass</code> (organismQuantityType). <code>r</code> (organismQuantity) with <code>BraunBlanquetScale</code> (organismQuantityType).</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:organismQuantityType"></a><a id="organismQuantityType"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">organismQuantityType <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/organismQuantityType">http://rs.tdwg.org/dwc/terms/organismQuantityType</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The type of quantification system used for the quantity of organisms.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>A dwc:organismQuantityType must have a corresponding dwc:organismQuantity.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>27</code> (organismQuantity) with <code>individuals</code> (organismQuantityType). <code>12.5</code> (organismQuantity) with <code>%biomass</code> (organismQuantityType). <code>r</code> (organismQuantity) with <code>BraunBlanquetScale</code> (organismQuantityType).</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:sex"></a><a id="sex"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">sex <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/sex">http://rs.tdwg.org/dwc/terms/sex</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The sex of the biological individual(s) represented in the Occurrence.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>female</code>, <code>male</code>, <code>hermaphrodite</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:lifeStage"></a><a id="lifeStage"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">lifeStage <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/lifeStage">http://rs.tdwg.org/dwc/terms/lifeStage</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The age class or life stage of the biological individual(s) at the time the Occurrence was recorded.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>egg</code>, <code>eft</code>, <code>juvenile</code>, <code>adult</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:reproductiveCondition"></a><a id="reproductiveCondition"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">reproductiveCondition <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/reproductiveCondition">http://rs.tdwg.org/dwc/terms/reproductiveCondition</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The reproductive condition of the biological individual(s) represented in the Occurrence.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>non-reproductive</code>, <code>pregnant</code>, <code>in bloom</code>, <code>fruit-bearing</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:behavior"></a><a id="behavior"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">behavior <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/behavior">http://rs.tdwg.org/dwc/terms/behavior</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The behavior shown by the subject at the time the Occurrence was recorded.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>roosting</code>, <code>foraging</code>, <code>running</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:establishmentMeans"></a><a id="establishmentMeans"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">establishmentMeans <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/establishmentMeans">http://rs.tdwg.org/dwc/terms/establishmentMeans</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The process by which the biological individual(s) represented in the Occurrence became established at the location.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>native</code>, <code>introduced</code>, <code>naturalised</code>, <code>invasive</code>, <code>managed</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:occurrenceStatus"></a><a id="occurrenceStatus"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">occurrenceStatus <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/occurrenceStatus">http://rs.tdwg.org/dwc/terms/occurrenceStatus</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A statement about the presence or absence of a Taxon at a Location.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>present</code>, <code>absent</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:preparations"></a><a id="preparations"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">preparations <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/preparations">http://rs.tdwg.org/dwc/terms/preparations</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of preparations and preservation methods for a specimen.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>fossil</code>, <code>cast</code>, <code>photograph</code>, <code>DNA extract</code>, <code>skin | skull | skeleton</code>, <code>whole animal (ETOH) | tissue (EDTA)</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:disposition"></a><a id="disposition"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">disposition <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/disposition">http://rs.tdwg.org/dwc/terms/disposition</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The current state of a specimen with respect to the collection identified in collectionCode or collectionID.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>in collection</code>, <code>missing</code>, <code>voucher elsewhere</code>, <code>duplicates elsewhere</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:associatedMedia"></a><a id="associatedMedia"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">associatedMedia <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/associatedMedia">http://rs.tdwg.org/dwc/terms/associatedMedia</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of media associated with the Occurrence.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code><a href="http://arctos.database.museum/SpecimenImages/UAMObs/Mamm/2/P7291179.JPG">http://arctos.database.museum/SpecimenImages/UAMObs/Mamm/2/P7291179.JPG</a></code>, <code><a href="http://204.140.246.24/Fish/Collection%20Pictures/10118-00.jpg">http://204.140.246.24/Fish/Collection%20Pictures/10118-00.jpg</a> | <a href="http://204.140.246.24/Fish/Collection%20Pictures/10118-00a.jpg">http://204.140.246.24/Fish/Collection%20Pictures/10118-00a.jpg</a></code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:associatedReferences"></a><a id="associatedReferences"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">associatedReferences <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/associatedReferences">http://rs.tdwg.org/dwc/terms/associatedReferences</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of identifiers (publication, bibliographic reference, global unique identifier, URI) of literature associated with the Occurrence.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code><a href="http://www.sciencemag.org/cgi/content/abstract/322/5899/261">http://www.sciencemag.org/cgi/content/abstract/322/5899/261</a></code>, <code>Christopher J. Conroy, Jennifer L. Neuwald. 2008. Phylogeographic study of the California vole, Microtus californicus Journal of Mammalogy, 89(3):755-767.</code>, <code>Steven R. Hoofer and Ronald A. Van Den Bussche. 2001. Phylogenetic Relationships of Plecotine Bats and Allies Based on Mitochondrial Ribosomal Sequences. Journal of Mammalogy 82(1):131-137. | Walker, Faith M., Jeffrey T. Foster, Kevin P. Drees, Carol L. Chambers. 2014. Spotted bat (Euderma maculatum) microsatellite discovery using illumina sequencing. Conservation Genetics Resources.</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:associatedSequences"></a><a id="associatedSequences"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">associatedSequences <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/associatedSequences">http://rs.tdwg.org/dwc/terms/associatedSequences</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of genetic sequence information associated with the Occurrence.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code><a href="http://www.ncbi.nlm.nih.gov/nuccore/U34853.1">http://www.ncbi.nlm.nih.gov/nuccore/U34853.1</a></code>, <code><a href="http://www.ncbi.nlm.nih.gov/nuccore/GU328060">http://www.ncbi.nlm.nih.gov/nuccore/GU328060</a> | <a href="http://www.ncbi.nlm.nih.gov/nuccore/AF326093">http://www.ncbi.nlm.nih.gov/nuccore/AF326093</a></code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:associatedTaxa"></a><a id="associatedTaxa"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">associatedTaxa <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/associatedTaxa">http://rs.tdwg.org/dwc/terms/associatedTaxa</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of identifiers or names of taxa and their associations with the Occurrence.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>"host":"Quercus alba"</code>, <code>"parasitoid of":"Cyclocephala signaticollis" | "predator of":"Apis mellifera"</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:otherCatalogNumbers"></a><a id="otherCatalogNumbers"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">otherCatalogNumbers <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/otherCatalogNumbers">http://rs.tdwg.org/dwc/terms/otherCatalogNumbers</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of previous or alternate fully qualified catalog numbers or other human-used identifiers for the same Occurrence, whether in the current or any other data set or collection.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>FMNH:Mammal:1234</code>, <code>NPS YELLO6778 | MBG 33424</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:occurrenceRemarks"></a><a id="occurrenceRemarks"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">occurrenceRemarks <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/occurrenceRemarks">http://rs.tdwg.org/dwc/terms/occurrenceRemarks</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Comments or notes about the Occurrence.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>found dead on road</code></td></tr>
-    </tbody>
-</table>
-
-
-## Organism
-
-<div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:organismID">organismID</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:organismName">organismName</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:organismScope">organismScope</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:associatedOccurrences">associatedOccurrences</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:associatedOrganisms">associatedOrganisms</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:previousIdentifications">previousIdentifications</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:organismRemarks">organismRemarks</a>
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">Organism <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/Organism">http://rs.tdwg.org/dwc/terms/Organism</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A particular organism or defined group of organisms considered to be taxonomically homogeneous.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Instances of the dwc:Organism class are intended to facilitate linking one or more dwc:Identification instances to one or more dwc:Occurrence instances. Therefore, things that are typically assigned scientific names (such as viruses, hybrids, and lichens) and aggregates whose occurrences are typically recorded (such as packs, clones, and colonies) are included in the scope of this class.</td></tr>
-        <tr><td class="theme-label">Examples</td><td>A specific bird. A specific wolf pack. A specific instance of a bacterial culture.</td></tr>
-    </tbody>
-</table>
-
-<p class="invisible">
-    <a id="dwc:organismID"></a><a id="organismID"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">organismID <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/organismID">http://rs.tdwg.org/dwc/terms/organismID</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier for the Organism instance (as opposed to a particular digital record of the Organism). May be a globally unique identifier or an identifier specific to the data set.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code><a href="http://arctos.database.museum/guid/WNMU:Mamm:1249">http://arctos.database.museum/guid/WNMU:Mamm:1249</a></code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:organismName"></a><a id="organismName"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">organismName <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/organismName">http://rs.tdwg.org/dwc/terms/organismName</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A textual name or label assigned to an Organism instance.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Huberta</code>, <code>Boab Prison Tree</code>, <code>J pod</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:organismScope"></a><a id="organismScope"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">organismScope <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/organismScope">http://rs.tdwg.org/dwc/terms/organismScope</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A description of the kind of Organism instance. Can be used to indicate whether the Organism instance represents a discrete organism or if it represents a particular type of aggregation.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. This term is not intended to be used to specify a type of taxon. To describe the kind of dwc:Organism using a URI object in RDF, use rdf:type (<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</a>) instead.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>multicellular organism</code>, <code>virus</code>, <code>clone</code>, <code>pack</code>, <code>colony</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:associatedOccurrences"></a><a id="associatedOccurrences"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">associatedOccurrences <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/associatedOccurrences">http://rs.tdwg.org/dwc/terms/associatedOccurrences</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of identifiers of other Occurrence records and their associations to this Occurrence.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code><a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3175067">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3175067</a> | <a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177393">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177393</a> | <a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177394">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177394</a> | <a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177392">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3177392</a> | <a href="http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3609139">http://arctos.database.museum/guid/MSB:Mamm:292063?seid=3609139</a></code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:associatedOrganisms"></a><a id="associatedOrganisms"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">associatedOrganisms <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/associatedOrganisms">http://rs.tdwg.org/dwc/terms/associatedOrganisms</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of identifiers of other Organisms and their associations to this Organism.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>"sibling of":"DMNS:Mamm <a href="http://arctos.database.museum/guid/DMNS:Mamm:14171">http://arctos.database.museum/guid/DMNS:Mamm:14171</a>"</code>, <code>"parent of":"MSB:Mamm <a href="http://arctos.database.museum/guid/MSB:Mamm:196208">http://arctos.database.museum/guid/MSB:Mamm:196208</a>" | "parent of":"MSB:Mamm <a href="http://arctos.database.museum/guid/MSB:Mamm:196523">http://arctos.database.museum/guid/MSB:Mamm:196523</a>" | "sibling of":"MSB:Mamm <a href="http://arctos.database.museum/guid/MSB:Mamm:142638">http://arctos.database.museum/guid/MSB:Mamm:142638</a>"</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:previousIdentifications"></a><a id="previousIdentifications"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">previousIdentifications <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/previousIdentifications">http://rs.tdwg.org/dwc/terms/previousIdentifications</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of previous assignments of names to the Organism.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Chalepidae</code>, <code>Pinus abies</code>, <code>Anthus sp., field ID by G. Iglesias | Anthus correndera, expert ID by C. Cicero 2009-02-12 based on morphology</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:organismRemarks"></a><a id="organismRemarks"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">organismRemarks <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/organismRemarks">http://rs.tdwg.org/dwc/terms/organismRemarks</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Comments or notes about the Organism instance.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>One of a litter of six</code></td></tr>
-    </tbody>
-</table>
-
-
-## MaterialSample
-
-<div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:materialSampleID">materialSampleID</a>
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">MaterialSample <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/MaterialSample">http://rs.tdwg.org/dwc/terms/MaterialSample</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A physical result of a sampling (or subsampling) event. In biological collections, the material sample is typically collected, and either preserved or destructively processed.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td>A whole organism preserved in a collection. A part of an organism isolated for some purpose. A soil sample. A marine microbial sample.</td></tr>
-    </tbody>
-</table>
-
-<p class="invisible">
-    <a id="dwc:materialSampleID"></a><a id="materialSampleID"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">materialSampleID <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/materialSampleID">http://rs.tdwg.org/dwc/terms/materialSampleID</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier for the MaterialSample (as opposed to a particular digital record of the material sample). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the materialSampleID globally unique.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>06809dc5-f143-459a-be1a-6f03e63fc083</code></td></tr>
-    </tbody>
-</table>
-
-
-## Event
-
-<div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:eventID">eventID</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:parentEventID">parentEventID</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:fieldNumber">fieldNumber</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:eventDate">eventDate</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:eventTime">eventTime</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:startDayOfYear">startDayOfYear</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:endDayOfYear">endDayOfYear</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:year">year</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:month">month</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:day">day</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimEventDate">verbatimEventDate</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:habitat">habitat</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:samplingProtocol">samplingProtocol</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:sampleSizeValue">sampleSizeValue</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:sampleSizeUnit">sampleSizeUnit</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:samplingEffort">samplingEffort</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:fieldNotes">fieldNotes</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:eventRemarks">eventRemarks</a>
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">Event <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/Event">http://rs.tdwg.org/dwc/terms/Event</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An action that occurs at some location during some time.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td>A specimen collection process. A camera trap image capture. A marine trawl.</td></tr>
-    </tbody>
-</table>
-
-<p class="invisible">
-    <a id="dwc:eventID"></a><a id="eventID"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">eventID <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/eventID">http://rs.tdwg.org/dwc/terms/eventID</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier for the set of information associated with an Event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>INBO:VIS:Ev:00009375</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:parentEventID"></a><a id="parentEventID"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">parentEventID <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/parentEventID">http://rs.tdwg.org/dwc/terms/parentEventID</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier for the broader Event that groups this and potentially other Events.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Use a globally unique identifier for a dwc:Event or an identifier for a dwc:Event that is specific to the data set.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>A1</code> (parentEventID to identify the main Whittaker Plot in nested samples, each with its own eventID - <code>A1:1</code>, <code>A1:2</code>).</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:fieldNumber"></a><a id="fieldNumber"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">fieldNumber <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/fieldNumber">http://rs.tdwg.org/dwc/terms/fieldNumber</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier given to the event in the field. Often serves as a link between field notes and the Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>RV Sol 87-03-08</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:eventDate"></a><a id="eventDate"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">eventDate <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/eventDate">http://rs.tdwg.org/dwc/terms/eventDate</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The date-time or interval during which an Event occurred. For occurrences, this is the date-time when the event was recorded. Not suitable for a time in a geological context.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601:2004(E).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018). <code>1809-02-12</code> (some time during 12 February 1809). <code>1906-06</code> (some time in June 1906). <code>1971</code> (some time in the year 1971). <code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). <code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909). <code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007).</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:eventTime"></a><a id="eventTime"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">eventTime <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/eventTime">http://rs.tdwg.org/dwc/terms/eventTime</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The time or interval during which an Event occurred.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a time that conforms to ISO 8601:2004(E).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>14:07-0600</code> (2:07pm in the time zone six hours earlier than UTC). <code>08:40:21Z</code> (8:40:21am UTC). <code>13:00:00Z/15:30:00Z</code> (the interval between 1pm UTC and 3:30pm UTC).</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:startDayOfYear"></a><a id="startDayOfYear"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">startDayOfYear <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/startDayOfYear">http://rs.tdwg.org/dwc/terms/startDayOfYear</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The earliest ordinal day of the year on which the Event occurred (1 for January 1, 365 for December 31, except in a leap year, in which case it is 366).</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>1</code> (1 January). <code>366</code> (31 December), <code>365</code> (30 December in a leap year, 31 December in a non-leap year).</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:endDayOfYear"></a><a id="endDayOfYear"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">endDayOfYear <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/endDayOfYear">http://rs.tdwg.org/dwc/terms/endDayOfYear</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The latest ordinal day of the year on which the Event occurred (1 for January 1, 365 for December 31, except in a leap year, in which case it is 366).</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>1</code> (1 January). <code>32</code> (1 February). <code>366</code> (31 December). <code>365</code> (30 December in a leap year, 31 December in a non-leap year).</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:year"></a><a id="year"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">year <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/year">http://rs.tdwg.org/dwc/terms/year</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The four-digit year in which the Event occurred, according to the Common Era Calendar.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>1160</code>, <code>2008</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:month"></a><a id="month"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">month <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/month">http://rs.tdwg.org/dwc/terms/month</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The ordinal month in which the Event occurred.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>1</code> (January). <code>10</code> (October).</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:day"></a><a id="day"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">day <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/day">http://rs.tdwg.org/dwc/terms/day</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The integer day of the month on which the Event occurred.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>9</code>, <code>28</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:verbatimEventDate"></a><a id="verbatimEventDate"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">verbatimEventDate <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimEventDate">http://rs.tdwg.org/dwc/terms/verbatimEventDate</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The verbatim original representation of the date and time information for an Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>spring 1910</code>, <code>Marzo 2002</code>, <code>1999-03-XX</code>, <code>17IV1934</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:habitat"></a><a id="habitat"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">habitat <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/habitat">http://rs.tdwg.org/dwc/terms/habitat</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A category or description of the habitat in which the Event occurred.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>oak savanna</code>, <code>pre-cordilleran steppe</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:samplingProtocol"></a><a id="samplingProtocol"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">samplingProtocol <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/samplingProtocol">http://rs.tdwg.org/dwc/terms/samplingProtocol</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The name of, reference to, or description of the method or protocol used during an Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>UV light trap</code>, <code>mist net</code>, <code>bottom trawl</code>, <code>ad hoc observation</code>, <code>point count</code>, <code>Penguins from space: faecal stains reveal the location of emperor penguin colonies, <a href="https://doi.org/10.1111/j.1466-8238.2009.00467.x">https://doi.org/10.1111/j.1466-8238.2009.00467.x</a></code>, <code>Takats et al. 2001. Guidelines for Nocturnal Owl Monitoring in North America. Beaverhill Bird Observatory and Bird Studies Canada, Edmonton, Alberta. 32 pp.</code>, <code><a href="http://www.bsc-eoc.org/download/Owl.pdf">http://www.bsc-eoc.org/download/Owl.pdf</a></code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:sampleSizeValue"></a><a id="sampleSizeValue"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">sampleSizeValue <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/sampleSizeValue">http://rs.tdwg.org/dwc/terms/sampleSizeValue</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A numeric value for a measurement of the size (time duration, length, area, or volume) of a sample in a sampling event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>A sampleSizeValue must have a corresponding sampleSizeUnit.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>5</code> for sampleSizeValue with <code>metre</code> for sampleSizeUnit.</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:sampleSizeUnit"></a><a id="sampleSizeUnit"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">sampleSizeUnit <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/sampleSizeUnit">http://rs.tdwg.org/dwc/terms/sampleSizeUnit</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The unit of measurement of the size (time duration, length, area, or volume) of a sample in a sampling event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>A sampleSizeUnit must have a corresponding sampleSizeValue, e.g., <code>5</code> for sampleSizeValue with <code>metre</code> for sampleSizeUnit.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>minute</code>, <code>hour</code>, <code>day</code>, <code>metre</code>, <code>square metre</code>, <code>cubic metre</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:samplingEffort"></a><a id="samplingEffort"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">samplingEffort <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/samplingEffort">http://rs.tdwg.org/dwc/terms/samplingEffort</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The amount of effort expended during an Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>40 trap-nights</code>, <code>10 observer-hours</code>, <code>10 km by foot</code>, <code>30 km by car</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:fieldNotes"></a><a id="fieldNotes"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">fieldNotes <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/fieldNotes">http://rs.tdwg.org/dwc/terms/fieldNotes</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>One of a) an indicator of the existence of, b) a reference to (publication, URI), or c) the text of notes taken in the field about the Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Notes available in the Grinnell-Miller Library.</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:eventRemarks"></a><a id="eventRemarks"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">eventRemarks <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/eventRemarks">http://rs.tdwg.org/dwc/terms/eventRemarks</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Comments or notes about the Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>After the recent rains the river is nearly at flood stage.</code></td></tr>
-    </tbody>
-</table>
-
-
-## Location
-
-<div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:locationID">locationID</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:higherGeographyID">higherGeographyID</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:higherGeography">higherGeography</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:continent">continent</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:waterBody">waterBody</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:islandGroup">islandGroup</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:island">island</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:country">country</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:countryCode">countryCode</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:stateProvince">stateProvince</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:county">county</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:municipality">municipality</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:locality">locality</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimLocality">verbatimLocality</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:minimumElevationInMeters">minimumElevationInMeters</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:maximumElevationInMeters">maximumElevationInMeters</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimElevation">verbatimElevation</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:minimumDepthInMeters">minimumDepthInMeters</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:maximumDepthInMeters">maximumDepthInMeters</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimDepth">verbatimDepth</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:minimumDistanceAboveSurfaceInMeters">minimumDistanceAboveSurfaceInMeters</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:maximumDistanceAboveSurfaceInMeters">maximumDistanceAboveSurfaceInMeters</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:locationAccordingTo">locationAccordingTo</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:locationRemarks">locationRemarks</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:decimalLatitude">decimalLatitude</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:decimalLongitude">decimalLongitude</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:geodeticDatum">geodeticDatum</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:coordinateUncertaintyInMeters">coordinateUncertaintyInMeters</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:coordinatePrecision">coordinatePrecision</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:pointRadiusSpatialFit">pointRadiusSpatialFit</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimCoordinates">verbatimCoordinates</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimLatitude">verbatimLatitude</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimLongitude">verbatimLongitude</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimCoordinateSystem">verbatimCoordinateSystem</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimSRS">verbatimSRS</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:footprintWKT">footprintWKT</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:footprintSRS">footprintSRS</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:footprintSpatialFit">footprintSpatialFit</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:georeferencedBy">georeferencedBy</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:georeferencedDate">georeferencedDate</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:georeferenceProtocol">georeferenceProtocol</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:georeferenceSources">georeferenceSources</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:georeferenceVerificationStatus">georeferenceVerificationStatus</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:georeferenceRemarks">georeferenceRemarks</a>
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">Location <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/dc/terms/Location">http://purl.org/dc/terms/Location</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A spatial region or named place.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td>The municipality of San Carlos de Bariloche, R√≠o Negro, Argentina. The place defined by a georeference.</td></tr>
-    </tbody>
-</table>
-
-<p class="invisible">
-    <a id="dwc:locationID"></a><a id="locationID"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">locationID <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/locationID">http://rs.tdwg.org/dwc/terms/locationID</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier for the set of location information (data associated with dcterms:Location). May be a global unique identifier or an identifier specific to the data set.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code><a href="https://opencontext.org/subjects/768A875F-E205-4D0B-DE55-BAB7598D0FD1">https://opencontext.org/subjects/768A875F-E205-4D0B-DE55-BAB7598D0FD1</a></code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:higherGeographyID"></a><a id="higherGeographyID"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">higherGeographyID <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/higherGeographyID">http://rs.tdwg.org/dwc/terms/higherGeographyID</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier for the geographic region within which the Location occurred.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a persistent identifier from a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code><a href="http://vocab.getty.edu/tgn/1002002">http://vocab.getty.edu/tgn/1002002</a></code> (Ant√°rtida e Islas del Atl√°ntico Sur, Territorio Nacional de la Tierra del Fuego, Argentina).</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:higherGeography"></a><a id="higherGeography"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">higherGeography <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/higherGeography">http://rs.tdwg.org/dwc/terms/higherGeography</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of geographic names less specific than the information captured in the locality term.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>), with terms in order from least specific to most specific.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>North Atlantic Ocean</code>. <code>South America | Argentina | Patagonia | Parque Nacional Nahuel Huapi | Neuqu√©n | Los Lagos</code> (with accompanying values <code>South America</code> in continent, <code>Argentina</code> in country, <code>Neuqu√©n</code> in stateProvince, and <code>Los Lagos</code> in county.</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:continent"></a><a id="continent"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">continent <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/continent">http://rs.tdwg.org/dwc/terms/continent</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The name of the continent in which the Location occurs.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Africa</code>, <code>Antarctica</code>, <code>Asia</code>, <code>Europe</code>, <code>North America</code>, <code>Oceania</code>, <code>South America</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:waterBody"></a><a id="waterBody"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">waterBody <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/waterBody">http://rs.tdwg.org/dwc/terms/waterBody</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The name of the water body in which the Location occurs.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Indian Ocean</code>, <code>Baltic Sea</code>, <code>Hudson River</code>, <code>Lago Nahuel Huapi</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:islandGroup"></a><a id="islandGroup"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">islandGroup <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/islandGroup">http://rs.tdwg.org/dwc/terms/islandGroup</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The name of the island group in which the Location occurs.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Alexander Archipelago</code>, <code>Archipi√©lago Diego Ram√≠rez</code>, <code>Seychelles</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:island"></a><a id="island"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">island <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/island">http://rs.tdwg.org/dwc/terms/island</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The name of the island on or near which the Location occurs.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Nosy Be</code>, <code>Bikini Atoll</code>, <code>Vancouver</code>, <code>Viti Levu</code>, <code>Zanzibar</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:country"></a><a id="country"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">country <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/country">http://rs.tdwg.org/dwc/terms/country</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The name of the country or major administrative unit in which the Location occurs.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Denmark</code>, <code>Colombia</code>, <code>Espa√±a</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:countryCode"></a><a id="countryCode"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">countryCode <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/countryCode">http://rs.tdwg.org/dwc/terms/countryCode</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The standard code for the country in which the Location occurs.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use an ISO 3166-1-alpha-2 country code.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>AR</code>, <code>SV</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:stateProvince"></a><a id="stateProvince"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">stateProvince <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/stateProvince">http://rs.tdwg.org/dwc/terms/stateProvince</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The name of the next smaller administrative region than country (state, province, canton, department, region, etc.) in which the Location occurs.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Montana</code>, <code>Minas Gerais</code>, <code>C√≥rdoba</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:county"></a><a id="county"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">county <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/county">http://rs.tdwg.org/dwc/terms/county</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The full, unabbreviated name of the next smaller administrative region than stateProvince (county, shire, department, etc.) in which the Location occurs.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Missoula</code>, <code>Los Lagos</code>, <code>Matar√≥</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:municipality"></a><a id="municipality"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">municipality <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/municipality">http://rs.tdwg.org/dwc/terms/municipality</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The full, unabbreviated name of the next smaller administrative region than county (city, municipality, etc.) in which the Location occurs. Do not use this term for a nearby named place that does not contain the actual location.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Holzminden</code>, <code>Ara√ßatuba</code>, <code>Ga-Segonyana</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:locality"></a><a id="locality"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">locality <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/locality">http://rs.tdwg.org/dwc/terms/locality</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The specific description of the place. Less specific geographic information can be provided in other geographic terms (higherGeography, continent, country, stateProvince, county, municipality, waterBody, island, islandGroup). This term may contain information modified from the original to correct perceived errors or standardize the description.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Bariloche, 25 km NNE via Ruta Nacional 40 (=Ruta 237)</code>.</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:verbatimLocality"></a><a id="verbatimLocality"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">verbatimLocality <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimLocality">http://rs.tdwg.org/dwc/terms/verbatimLocality</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The original textual description of the place.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>25 km NNE Bariloche por R. Nac. 237</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:minimumElevationInMeters"></a><a id="minimumElevationInMeters"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">minimumElevationInMeters <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/minimumElevationInMeters">http://rs.tdwg.org/dwc/terms/minimumElevationInMeters</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The lower limit of the range of elevation (altitude, usually above sea level), in meters.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>-100</code>, <code>802</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:maximumElevationInMeters"></a><a id="maximumElevationInMeters"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">maximumElevationInMeters <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/maximumElevationInMeters">http://rs.tdwg.org/dwc/terms/maximumElevationInMeters</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The upper limit of the range of elevation (altitude, usually above sea level), in meters.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>-205</code>, <code>1236</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:verbatimElevation"></a><a id="verbatimElevation"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">verbatimElevation <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimElevation">http://rs.tdwg.org/dwc/terms/verbatimElevation</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The original description of the elevation (altitude, usually above sea level) of the Location.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>100-200 m</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:minimumDepthInMeters"></a><a id="minimumDepthInMeters"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">minimumDepthInMeters <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/minimumDepthInMeters">http://rs.tdwg.org/dwc/terms/minimumDepthInMeters</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The lesser depth of a range of depth below the local surface, in meters.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>0</code>, <code>100</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:maximumDepthInMeters"></a><a id="maximumDepthInMeters"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">maximumDepthInMeters <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/maximumDepthInMeters">http://rs.tdwg.org/dwc/terms/maximumDepthInMeters</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The greater depth of a range of depth below the local surface, in meters.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>0</code>, <code>200</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:verbatimDepth"></a><a id="verbatimDepth"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">verbatimDepth <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimDepth">http://rs.tdwg.org/dwc/terms/verbatimDepth</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The original description of the depth below the local surface.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>100-200 m</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:minimumDistanceAboveSurfaceInMeters"></a><a id="minimumDistanceAboveSurfaceInMeters"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">minimumDistanceAboveSurfaceInMeters <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/minimumDistanceAboveSurfaceInMeters">http://rs.tdwg.org/dwc/terms/minimumDistanceAboveSurfaceInMeters</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The lesser distance in a range of distance from a reference surface in the vertical direction, in meters. Use positive values for locations above the surface, negative values for locations below. If depth measures are given, the reference surface is the location given by the depth, otherwise the reference surface is the location given by the elevation.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>-1.5</code> (below the surface). <code>4.2</code> (above the surface). For a 1.5 meter sediment core from the bottom of a lake (at depth 20m) at 300m elevation: verbatimElevation: <code>300m</code> minimumElevationInMeters: <code>300</code>, maximumElevationInMeters: <code>300</code>, verbatimDepth: <code>20m</code>, minimumDepthInMeters: <code>20</code>, maximumDepthInMeters: <code>20</code>, minimumDistanceAboveSurfaceInMeters: <code>0</code>, maximumDistanceAboveSurfaceInMeters: <code>-1.5</code>.</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:maximumDistanceAboveSurfaceInMeters"></a><a id="maximumDistanceAboveSurfaceInMeters"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">maximumDistanceAboveSurfaceInMeters <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/maximumDistanceAboveSurfaceInMeters">http://rs.tdwg.org/dwc/terms/maximumDistanceAboveSurfaceInMeters</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The greater distance in a range of distance from a reference surface in the vertical direction, in meters. Use positive values for locations above the surface, negative values for locations below. If depth measures are given, the reference surface is the location given by the depth, otherwise the reference surface is the location given by the elevation.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>-1.5</code> (below the surface). <code>4.2</code> (above the surface). For a 1.5 meter sediment core from the bottom of a lake (at depth 20m) at 300m elevation: verbatimElevation: <code>300m</code> minimumElevationInMeters: <code>300</code>, maximumElevationInMeters: <code>300</code>, verbatimDepth: <code>20m</code>, minimumDepthInMeters: <code>20</code>, maximumDepthInMeters: <code>20</code>, minimumDistanceAboveSurfaceInMeters: <code>0</code>, maximumDistanceAboveSurfaceInMeters: <code>-1.5</code>.</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:locationAccordingTo"></a><a id="locationAccordingTo"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">locationAccordingTo <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/locationAccordingTo">http://rs.tdwg.org/dwc/terms/locationAccordingTo</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Information about the source of this Location information. Could be a publication (gazetteer), institution, or team of individuals.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Getty Thesaurus of Geographic Names</code>, <code>GADM</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:locationRemarks"></a><a id="locationRemarks"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">locationRemarks <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/locationRemarks">http://rs.tdwg.org/dwc/terms/locationRemarks</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Comments or notes about the Location.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>under water since 2005</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:decimalLatitude"></a><a id="decimalLatitude"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">decimalLatitude <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decimalLatitude">http://rs.tdwg.org/dwc/terms/decimalLatitude</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The geographic latitude (in decimal degrees, using the spatial reference system given in geodeticDatum) of the geographic center of a Location. Positive values are north of the Equator, negative values are south of it. Legal values lie between -90 and 90, inclusive.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>-41.0983423</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:decimalLongitude"></a><a id="decimalLongitude"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">decimalLongitude <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/decimalLongitude">http://rs.tdwg.org/dwc/terms/decimalLongitude</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The geographic longitude (in decimal degrees, using the spatial reference system given in geodeticDatum) of the geographic center of a Location. Positive values are east of the Greenwich Meridian, negative values are west of it. Legal values lie between -180 and 180, inclusive.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>-121.1761111</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:geodeticDatum"></a><a id="geodeticDatum"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">geodeticDatum <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/geodeticDatum">http://rs.tdwg.org/dwc/terms/geodeticDatum</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geographic coordinates given in decimalLatitude and decimalLongitude as based.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value <code>unknown</code>.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>EPSG:4326</code>, <code>WGS84</code>, <code>NAD27</code>, <code>Campo Inchauspe</code>, <code>European 1950</code>, <code>Clarke 1866</code>, <code>unknown</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:coordinateUncertaintyInMeters"></a><a id="coordinateUncertaintyInMeters"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">coordinateUncertaintyInMeters <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters">http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The horizontal distance (in meters) from the given decimalLatitude and decimalLongitude describing the smallest circle containing the whole of the Location. Leave the value empty if the uncertainty is unknown, cannot be estimated, or is not applicable (because there are no coordinates). Zero is not a valid value for this term.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>30</code> (reasonable lower limit of a GPS reading under good conditions if the actual precision was not recorded at the time). <code>71</code> (uncertainty for a UTM coordinate having 100 meter precision and a known spatial reference system).</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:coordinatePrecision"></a><a id="coordinatePrecision"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">coordinatePrecision <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/coordinatePrecision">http://rs.tdwg.org/dwc/terms/coordinatePrecision</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A decimal representation of the precision of the coordinates given in the decimalLatitude and decimalLongitude.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>0.00001</code> (normal GPS limit for decimal degrees). <code>0.000278</code> (nearest second). <code>0.01667</code> (nearest minute). <code>1.0</code> (nearest degree).</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:pointRadiusSpatialFit"></a><a id="pointRadiusSpatialFit"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">pointRadiusSpatialFit <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/pointRadiusSpatialFit">http://rs.tdwg.org/dwc/terms/pointRadiusSpatialFit</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The ratio of the area of the point-radius (decimalLatitude, decimalLongitude, coordinateUncertaintyInMeters) to the area of the true (original, or most specific) spatial representation of the Location. Legal values are 0, greater than or equal to 1, or undefined. A value of 1 is an exact match or 100% overlap. A value of 0 should be used if the given point-radius does not completely contain the original representation. The pointRadiusSpatialFit is undefined (and should be left blank) if the original representation is a point without uncertainty and the given georeference is not that same point (without uncertainty). If both the original and the given georeference are the same point, the pointRadiusSpatialFit is 1.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Detailed explanations with graphical examples can be found in the Guide to Best Practices for Georeferencing, Chapman and Wieczorek, eds. 2006.</td></tr>
-        <tr><td class="theme-label">Examples</td><td>Detailed explanations with graphical examples can be found in the Guide to Best Practices for Georeferencing, Chapman and Wieczorek, eds. 2006.</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:verbatimCoordinates"></a><a id="verbatimCoordinates"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">verbatimCoordinates <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimCoordinates">http://rs.tdwg.org/dwc/terms/verbatimCoordinates</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The verbatim original spatial coordinates of the Location. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in verbatimSRS and the coordinate system should be stored in verbatimCoordinateSystem.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>41 05 54S 121 05 34W</code>, <code>17T 630000 4833400</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:verbatimLatitude"></a><a id="verbatimLatitude"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">verbatimLatitude <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimLatitude">http://rs.tdwg.org/dwc/terms/verbatimLatitude</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The verbatim original latitude of the Location. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in verbatimSRS and the coordinate system should be stored in verbatimCoordinateSystem.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>41 05 54.03S</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:verbatimLongitude"></a><a id="verbatimLongitude"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">verbatimLongitude <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimLongitude">http://rs.tdwg.org/dwc/terms/verbatimLongitude</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The verbatim original longitude of the Location. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in verbatimSRS and the coordinate system should be stored in verbatimCoordinateSystem.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>121d 10' 34" W</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:verbatimCoordinateSystem"></a><a id="verbatimCoordinateSystem"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">verbatimCoordinateSystem <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem">http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The spatial coordinate system for the verbatimLatitude and verbatimLongitude or the verbatimCoordinates of the Location.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>decimal degrees</code>, <code>degrees decimal minutes</code>, <code>degrees minutes seconds</code>, <code>UTM</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:verbatimSRS"></a><a id="verbatimSRS"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">verbatimSRS <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimSRS">http://rs.tdwg.org/dwc/terms/verbatimSRS</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which coordinates given in verbatimLatitude and verbatimLongitude, or verbatimCoordinates are based.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value <code>unknown</code>.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>unknown</code>, <code>EPSG:4326</code>, <code>WGS84</code>, <code>NAD27</code>, <code>Campo Inchauspe</code>, <code>European 1950</code>, <code>Clarke 1866</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:footprintWKT"></a><a id="footprintWKT"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">footprintWKT <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/footprintWKT">http://rs.tdwg.org/dwc/terms/footprintWKT</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A Well-Known Text (WKT) representation of the shape (footprint, geometry) that defines the Location. A Location may have both a point-radius representation (see decimalLatitude) and a footprint representation, and they may differ from each other.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>POLYGON ((10 20, 11 20, 11 21, 10 21, 10 20))</code> (the one-degree bounding box with opposite corners at longitude=10, latitude=20 and longitude=11, latitude=21)</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:footprintSRS"></a><a id="footprintSRS"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">footprintSRS <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/footprintSRS">http://rs.tdwg.org/dwc/terms/footprintSRS</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A Well-Known Text (WKT) representation of the Spatial Reference System (SRS) for the footprintWKT of the Location. Do not use this term to describe the SRS of the decimalLatitude and decimalLongitude, even if it is the same as for the footprintWKT - use the geodeticDatum instead.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>GEOGCS["GCS_WGS_1984", DATUM["D_WGS_1984", SPHEROID["WGS_1984",6378137,298.257223563]], PRIMEM["Greenwich",0], UNIT["Degree",0.0174532925199433]]</code> (WKT for the standard WGS84 Spatial Reference System EPSG:4326).</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:footprintSpatialFit"></a><a id="footprintSpatialFit"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">footprintSpatialFit <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/footprintSpatialFit">http://rs.tdwg.org/dwc/terms/footprintSpatialFit</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The ratio of the area of the footprint (footprintWKT) to the area of the true (original, or most specific) spatial representation of the Location. Legal values are 0, greater than or equal to 1, or undefined. A value of 1 is an exact match or 100% overlap. A value of 0 should be used if the given footprint does not completely contain the original representation. The footprintSpatialFit is undefined (and should be left blank) if the original representation is a point and the given georeference is not that same point. If both the original and the given georeference are the same point, the footprintSpatialFit is 1.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Detailed explanations with graphical examples can be found in the Guide to Best Practices for Georeferencing, Chapman and Wieczorek, eds. 2006.</td></tr>
-        <tr><td class="theme-label">Examples</td><td>Detailed explanations with graphical examples can be found in the Guide to Best Practices for Georeferencing, Chapman and Wieczorek, eds. 2006.</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:georeferencedBy"></a><a id="georeferencedBy"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">georeferencedBy <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/georeferencedBy">http://rs.tdwg.org/dwc/terms/georeferencedBy</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of names of people, groups, or organizations who determined the georeference (spatial representation) for the Location.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Brad Millen (ROM)</code>, <code>Kristina Yamamoto | Janet Fang</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:georeferencedDate"></a><a id="georeferencedDate"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">georeferencedDate <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/georeferencedDate">http://rs.tdwg.org/dwc/terms/georeferencedDate</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The date on which the Location was georeferenced.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601:2004(E).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018). <code>1809-02-12</code> (some time during 12 February 1809). <code>1906-06</code> (some time in June 1906). <code>1971</code> (some time in the year 1971). <code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). <code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909). <code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007).</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:georeferenceProtocol"></a><a id="georeferenceProtocol"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">georeferenceProtocol <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/georeferenceProtocol">http://rs.tdwg.org/dwc/terms/georeferenceProtocol</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A description or reference to the methods used to determine the spatial footprint, coordinates, and uncertainties.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Guide to Best Practices for Georeferencing. (Chapman and Wieczorek, eds. 2006). Global Biodiversity Information Facility.</code>, <code>MaNIS/HerpNet/ORNIS Georeferencing Guidelines</code>, <code>Georeferencing Quick Reference Guide</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:georeferenceSources"></a><a id="georeferenceSources"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">georeferenceSources <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/georeferenceSources">http://rs.tdwg.org/dwc/terms/georeferenceSources</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of maps, gazetteers, or other resources used to georeference the Location, described specifically enough to allow anyone in the future to use the same resources.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code><a href="https://www.geonames.org/">https://www.geonames.org/</a></code>, <code>USGS 1:24000 Florence Montana Quad | Terrametrics 2008 on Google Earth</code>, <code>GeoLocate</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:georeferenceVerificationStatus"></a><a id="georeferenceVerificationStatus"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">georeferenceVerificationStatus <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/georeferenceVerificationStatus">http://rs.tdwg.org/dwc/terms/georeferenceVerificationStatus</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A categorical description of the extent to which the georeference has been verified to represent the best possible spatial description.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>requires verification</code>, <code>verified by collector</code>, <code>verified by curator</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:georeferenceRemarks"></a><a id="georeferenceRemarks"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">georeferenceRemarks <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/georeferenceRemarks">http://rs.tdwg.org/dwc/terms/georeferenceRemarks</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Notes or comments about the spatial description determination, explaining assumptions made in addition or opposition to the those formalized in the method referred to in georeferenceProtocol.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Assumed distance by road (Hwy. 101)</code>.</td></tr>
-    </tbody>
-</table>
-
-
-## GeologicalContext
-
-<div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:geologicalContextID">geologicalContextID</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:earliestEonOrLowestEonothem">earliestEonOrLowestEonothem</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:latestEonOrHighestEonothem">latestEonOrHighestEonothem</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:earliestEraOrLowestErathem">earliestEraOrLowestErathem</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:latestEraOrHighestErathem">latestEraOrHighestErathem</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:earliestPeriodOrLowestSystem">earliestPeriodOrLowestSystem</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:latestPeriodOrHighestSystem">latestPeriodOrHighestSystem</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:earliestEpochOrLowestSeries">earliestEpochOrLowestSeries</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:latestEpochOrHighestSeries">latestEpochOrHighestSeries</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:earliestAgeOrLowestStage">earliestAgeOrLowestStage</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:latestAgeOrHighestStage">latestAgeOrHighestStage</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:lowestBiostratigraphicZone">lowestBiostratigraphicZone</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:highestBiostratigraphicZone">highestBiostratigraphicZone</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:lithostratigraphicTerms">lithostratigraphicTerms</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:group">group</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:formation">formation</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:member">member</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:bed">bed</a>
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">GeologicalContext <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/GeologicalContext">http://rs.tdwg.org/dwc/terms/GeologicalContext</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Geological information, such as stratigraphy, that qualifies a region or place.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td>A lithostratigraphic layer.</td></tr>
-    </tbody>
-</table>
-
-<p class="invisible">
-    <a id="dwc:geologicalContextID"></a><a id="geologicalContextID"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">geologicalContextID <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/geologicalContextID">http://rs.tdwg.org/dwc/terms/geologicalContextID</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier for the set of information associated with a GeologicalContext (the location within a geological context, such as stratigraphy). May be a global unique identifier or an identifier specific to the data set.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code><a href="https://opencontext.org/subjects/e54377f7-4452-4315-b676-40679b10c4d9">https://opencontext.org/subjects/e54377f7-4452-4315-b676-40679b10c4d9</a></code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:earliestEonOrLowestEonothem"></a><a id="earliestEonOrLowestEonothem"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">earliestEonOrLowestEonothem <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestEonOrLowestEonothem">http://rs.tdwg.org/dwc/terms/earliestEonOrLowestEonothem</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The full name of the earliest possible geochronologic eon or lowest chrono-stratigraphic eonothem or the informal name ("Precambrian") attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Phanerozoic</code>, <code>Proterozoic</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:latestEonOrHighestEonothem"></a><a id="latestEonOrHighestEonothem"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">latestEonOrHighestEonothem <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestEonOrHighestEonothem">http://rs.tdwg.org/dwc/terms/latestEonOrHighestEonothem</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The full name of the latest possible geochronologic eon or highest chrono-stratigraphic eonothem or the informal name ("Precambrian") attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Phanerozoic</code>, <code>Proterozoic</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:earliestEraOrLowestErathem"></a><a id="earliestEraOrLowestErathem"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">earliestEraOrLowestErathem <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestEraOrLowestErathem">http://rs.tdwg.org/dwc/terms/earliestEraOrLowestErathem</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The full name of the earliest possible geochronologic era or lowest chronostratigraphic erathem attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Cenozoic</code>, <code>Mesozoic</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:latestEraOrHighestErathem"></a><a id="latestEraOrHighestErathem"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">latestEraOrHighestErathem <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestEraOrHighestErathem">http://rs.tdwg.org/dwc/terms/latestEraOrHighestErathem</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The full name of the latest possible geochronologic era or highest chronostratigraphic erathem attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Cenozoic</code>, <code>Mesozoic</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:earliestPeriodOrLowestSystem"></a><a id="earliestPeriodOrLowestSystem"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">earliestPeriodOrLowestSystem <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestPeriodOrLowestSystem">http://rs.tdwg.org/dwc/terms/earliestPeriodOrLowestSystem</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The full name of the earliest possible geochronologic period or lowest chronostratigraphic system attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Neogene</code>, <code>Tertiary</code>, <code>Quaternary</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:latestPeriodOrHighestSystem"></a><a id="latestPeriodOrHighestSystem"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">latestPeriodOrHighestSystem <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestPeriodOrHighestSystem">http://rs.tdwg.org/dwc/terms/latestPeriodOrHighestSystem</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The full name of the latest possible geochronologic period or highest chronostratigraphic system attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Neogene</code>, <code>Tertiary</code>, <code>Quaternary</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:earliestEpochOrLowestSeries"></a><a id="earliestEpochOrLowestSeries"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">earliestEpochOrLowestSeries <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestEpochOrLowestSeries">http://rs.tdwg.org/dwc/terms/earliestEpochOrLowestSeries</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The full name of the earliest possible geochronologic epoch or lowest chronostratigraphic series attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Holocene</code>, <code>Pleistocene</code>, <code>Ibexian Series</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:latestEpochOrHighestSeries"></a><a id="latestEpochOrHighestSeries"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">latestEpochOrHighestSeries <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestEpochOrHighestSeries">http://rs.tdwg.org/dwc/terms/latestEpochOrHighestSeries</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The full name of the latest possible geochronologic epoch or highest chronostratigraphic series attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Holocene</code>, <code>Pleistocene</code>, <code>Ibexian Series</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:earliestAgeOrLowestStage"></a><a id="earliestAgeOrLowestStage"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">earliestAgeOrLowestStage <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/earliestAgeOrLowestStage">http://rs.tdwg.org/dwc/terms/earliestAgeOrLowestStage</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The full name of the earliest possible geochronologic age or lowest chronostratigraphic stage attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Atlantic</code>, <code>Boreal</code>, <code>Skullrockian</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:latestAgeOrHighestStage"></a><a id="latestAgeOrHighestStage"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">latestAgeOrHighestStage <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/latestAgeOrHighestStage">http://rs.tdwg.org/dwc/terms/latestAgeOrHighestStage</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The full name of the latest possible geochronologic age or highest chronostratigraphic stage attributable to the stratigraphic horizon from which the cataloged item was collected.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Atlantic</code>, <code>Boreal</code>, <code>Skullrockian</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:lowestBiostratigraphicZone"></a><a id="lowestBiostratigraphicZone"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">lowestBiostratigraphicZone <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/lowestBiostratigraphicZone">http://rs.tdwg.org/dwc/terms/lowestBiostratigraphicZone</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The full name of the lowest possible geological biostratigraphic zone of the stratigraphic horizon from which the cataloged item was collected.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Maastrichtian</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:highestBiostratigraphicZone"></a><a id="highestBiostratigraphicZone"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">highestBiostratigraphicZone <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/highestBiostratigraphicZone">http://rs.tdwg.org/dwc/terms/highestBiostratigraphicZone</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The full name of the highest possible geological biostratigraphic zone of the stratigraphic horizon from which the cataloged item was collected.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Blancan</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:lithostratigraphicTerms"></a><a id="lithostratigraphicTerms"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">lithostratigraphicTerms <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/lithostratigraphicTerms">http://rs.tdwg.org/dwc/terms/lithostratigraphicTerms</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The combination of all litho-stratigraphic names for the rock from which the cataloged item was collected.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Pleistocene-Weichselien</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:group"></a><a id="group"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">group <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/group">http://rs.tdwg.org/dwc/terms/group</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The full name of the lithostratigraphic group from which the cataloged item was collected.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Bathurst</code>, <code>Lower Wealden</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:formation"></a><a id="formation"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">formation <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/formation">http://rs.tdwg.org/dwc/terms/formation</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The full name of the lithostratigraphic formation from which the cataloged item was collected.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Notch Peak Formation</code>, <code>House Limestone</code>, <code>Fillmore Formation</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:member"></a><a id="member"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">member <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/member">http://rs.tdwg.org/dwc/terms/member</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The full name of the lithostratigraphic member from which the cataloged item was collected.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Lava Dam Member</code>, <code>Hellnmaria Member</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:bed"></a><a id="bed"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">bed <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/bed">http://rs.tdwg.org/dwc/terms/bed</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The full name of the lithostratigraphic bed from which the cataloged item was collected.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Harlem coal</code></td></tr>
-    </tbody>
-</table>
-
-
-## Identification
-
-<div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:identificationID">identificationID</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:identificationQualifier">identificationQualifier</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:typeStatus">typeStatus</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:identifiedBy">identifiedBy</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:dateIdentified">dateIdentified</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:identificationReferences">identificationReferences</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:identificationVerificationStatus">identificationVerificationStatus</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:identificationRemarks">identificationRemarks</a>
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">Identification <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/Identification">http://rs.tdwg.org/dwc/terms/Identification</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A taxonomic determination (e.g., the assignment to a taxon).</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td>A subspecies determination of an organism.</td></tr>
-    </tbody>
-</table>
-
-<p class="invisible">
-    <a id="dwc:identificationID"></a><a id="identificationID"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">identificationID <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationID">http://rs.tdwg.org/dwc/terms/identificationID</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier for the Identification (the body of information associated with the assignment of a scientific name). May be a global unique identifier or an identifier specific to the data set.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>9992</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:identificationQualifier"></a><a id="identificationQualifier"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">identificationQualifier <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationQualifier">http://rs.tdwg.org/dwc/terms/identificationQualifier</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A brief phrase or a standard term ("cf.", "aff.") to express the determiner's doubts about the Identification.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>aff. agrifolia var. oxyadenia</code> (for <code>Quercus aff. agrifolia var. oxyadenia</code> with accompanying values <code>Quercus</code> in genus, <code>agrifolia</code> in specificEpithet, <code>oxyadenia</code> in infraspecificEpithet, and <code>var.</code> in taxonRank. <code>cf. var. oxyadenia</code> for <code>Quercus agrifolia cf. var. oxyadenia</code> with accompanying values <code>Quercus</code> in genus, <code>agrifolia</code> in specificEpithet, <code>oxyadenia</code> in infraspecificEpithet, and <code>var.</code> in taxonRank.</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:typeStatus"></a><a id="typeStatus"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">typeStatus <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/typeStatus">http://rs.tdwg.org/dwc/terms/typeStatus</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of nomenclatural types (type status, typified scientific name, publication) applied to the subject.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>holotype of Ctenomys sociabilis. Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388</code>, <code>holotype of Pinus abies | holotype of Picea abies</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:identifiedBy"></a><a id="identifiedBy"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">identifiedBy <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identifiedBy">http://rs.tdwg.org/dwc/terms/identifiedBy</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of names of people, groups, or organizations who assigned the Taxon to the subject.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>James L. Patton</code>, <code>Theodore Pappenfuss | Robert Macey</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:dateIdentified"></a><a id="dateIdentified"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">dateIdentified <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/dateIdentified">http://rs.tdwg.org/dwc/terms/dateIdentified</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The date on which the subject was identified as representing the Taxon.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601:2004(E).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018). <code>1809-02-12</code> (some time during 12 February 1809). <code>1906-06</code> (some time in June 1906). <code>1971</code> (some time in the year 1971). <code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). <code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909). <code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007).</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:identificationReferences"></a><a id="identificationReferences"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">identificationReferences <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationReferences">http://rs.tdwg.org/dwc/terms/identificationReferences</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of references (publication, global unique identifier, URI) used in the Identification.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Aves del Noroeste Patagonico. Christie et al. 2004.</code>, <code>Stebbins, R. Field Guide to Western Reptiles and Amphibians. 3rd Edition. 2003. | Irschick, D.J. and Shaffer, H.B. (1997). The polytypic species revisited: Morphological differentiation among tiger salamanders (Ambystoma tigrinum) (Amphibia: Caudata). Herpetologica, 53(1), 30-49.</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:identificationVerificationStatus"></a><a id="identificationVerificationStatus"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">identificationVerificationStatus <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationVerificationStatus">http://rs.tdwg.org/dwc/terms/identificationVerificationStatus</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A categorical indicator of the extent to which the taxonomic identification has been verified to be correct.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary such as that used in HISPID and ABCD.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>0</code> ("unverified" in HISPID/ABCD).</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:identificationRemarks"></a><a id="identificationRemarks"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">identificationRemarks <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationRemarks">http://rs.tdwg.org/dwc/terms/identificationRemarks</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Comments or notes about the Identification.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Distinguished between Anthus correndera and Anthus hellmayri based on the comparative lengths of the u√±as.</code></td></tr>
-    </tbody>
-</table>
-
-
-## Taxon
-
-<div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:taxonID">taxonID</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:scientificNameID">scientificNameID</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:acceptedNameUsageID">acceptedNameUsageID</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:parentNameUsageID">parentNameUsageID</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:originalNameUsageID">originalNameUsageID</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:nameAccordingToID">nameAccordingToID</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:namePublishedInID">namePublishedInID</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:taxonConceptID">taxonConceptID</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:scientificName">scientificName</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:acceptedNameUsage">acceptedNameUsage</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:parentNameUsage">parentNameUsage</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:originalNameUsage">originalNameUsage</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:nameAccordingTo">nameAccordingTo</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:namePublishedIn">namePublishedIn</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:namePublishedInYear">namePublishedInYear</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:higherClassification">higherClassification</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:kingdom">kingdom</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:phylum">phylum</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:class">class</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:order">order</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:family">family</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:genus">genus</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:subgenus">subgenus</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:specificEpithet">specificEpithet</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:infraspecificEpithet">infraspecificEpithet</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:taxonRank">taxonRank</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:verbatimTaxonRank">verbatimTaxonRank</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:scientificNameAuthorship">scientificNameAuthorship</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:vernacularName">vernacularName</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:nomenclaturalCode">nomenclaturalCode</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:taxonomicStatus">taxonomicStatus</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:nomenclaturalStatus">nomenclaturalStatus</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:taxonRemarks">taxonRemarks</a>
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">Taxon <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/Taxon">http://rs.tdwg.org/dwc/terms/Taxon</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A group of organisms (sensu <a href="http://purl.obolibrary.org/obo/OBI_0100026">http://purl.obolibrary.org/obo/OBI_0100026</a>) considered by taxonomists to form a homogeneous unit.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td>The genus Truncorotaloides as published by Br√∂nnimann et al. in 1953 in the Journal of Paleontology Vol. 27(6) p. 817-820.</td></tr>
-    </tbody>
-</table>
-
-<p class="invisible">
-    <a id="dwc:taxonID"></a><a id="taxonID"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">taxonID <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/taxonID">http://rs.tdwg.org/dwc/terms/taxonID</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>8fa58e08-08de-4ac1-b69c-1235340b7001</code>, <code>32567</code>, <code><a href="https://www.gbif.org/species/212">https://www.gbif.org/species/212</a></code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:scientificNameID"></a><a id="scientificNameID"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">scientificNameID <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/scientificNameID">http://rs.tdwg.org/dwc/terms/scientificNameID</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier for the nomenclatural (not taxonomic) details of a scientific name.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>urn:lsid:ipni.org:names:37829-1:1.3</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:acceptedNameUsageID"></a><a id="acceptedNameUsageID"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">acceptedNameUsageID <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/acceptedNameUsageID">http://rs.tdwg.org/dwc/terms/acceptedNameUsageID</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier for the name usage (documented meaning of the name according to a source) of the currently valid (zoological) or accepted (botanical) taxon.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>8fa58e08-08de-4ac1-b69c-1235340b7001</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:parentNameUsageID"></a><a id="parentNameUsageID"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">parentNameUsageID <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/parentNameUsageID">http://rs.tdwg.org/dwc/terms/parentNameUsageID</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier for the name usage (documented meaning of the name according to a source) of the direct, most proximate higher-rank parent taxon (in a classification) of the most specific element of the scientificName.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code><a href="https://www.gbif.org/species/2684876">https://www.gbif.org/species/2684876</a></code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:originalNameUsageID"></a><a id="originalNameUsageID"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">originalNameUsageID <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/originalNameUsageID">http://rs.tdwg.org/dwc/terms/originalNameUsageID</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier for the name usage (documented meaning of the name according to a source) in which the terminal element of the scientificName was originally established under the rules of the associated nomenclaturalCode.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code><a href="https://www.gbif.org/species/2685484">https://www.gbif.org/species/2685484</a></code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:nameAccordingToID"></a><a id="nameAccordingToID"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">nameAccordingToID <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/nameAccordingToID">http://rs.tdwg.org/dwc/terms/nameAccordingToID</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier for the source in which the specific taxon concept circumscription is defined or implied. See nameAccordingTo.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code><a href="https://doi.org/10.1016/S0269-915X(97)80026-2">https://doi.org/10.1016/S0269-915X(97)80026-2</a></code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:namePublishedInID"></a><a id="namePublishedInID"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">namePublishedInID <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/namePublishedInID">http://rs.tdwg.org/dwc/terms/namePublishedInID</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier for the publication in which the scientificName was originally established under the rules of the associated nomenclaturalCode.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code><a href="http://hdl.handle.net/10199/7">http://hdl.handle.net/10199/7</a></code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:taxonConceptID"></a><a id="taxonConceptID"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">taxonConceptID <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/taxonConceptID">http://rs.tdwg.org/dwc/terms/taxonConceptID</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier for the taxonomic concept to which the record refers - not for the nomenclatural details of a taxon.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>8fa58e08-08de-4ac1-b69c-1235340b7001</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:scientificName"></a><a id="scientificName"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">scientificName <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/scientificName">http://rs.tdwg.org/dwc/terms/scientificName</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The full scientific name, with authorship and date information if known. When forming part of an Identification, this should be the name in lowest level taxonomic rank that can be determined. This term should not contain identification qualifications, which should instead be supplied in the IdentificationQualifier term.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Coleoptera</code> (order). <code>Vespertilionidae</code> (family). <code>Manis</code> (genus). <code>Ctenomys sociabilis</code> (genus + specificEpithet). <code>Ambystoma tigrinum diaboli</code> (genus + specificEpithet + infraspecificEpithet). <code>Roptrocerus typographi (Gy√∂rfi, 1952)</code> (genus + specificEpithet + scientificNameAuthorship), <code>Quercus agrifolia var. oxyadenia (Torr.) J.T. Howell</code> (genus + specificEpithet + taxonRank + infraspecificEpithet + scientificNameAuthorship).</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:acceptedNameUsage"></a><a id="acceptedNameUsage"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">acceptedNameUsage <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/acceptedNameUsage">http://rs.tdwg.org/dwc/terms/acceptedNameUsage</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The full name, with authorship and date information if known, of the currently valid (zoological) or accepted (botanical) taxon.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Tamias minimus</code> (valid name for Eutamias minimus).</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:parentNameUsage"></a><a id="parentNameUsage"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">parentNameUsage <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/parentNameUsage">http://rs.tdwg.org/dwc/terms/parentNameUsage</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The full name, with authorship and date information if known, of the direct, most proximate higher-rank parent taxon (in a classification) of the most specific element of the scientificName.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Rubiaceae</code>, <code>Gruiformes</code>, <code>Testudinae</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:originalNameUsage"></a><a id="originalNameUsage"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">originalNameUsage <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/originalNameUsage">http://rs.tdwg.org/dwc/terms/originalNameUsage</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The taxon name, with authorship and date information if known, as it originally appeared when first established under the rules of the associated nomenclaturalCode. The basionym (botany) or basonym (bacteriology) of the scientificName or the senior/earlier homonym for replaced names.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Pinus abies</code>, <code>Gasterosteus saltatrix Linnaeus 1768</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:nameAccordingTo"></a><a id="nameAccordingTo"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">nameAccordingTo <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/nameAccordingTo">http://rs.tdwg.org/dwc/terms/nameAccordingTo</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The reference to the source in which the specific taxon concept circumscription is defined or implied - traditionally signified by the Latin "sensu" or "sec." (from secundum, meaning "according to"). For taxa that result from identifications, a reference to the keys, monographs, experts and other sources should be given.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>McCranie, J. R., D. B. Wake, and L. D. Wilson. 1996. The taxonomic status of Bolitoglossa schmidti, with comments on the biology of the Mesoamerican salamander Bolitoglossa dofleini (Caudata: Plethodontidae). Carib. J. Sci. 32:395-398.</code>, <code>Werner Greuter 2008</code>. <code>Lilljeborg 1861, Upsala Univ. Arsskrift, Math. Naturvet., pp. 4, 5</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:namePublishedIn"></a><a id="namePublishedIn"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">namePublishedIn <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/namePublishedIn">http://rs.tdwg.org/dwc/terms/namePublishedIn</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A reference for the publication in which the scientificName was originally established under the rules of the associated nomenclaturalCode.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388</code>, <code>Forel, Auguste, Diagnosies provisoires de quelques esp√®ces nouvelles de fourmis de Madagascar, r√©colt√©es par M. Grandidier., Annales de la Societe Entomologique de Belgique, Comptes-rendus des Seances 30, 1886</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:namePublishedInYear"></a><a id="namePublishedInYear"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">namePublishedInYear <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/namePublishedInYear">http://rs.tdwg.org/dwc/terms/namePublishedInYear</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The four-digit year in which the scientificName was published.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>1915</code>, <code>2008</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:higherClassification"></a><a id="higherClassification"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">higherClassification <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/higherClassification">http://rs.tdwg.org/dwc/terms/higherClassification</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of taxa names terminating at the rank immediately superior to the taxon referenced in the taxon record.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>), with terms in order from the highest taxonomic rank to the lowest.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Plantae | Tracheophyta | Magnoliopsida | Ranunculales | Ranunculaceae | Ranunculus</code>, <code>Animalia</code>, <code>Animalia | Chordata | Vertebrata | Mammalia | Theria | Eutheria | Rodentia | Hystricognatha | Hystricognathi | Ctenomyidae | Ctenomyini | Ctenomys</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:kingdom"></a><a id="kingdom"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">kingdom <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/kingdom">http://rs.tdwg.org/dwc/terms/kingdom</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The full scientific name of the kingdom in which the taxon is classified.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Animalia</code>, <code>Archaea</code>, <code>Bacteria</code>, <code>Chromista</code>, <code>Fungi</code>, <code>Plantae</code>, <code>Protozoa</code>, <code>Viruses</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:phylum"></a><a id="phylum"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">phylum <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/phylum">http://rs.tdwg.org/dwc/terms/phylum</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The full scientific name of the phylum or division in which the taxon is classified.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Chordata</code> (phylum). <code>Bryophyta</code> (division).</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:class"></a><a id="class"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">class <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/class">http://rs.tdwg.org/dwc/terms/class</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The full scientific name of the class in which the taxon is classified.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Mammalia</code>, <code>Hepaticopsida</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:order"></a><a id="order"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">order <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/order">http://rs.tdwg.org/dwc/terms/order</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The full scientific name of the order in which the taxon is classified.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Carnivora</code>, <code>Monocleales</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:family"></a><a id="family"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">family <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/family">http://rs.tdwg.org/dwc/terms/family</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The full scientific name of the family in which the taxon is classified.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Felidae</code>, <code>Monocleaceae</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:genus"></a><a id="genus"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">genus <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/genus">http://rs.tdwg.org/dwc/terms/genus</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The full scientific name of the genus in which the taxon is classified.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Puma</code>, <code>Monoclea</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:subgenus"></a><a id="subgenus"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">subgenus <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/subgenus">http://rs.tdwg.org/dwc/terms/subgenus</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The full scientific name of the subgenus in which the taxon is classified. Values should include the genus to avoid homonym confusion.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Strobus</code>, <code>Amerigo</code>, <code>Pilosella</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:specificEpithet"></a><a id="specificEpithet"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">specificEpithet <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/specificEpithet">http://rs.tdwg.org/dwc/terms/specificEpithet</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The name of the first or species epithet of the scientificName.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>concolor</code>, <code>gottschei</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:infraspecificEpithet"></a><a id="infraspecificEpithet"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">infraspecificEpithet <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/infraspecificEpithet">http://rs.tdwg.org/dwc/terms/infraspecificEpithet</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The name of the lowest or terminal infraspecific epithet of the scientificName, excluding any rank designation.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>concolor</code>, <code>oxyadenia</code>, <code>sayi</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:taxonRank"></a><a id="taxonRank"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">taxonRank <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/taxonRank">http://rs.tdwg.org/dwc/terms/taxonRank</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The taxonomic rank of the most specific name in the scientificName.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>subspecies</code>, <code>varietas</code>, <code>forma</code>, <code>species</code>, <code>genus</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:verbatimTaxonRank"></a><a id="verbatimTaxonRank"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">verbatimTaxonRank <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/verbatimTaxonRank">http://rs.tdwg.org/dwc/terms/verbatimTaxonRank</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The taxonomic rank of the most specific name in the scientificName as it appears in the original record.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Agamospecies</code>, <code>sub-lesus</code>, <code>prole</code>, <code>apomict</code>, <code>nothogrex</code>, <code>sp.</code>, <code>subsp.</code>, <code>var.</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:scientificNameAuthorship"></a><a id="scientificNameAuthorship"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">scientificNameAuthorship <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/scientificNameAuthorship">http://rs.tdwg.org/dwc/terms/scientificNameAuthorship</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The authorship information for the scientificName formatted according to the conventions of the applicable nomenclaturalCode.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>(Torr.) J.T. Howell</code>, <code>(Martinovsk√Ω) Tzvelev</code>, <code>(Gy√∂rfi, 1952)</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:vernacularName"></a><a id="vernacularName"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">vernacularName <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/vernacularName">http://rs.tdwg.org/dwc/terms/vernacularName</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A common or vernacular name.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Andean Condor</code>, <code>Condor Andino</code>, <code>American Eagle</code>, <code>G√§nsegeier</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:nomenclaturalCode"></a><a id="nomenclaturalCode"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">nomenclaturalCode <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/nomenclaturalCode">http://rs.tdwg.org/dwc/terms/nomenclaturalCode</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The nomenclatural code (or codes in the case of an ambiregnal name) under which the scientificName is constructed.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>ICN</code>, <code>ICZN</code>, <code>BC</code>, <code>ICNCP</code>, <code>BioCode</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:taxonomicStatus"></a><a id="taxonomicStatus"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">taxonomicStatus <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/taxonomicStatus">http://rs.tdwg.org/dwc/terms/taxonomicStatus</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The status of the use of the scientificName as a label for a taxon. Requires taxonomic opinion to define the scope of a taxon. Rules of priority then are used to define the taxonomic status of the nomenclature contained in that scope, combined with the experts opinion. It must be linked to a specific taxonomic reference that defines the concept.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>invalid</code>, <code>misapplied</code>, <code>homotypic synonym</code>, <code>accepted</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:nomenclaturalStatus"></a><a id="nomenclaturalStatus"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">nomenclaturalStatus <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/nomenclaturalStatus">http://rs.tdwg.org/dwc/terms/nomenclaturalStatus</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The status related to the original publication of the name and its conformance to the relevant rules of nomenclature. It is based essentially on an algorithm according to the business rules of the code. It requires no taxonomic opinion.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>nom. ambig.</code>, <code>nom. illeg.</code>, <code>nom. subnud.</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:taxonRemarks"></a><a id="taxonRemarks"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">taxonRemarks <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/taxonRemarks">http://rs.tdwg.org/dwc/terms/taxonRemarks</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Comments or notes about the taxon or name.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>this name is a misspelling in common use</code></td></tr>
-    </tbody>
-</table>
-
-
-## MeasurementOrFact
-
-<div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:measurementID">measurementID</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:measurementType">measurementType</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:measurementValue">measurementValue</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:measurementAccuracy">measurementAccuracy</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:measurementUnit">measurementUnit</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:measurementDeterminedBy">measurementDeterminedBy</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:measurementDeterminedDate">measurementDeterminedDate</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:measurementMethod">measurementMethod</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:measurementRemarks">measurementRemarks</a>
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">MeasurementOrFact <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/MeasurementOrFact">http://rs.tdwg.org/dwc/terms/MeasurementOrFact</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A measurement of or fact about an rdfs:Resource (<a href="http://www.w3.org/2000/01/rdf-schema#Resource">http://www.w3.org/2000/01/rdf-schema#Resource</a>).</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to dwc:Occurrence, dwc:Organism, dwc:MaterialSample, dwc:Event, dwc:Location, dwc:GeologicalContext, dwc:Identification, or dwc:Taxon.</td></tr>
-        <tr><td class="theme-label">Examples</td><td>The weight of an organism in grams. The number of placental scars. Surface water temperature in Celsius.</td></tr>
-    </tbody>
-</table>
-
-<p class="invisible">
-    <a id="dwc:measurementID"></a><a id="measurementID"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">measurementID <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementID">http://rs.tdwg.org/dwc/terms/measurementID</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>9c752d22-b09a-11e8-96f8-529269fb1459</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:measurementType"></a><a id="measurementType"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">measurementType <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementType">http://rs.tdwg.org/dwc/terms/measurementType</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The nature of the measurement, fact, characteristic, or assertion.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>tail length</code>, <code>temperature</code>, <code>trap line length</code>, <code>survey area</code>, <code>trap type</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:measurementValue"></a><a id="measurementValue"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">measurementValue <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementValue">http://rs.tdwg.org/dwc/terms/measurementValue</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The value of the measurement, fact, characteristic, or assertion.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>45</code>, <code>20</code>, <code>1</code>, <code>14.5</code>, <code>UV-light</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:measurementAccuracy"></a><a id="measurementAccuracy"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">measurementAccuracy <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementAccuracy">http://rs.tdwg.org/dwc/terms/measurementAccuracy</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The description of the potential error associated with the measurementValue.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>0.01</code>, <code>normal distribution with variation of 2 m</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:measurementUnit"></a><a id="measurementUnit"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">measurementUnit <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementUnit">http://rs.tdwg.org/dwc/terms/measurementUnit</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The units associated with the measurementValue.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use the International System of Units (SI).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>mm</code>, <code>C</code>, <code>km</code>, <code>ha</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:measurementDeterminedBy"></a><a id="measurementDeterminedBy"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">measurementDeterminedBy <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementDeterminedBy">http://rs.tdwg.org/dwc/terms/measurementDeterminedBy</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of names of people, groups, or organizations who determined the value of the MeasurementOrFact.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Rob Guralnick</code>, <code>Peter Desmet | Stijn Van Hoey</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:measurementDeterminedDate"></a><a id="measurementDeterminedDate"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">measurementDeterminedDate <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementDeterminedDate">http://rs.tdwg.org/dwc/terms/measurementDeterminedDate</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The date on which the MeasurementOrFact was made.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601:2004(E).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018). <code>1809-02-12</code> (some time during 12 February 1809). <code>1906-06</code> (some time in June 1906). <code>1971</code> (some time in the year 1971). <code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). <code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909). <code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007).</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:measurementMethod"></a><a id="measurementMethod"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">measurementMethod <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementMethod">http://rs.tdwg.org/dwc/terms/measurementMethod</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A description of or reference to (publication, URI) the method or protocol used to determine the measurement, fact, characteristic, or assertion.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>minimum convex polygon around burrow entrances</code> (for a home range area). <code>barometric altimeter</code> (for an elevation).</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:measurementRemarks"></a><a id="measurementRemarks"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">measurementRemarks <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/measurementRemarks">http://rs.tdwg.org/dwc/terms/measurementRemarks</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Comments or notes accompanying the MeasurementOrFact.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>tip of tail missing</code></td></tr>
-    </tbody>
-</table>
-
-
-## ResourceRelationship
-
-<div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:resourceRelationshipID">resourceRelationshipID</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:resourceID">resourceID</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:relatedResourceID">relatedResourceID</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:relationshipOfResource">relationshipOfResource</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:relationshipAccordingTo">relationshipAccordingTo</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:relationshipEstablishedDate">relationshipEstablishedDate</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:relationshipRemarks">relationshipRemarks</a>
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">ResourceRelationship <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/ResourceRelationship">http://rs.tdwg.org/dwc/terms/ResourceRelationship</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A relationship of one rdfs:Resource (<a href="http://www.w3.org/2000/01/rdf-schema#Resource">http://www.w3.org/2000/01/rdf-schema#Resource</a>) to another.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to dwc:Occurrence, dwc:Organism, dwc:MaterialSample, dwc:Event, dwc:Location, dwc:GeologicalContext, dwc:Identification, or dwc:Taxon.</td></tr>
-        <tr><td class="theme-label">Examples</td><td>An instance of an Organism is the mother of another instance of an Organism. A uniquely identified Occurrence represents the same Occurrence as another uniquely identified Occurrence. A MaterialSample is a subsample of another MaterialSample.</td></tr>
-    </tbody>
-</table>
-
-<p class="invisible">
-    <a id="dwc:resourceRelationshipID"></a><a id="resourceRelationshipID"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">resourceRelationshipID <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/resourceRelationshipID">http://rs.tdwg.org/dwc/terms/resourceRelationshipID</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier for an instance of relationship between one resource (the subject) and another (relatedResource, the object).</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>04b16710-b09c-11e8-96f8-529269fb1459</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:resourceID"></a><a id="resourceID"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">resourceID <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/resourceID">http://rs.tdwg.org/dwc/terms/resourceID</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier for the resource that is the subject of the relationship.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>f809b9e0-b09b-11e8-96f8-529269fb1459</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:relatedResourceID"></a><a id="relatedResourceID"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">relatedResourceID <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/relatedResourceID">http://rs.tdwg.org/dwc/terms/relatedResourceID</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier for a related resource (the object, rather than the subject of the relationship).</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>dc609808-b09b-11e8-96f8-529269fb1459</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:relationshipOfResource"></a><a id="relationshipOfResource"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">relationshipOfResource <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/relationshipOfResource">http://rs.tdwg.org/dwc/terms/relationshipOfResource</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The relationship of the resource identified by relatedResourceID to the subject (optionally identified by the resourceID).</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>sameAs</code>, <code>duplicate of</code>, <code>mother of</code>, <code>endoparasite of</code>, <code>host to</code>, <code>sibling of</code>, <code>valid synonym of</code>, <code>located within</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:relationshipAccordingTo"></a><a id="relationshipAccordingTo"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">relationshipAccordingTo <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/relationshipAccordingTo">http://rs.tdwg.org/dwc/terms/relationshipAccordingTo</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The source (person, organization, publication, reference) establishing the relationship between the two resources.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Julie Woodruff</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:relationshipEstablishedDate"></a><a id="relationshipEstablishedDate"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">relationshipEstablishedDate <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate">http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The date-time on which the relationship between the two resources was established.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601:2004(E).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018). <code>1809-02-12</code> (some time during 12 February 1809). <code>1906-06</code> (some time in June 1906). <code>1971</code> (some time in the year 1971). <code>2007-03-01T13:00:00Z/2008-05-11T15:30:00Z</code> (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC). <code>1900/1909</code> (some time during the interval between the beginning of the year 1900 and the end of the year 1909). <code>2007-11-13/15</code> (some time in the interval between 13 November 2007 and 15 November 2007).</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:relationshipRemarks"></a><a id="relationshipRemarks"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">relationshipRemarks <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/relationshipRemarks">http://rs.tdwg.org/dwc/terms/relationshipRemarks</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Comments or notes about the relationship between the two resources.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>mother and offspring collected from the same nest</code>, <code>pollinator captured in the act</code></td></tr>
-    </tbody>
-</table>
-
-
-## UseWithIRI
-
-<div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:inDescribedPlace">inDescribedPlace</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:identifiedBy">identifiedBy</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:recordedBy">recordedBy</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:toTaxon">toTaxon</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:inCollection">inCollection</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:georeferencedBy">georeferencedBy</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:behavior">behavior</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:dataGeneralizations">dataGeneralizations</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:disposition">disposition</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:earliestGeochronologicalEra">earliestGeochronologicalEra</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:establishmentMeans">establishmentMeans</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:fieldNotes">fieldNotes</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:fieldNumber">fieldNumber</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:footprintSRS">footprintSRS</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:footprintWKT">footprintWKT</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:fromLithostratigraphicUnit">fromLithostratigraphicUnit</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:geodeticDatum">geodeticDatum</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:georeferenceProtocol">georeferenceProtocol</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:georeferenceSources">georeferenceSources</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:georeferenceVerificationStatus">georeferenceVerificationStatus</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:habitat">habitat</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:identificationQualifier">identificationQualifier</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:identificationVerificationStatus">identificationVerificationStatus</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:inDataset">inDataset</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:informationWithheld">informationWithheld</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:latestGeochronologicalEra">latestGeochronologicalEra</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:lifeStage">lifeStage</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:locationAccordingTo">locationAccordingTo</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:measurementDeterminedBy">measurementDeterminedBy</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:measurementMethod">measurementMethod</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:measurementType">measurementType</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:measurementUnit">measurementUnit</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:occurrenceStatus">occurrenceStatus</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:organismQuantityType">organismQuantityType</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:preparations">preparations</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:recordNumber">recordNumber</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:reproductiveCondition">reproductiveCondition</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:sampleSizeUnit">sampleSizeUnit</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:samplingProtocol">samplingProtocol</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:sex">sex</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:typeStatus">typeStatus</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:verbatimCoordinateSystem">verbatimCoordinateSystem</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwciri:verbatimSRS">verbatimSRS</a>
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">UseWithIRI <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI">http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The category of terms that are recommended to have an IRI as a value.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>A utility class to organize the dwciri: terms.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-
-<p class="invisible">
-    <a id="dwciri:inDescribedPlace"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">inDescribedPlace <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/inDescribedPlace">http://rs.tdwg.org/dwc/iri/inDescribedPlace</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Use to link a dcterms:Location instance subject to the lowest level standardized hierarchically-described resource.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use an IRI from a controlled registry. A "convenience property" that replaces Darwin Core literal-value terms related to locations. See Section 2.7.5 of the Darwin Core RDF Guide for details.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code><a href="http://vocab.getty.edu/tgn/1019987">http://vocab.getty.edu/tgn/1019987</a></code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:identifiedBy"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">identifiedBy <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/identifiedBy">http://rs.tdwg.org/dwc/iri/identifiedBy</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A person, group, or organization who assigned the Taxon to the subject.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:recordedBy"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">recordedBy <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/recordedBy">http://rs.tdwg.org/dwc/iri/recordedBy</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A person, group, or organization responsible for recording the original Occurrence.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:toTaxon"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">toTaxon <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/toTaxon">http://rs.tdwg.org/dwc/iri/toTaxon</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Use to link a dwc:Identification instance subject to a taxonomic entity such as a taxon, taxon concept, or taxon name use.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>A "convenience property" that replaces Darwin Core literal-value terms related to taxonomic entities. See Section 2.7.4 of the Darwin Core RDF Guide for details.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:inCollection"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">inCollection <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/inCollection">http://rs.tdwg.org/dwc/iri/inCollection</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Use to link any subject resource that is part of a collection to the collection containing the resource.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use an IRI from a controlled registry. A "convenience property" that replaces literal-value terms related to collections and institutions. See Section 2.7.3 of the Darwin Core RDF Guide for details.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:georeferencedBy"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">georeferencedBy <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/georeferencedBy">http://rs.tdwg.org/dwc/iri/georeferencedBy</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A person, group, or organization who determined the georeference (spatial representation) for the Location.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:behavior"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">behavior <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/behavior">http://rs.tdwg.org/dwc/iri/behavior</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A description of the behavior shown by the subject at the time the Occurrence was recorded.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:dataGeneralizations"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">dataGeneralizations <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/dataGeneralizations">http://rs.tdwg.org/dwc/iri/dataGeneralizations</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Actions taken to make the shared data less specific or complete than in its original form. Suggests that alternative data of higher quality may be available on request.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:disposition"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">disposition <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/disposition">http://rs.tdwg.org/dwc/iri/disposition</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The current state of a specimen with respect to the collection identified in collectionCode or collectionID.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:earliestGeochronologicalEra"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">earliestGeochronologicalEra <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/earliestGeochronologicalEra">http://rs.tdwg.org/dwc/iri/earliestGeochronologicalEra</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Use to link a dwc:GeologicalContext instance to chronostratigraphic time periods at the lowest possible level in a standardized hierarchy. Use this property to point to the earliest possible geological time period from which the cataloged item was collected.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. A "convenience property" that replaces Darwin Core literal-value terms related to geological context. See Section 2.7.6 of the Darwin Core RDF Guide for details.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:establishmentMeans"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">establishmentMeans <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/establishmentMeans">http://rs.tdwg.org/dwc/iri/establishmentMeans</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The process by which the biological individual(s) represented in the Occurrence became established at the location.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:fieldNotes"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">fieldNotes <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/fieldNotes">http://rs.tdwg.org/dwc/iri/fieldNotes</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>One of a) an indicator of the existence of, b) a reference to (publication, URI), or c) the text of notes taken in the field about the Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>The subject is a dwc:Event instance and the object is a (possibly IRI-identified) resource that is the field notes.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:fieldNumber"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">fieldNumber <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/fieldNumber">http://rs.tdwg.org/dwc/iri/fieldNumber</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier given to the event in the field. Often serves as a link between field notes and the Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>The subject is a (possibly IRI-identified) resource that is the field notes and the object is a dwc:Event instance.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:footprintSRS"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">footprintSRS <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/footprintSRS">http://rs.tdwg.org/dwc/iri/footprintSRS</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A Well-Known Text (WKT) representation of the Spatial Reference System (SRS) for the footprintWKT of the Location. Do not use this term to describe the SRS of the decimalLatitude and decimalLongitude, even if it is the same as for the footprintWKT - use the geodeticDatum instead.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:footprintWKT"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">footprintWKT <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/footprintWKT">http://rs.tdwg.org/dwc/iri/footprintWKT</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A Well-Known Text (WKT) representation of the shape (footprint, geometry) that defines the Location. A Location may have both a point-radius representation (see decimalLatitude) and a footprint representation, and they may differ from each other.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:fromLithostratigraphicUnit"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">fromLithostratigraphicUnit <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/fromLithostratigraphicUnit">http://rs.tdwg.org/dwc/iri/fromLithostratigraphicUnit</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Use to link a dwc:GeologicalContext instance to an IRI-identified lithostratigraphic unit at the lowest possible level in a hierarchy.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. A "convenience property" that replaces Darwin Core literal-value terms related to geological context. See Section 2.7.7 of the Darwin Core RDF Guide for details.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:geodeticDatum"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">geodeticDatum <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/geodeticDatum">http://rs.tdwg.org/dwc/iri/geodeticDatum</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geographic coordinates given in decimalLatitude and decimalLongitude as based.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use an IRI for the EPSG code of the SRS, if known. Otherwise use an IRI or controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use an IRI or controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value <code>unknown</code>.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><a href="https://epsg.io/4326">https://epsg.io/4326</a></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:georeferenceProtocol"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">georeferenceProtocol <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/georeferenceProtocol">http://rs.tdwg.org/dwc/iri/georeferenceProtocol</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A description or reference to the methods used to determine the spatial footprint, coordinates, and uncertainties.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:georeferenceSources"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">georeferenceSources <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/georeferenceSources">http://rs.tdwg.org/dwc/iri/georeferenceSources</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A map, gazetteer, or other resource used to georeference the Location.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:georeferenceVerificationStatus"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">georeferenceVerificationStatus <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/georeferenceVerificationStatus">http://rs.tdwg.org/dwc/iri/georeferenceVerificationStatus</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A categorical description of the extent to which the georeference has been verified to represent the best possible spatial description.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:habitat"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">habitat <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/habitat">http://rs.tdwg.org/dwc/iri/habitat</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A category or description of the habitat in which the Event occurred.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:identificationQualifier"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">identificationQualifier <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/identificationQualifier">http://rs.tdwg.org/dwc/iri/identificationQualifier</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A controlled value to express the determiner's doubts about the Identification.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:identificationVerificationStatus"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">identificationVerificationStatus <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/identificationVerificationStatus">http://rs.tdwg.org/dwc/iri/identificationVerificationStatus</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A categorical indicator of the extent to which the taxonomic identification has been verified to be correct.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects. Recommended best practice is to use a controlled vocabulary such as that used in HISPID and ABCD.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:inDataset"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">inDataset <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/inDataset">http://rs.tdwg.org/dwc/iri/inDataset</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Use to link a subject dataset record to the dataset which contains it.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>A string literal name of the dataset can be provided using the term dwc:datasetName. See the Darwin Core RDF Guide for details.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:informationWithheld"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">informationWithheld <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/informationWithheld">http://rs.tdwg.org/dwc/iri/informationWithheld</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Additional information that exists, but that has not been shared in the given record.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:latestGeochronologicalEra"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">latestGeochronologicalEra <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/latestGeochronologicalEra">http://rs.tdwg.org/dwc/iri/latestGeochronologicalEra</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Use to link a dwc:GeologicalContext instance to chronostratigraphic time periods at the lowest possible level in a standardized hierarchy. Use this property to point to the latest possible geological time period from which the cataloged item was collected.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. A "convenience property" that replaces Darwin Core literal-value terms related to geological context. See Section 2.7.6 of the Darwin Core RDF Guide for details.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:lifeStage"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">lifeStage <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/lifeStage">http://rs.tdwg.org/dwc/iri/lifeStage</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The age class or life stage of the biological individual(s) at the time the Occurrence was recorded.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:locationAccordingTo"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">locationAccordingTo <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/locationAccordingTo">http://rs.tdwg.org/dwc/iri/locationAccordingTo</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Information about the source of this Location information. Could be a publication (gazetteer), institution, or team of individuals.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:measurementDeterminedBy"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">measurementDeterminedBy <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/measurementDeterminedBy">http://rs.tdwg.org/dwc/iri/measurementDeterminedBy</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A person, group, or organization who determined the value of the MeasurementOrFact.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:measurementMethod"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">measurementMethod <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/measurementMethod">http://rs.tdwg.org/dwc/iri/measurementMethod</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The method or protocol used to determine the measurement, fact, characteristic, or assertion.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:measurementType"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">measurementType <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/measurementType">http://rs.tdwg.org/dwc/iri/measurementType</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The nature of the measurement, fact, characteristic, or assertion.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:measurementUnit"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">measurementUnit <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/measurementUnit">http://rs.tdwg.org/dwc/iri/measurementUnit</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The units associated with the measurementValue.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use the International System of Units (SI).</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:occurrenceStatus"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">occurrenceStatus <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/occurrenceStatus">http://rs.tdwg.org/dwc/iri/occurrenceStatus</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A statement about the presence or absence of a Taxon at a Location.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:organismQuantityType"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">organismQuantityType <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/organismQuantityType">http://rs.tdwg.org/dwc/iri/organismQuantityType</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The type of quantification system used for the quantity of organisms.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>A dwc;organismQuantityType must have a corresponding dwc:organismQuantity.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:preparations"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">preparations <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/preparations">http://rs.tdwg.org/dwc/iri/preparations</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A preparation or preservation method for a specimen.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:recordNumber"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">recordNumber <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/recordNumber">http://rs.tdwg.org/dwc/iri/recordNumber</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier given to the Occurrence at the time it was recorded. Often serves as a link between field notes and an Occurrence record, such as a specimen collector's number.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>The subject is a dwc:Occurrence and the object is a (possibly IRI-identified) resource that is the field notes.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:reproductiveCondition"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">reproductiveCondition <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/reproductiveCondition">http://rs.tdwg.org/dwc/iri/reproductiveCondition</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The reproductive condition of the biological individual(s) represented in the Occurrence.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:sampleSizeUnit"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">sampleSizeUnit <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/sampleSizeUnit">http://rs.tdwg.org/dwc/iri/sampleSizeUnit</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The unit of measurement of the size (time duration, length, area, or volume) of a sample in a sampling event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>A sampleSizeUnit must have a corresponding sampleSizeValue. Recommended best practice is to use a controlled vocabulary such as the Ontology of Units of Measure <a href="http://www.wurvoc.org/vocabularies/om-1.8/">http://www.wurvoc.org/vocabularies/om-1.8/</a> of SI units, derived units, or other non-SI units accepted for use within the SI.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>minute</code>, <code>hour</code>, <code>day</code>, <code>metre</code>, <code>square metre</code>, <code>cubic metre</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:samplingProtocol"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">samplingProtocol <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/samplingProtocol">http://rs.tdwg.org/dwc/iri/samplingProtocol</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The method or protocol used during an Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:sex"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">sex <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/sex">http://rs.tdwg.org/dwc/iri/sex</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The sex of the biological individual(s) represented in the Occurrence.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:typeStatus"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">typeStatus <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/typeStatus">http://rs.tdwg.org/dwc/iri/typeStatus</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A nomenclatural type (type status, typified scientific name, publication) applied to the subject.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:verbatimCoordinateSystem"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">verbatimCoordinateSystem <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/verbatimCoordinateSystem">http://rs.tdwg.org/dwc/iri/verbatimCoordinateSystem</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The spatial coordinate system for the verbatimLatitude and verbatimLongitude or the verbatimCoordinates of the Location.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwciri:verbatimSRS"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">verbatimSRS <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/iri/verbatimSRS">http://rs.tdwg.org/dwc/iri/verbatimSRS</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which coordinates given in verbatimLatitude and verbatimLongitude, or verbatimCoordinates are based.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use an IRI for the EPSG code of the SRS, if known. Otherwise use an IRI or controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use an IRI or controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value <code>unknown</code>.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>EPSG:4326</code>, <code>WGS84</code>, <code>NAD27</code>, <code>Campo Inchauspe</code>, <code>European 1950</code>, <code>Clarke 1866</code>, <code>unknown</code></td></tr>
-    </tbody>
-</table>
-
-
-## LivingSpecimen
-
-<div class="my-4">
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">LivingSpecimen <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/LivingSpecimen">http://rs.tdwg.org/dwc/terms/LivingSpecimen</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A specimen that is alive.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td>A living plant in a botanical garden. A living animal in a zoo.</td></tr>
-    </tbody>
-</table>
-
-
-
-## PreservedSpecimen
-
-<div class="my-4">
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">PreservedSpecimen <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/PreservedSpecimen">http://rs.tdwg.org/dwc/terms/PreservedSpecimen</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A specimen that has been preserved.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td>A plant on an herbarium sheet. A cataloged lot of fish in a jar.</td></tr>
-    </tbody>
-</table>
-
-
-
-## FossilSpecimen
-
-<div class="my-4">
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">FossilSpecimen <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/FossilSpecimen">http://rs.tdwg.org/dwc/terms/FossilSpecimen</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A preserved specimen that is a fossil.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td>A body fossil. A coprolite. A gastrolith. An ichnofossil. A piece of a petrified tree.</td></tr>
-    </tbody>
-</table>
-
-
-
-## HumanObservation
-
-<div class="my-4">
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">HumanObservation <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/HumanObservation">http://rs.tdwg.org/dwc/terms/HumanObservation</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An output of a human observation process.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td>Evidence of an Occurrence taken from field notes or literature. A record of an Occurrence without physical evidence nor evidence captured with a machine.</td></tr>
-    </tbody>
-</table>
-
-
-
-## MachineObservation
-
-<div class="my-4">
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">MachineObservation <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/MachineObservation">http://rs.tdwg.org/dwc/terms/MachineObservation</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An output of a machine observation process.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td>A photograph. A video. An audio recording. A remote sensing image. A Occurrence record based on telemetry.</td></tr>
-    </tbody>
-</table>
-
+This page provides a list of all currently recommended terms of the REBIPP Plant-Pollinator Interactions standard. Convenient [files of these terms](https://github.com/BioComp-USP/rebipp-data-standard/tree/master/dist) and [their full history](https://github.com/BioComp-USP/rebipp-data-standard/blob/master/vocabulary/term_versions.csv) can be found in the [Plant-Pollinator Interactions repository](https://github.com/BioComp-USP/rebipp-data-standard).
 
 
 ## PlantTrait
 
 <div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:habit">habit</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerOpening">flowerOpening</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:functionalFlowerLifespan">functionalFlowerLifespan</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:totalFlowerLifespan">totalFlowerLifespan</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floralSymmetry">floralSymmetry</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerType">flowerType</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerOrientation">flowerOrientation</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:attractiveBract">attractiveBract</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:bractsColor">bractsColor</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:calyx">calyx</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:sepalsLength">sepalsLength</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:sepalsWidth">sepalsWidth</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:sepalsColor">sepalsColor</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:sepalsFusion">sepalsFusion</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:corolla">corolla</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:petalsLength">petalsLength</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:petalsWidth">petalsWidth</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:petalsColor">petalsColor</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:petalsFusion">petalsFusion</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:androecium">androecium</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:numberOfStamens">numberOfStamens</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:numberOfStaminodes">numberOfStaminodes</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:stamenHeight">stamenHeight</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:antherDehiscenceType">antherDehiscenceType</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:numberOfPollenGrains">numberOfPollenGrains</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:gynoecium">gynoecium</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:numberOfStigmas">numberOfStigmas</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:stigmaticArea">stigmaticArea</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:styleLength">styleLength</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:ovulesCount">ovulesCount</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floralResource">floralResource</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:accumulatedNectarVolumeOpeningFlower">accumulatedNectarVolumeOpeningFlower</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:nectarConcentrationFlowerOpening">nectarConcentrationFlowerOpening</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:accumulatedNectarVolumeFlowerLifespan">accumulatedNectarVolumeFlowerLifespan</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:nectarConcentrationFlowerLifespan">nectarConcentrationFlowerLifespan</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:phenologyPattern">phenologyPattern</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floweringSeason">floweringSeason</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floweringDuration">floweringDuration</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowersCount">flowersCount</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floralAbundance">floralAbundance</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floweringPlantsSampled">floweringPlantsSampled</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:selfIncompatibility">selfIncompatibility</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:selfIncompatibilityType">selfIncompatibilityType</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:isi">isi</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:autogamyIndex">autogamyIndex</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:apomixis">apomixis</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerSexuality">flowerSexuality</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:plantSexuality">plantSexuality</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:herkogamy">herkogamy</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:stylarHeteromorphism">stylarHeteromorphism</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:heterostyly">heterostyly</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:enantiostyly">enantiostyly</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:heteranthery">heteranthery</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:dichogamy">dichogamy</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flexistyly">flexistyly</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerMovement">flowerMovement</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floralAdvertisement">floralAdvertisement</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:attractiveStructureColor">attractiveStructureColor</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:conspecificPollenGrains">conspecificPollenGrains</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:conspecificPollenGrainsMultipleVisits">conspecificPollenGrainsMultipleVisits</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:heterospecificPollenGrains">heterospecificPollenGrains</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:removedPollenGrains">removedPollenGrains</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:removedPollenGrainsMultipleVisits">removedPollenGrainsMultipleVisits</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:pollenTubesCount">pollenTubesCount</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:pollenTubesCountMultipleVisits">pollenTubesCountMultipleVisits</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:fertilizedOvulesCount">fertilizedOvulesCount</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:fruitSet">fruitSet</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:seedSet">seedSet</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:fruitMass">fruitMass</a>
     </div>
 
 <table class="table table-sm table-bordered">
     <tbody>
         <tr class="table-primary"><th colspan="2">PlantTrait <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/PlantTrait">http://rs.rebipp.org.br/rebipp/terms/PlantTrait</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A plant trait (morphological, behavoral, biochemical, phenological or any other trait that describe the plant)</td></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/PlantTrait">http://rs.rebipp.org.br/ppi/terms/PlantTrait</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A trait is a single feature or quantifiable measurement of a plant resource (rdf:Resource)</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to dwc:Occurrence, dwc:Organism, dwc:MaterialSample, dwc:Event, dwc:Location, dwc:GeologicalContext, dwc:Identification, or dwc:Taxon.</td></tr>
+        <tr><td class="theme-label">Examples</td><td>A habit of a plant. The symmetry of flowers of a plant</td></tr>
+    </tbody>
+</table>
+
+
+
+## AnimalTrait
+
+<div class="my-4">
+    </div>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">AnimalTrait <span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/AnimalTrait">http://rs.rebipp.org.br/ppi/terms/AnimalTrait</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A trait is a single feature or quantifiable measurement of a animal resource (rdf:Resource)</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to dwc:Occurrence, dwc:Organism, dwc:MaterialSample, dwc:Event, dwc:Location, dwc:GeologicalContext, dwc:Identification, or dwc:Taxon.</td></tr>
+        <tr><td class="theme-label">Examples</td><td>A caste of a bee</td></tr>
+    </tbody>
+</table>
+
+
+
+## Interaction
+
+<div class="my-4">
+    </div>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">Interaction <span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/Interaction">http://rs.rebipp.org.br/ppi/terms/Interaction</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>An interaction event that occurs at some location during some time.</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td>A bee visits a flower of a plant</td></tr>
+    </tbody>
+</table>
+
+
+
+## FlowerTrait
+
+<div class="my-4">
+    </div>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">FlowerTrait <span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/FlowerTrait">http://rs.rebipp.org.br/ppi/terms/FlowerTrait</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A trait is a single feature or quantifiable measurement of a flower of a plant resource (rdf:Resource)</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
 
-<p class="invisible">
-    <a id="rebipp:habit"></a><a id="habit"></a></p>
+
+
+## InteractionOutcome
+
+<div class="my-4">
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:caste">caste</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:accumlatedNectarVolume">accumlatedNectarVolume</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:accumulatedNectarConcentration">accumulatedNectarConcentration</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:antherPollenGrainsQuantity">antherPollenGrainsQuantity</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:cospecificPollenGrainsQuantitySingleVisit">cospecificPollenGrainsQuantitySingleVisit</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:fertilizedOvulesQuantity">fertilizedOvulesQuantity</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerSexuality">flowerSexuality</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:pollenTubesQuantitySingleVisit">pollenTubesQuantitySingleVisit</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:pollinate">pollinate</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:removedPollenGrainsQuantitySingleVisit">removedPollenGrainsQuantitySingleVisit</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:standingCropFlowerLongevity">standingCropFlowerLongevity</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:standingCropNectarConcentration">standingCropNectarConcentration</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:standingCropNectarVolume">standingCropNectarVolume</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:stigmaticArea">stigmaticArea</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:styleLength">styleLength</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:animalPlaceOfContact">animalPlaceOfContact</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:attractiveStructure">attractiveStructure</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:attractiveStructureColor">attractiveStructureColor</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:collectingBodyPart">collectingBodyPart</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:collectingBodyPartLength">collectingBodyPartLength</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowersVisitedQuantity">flowersVisitedQuantity</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:plantPlaceOfContact">plantPlaceOfContact</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:resourceCollected">resourceCollected</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:verticalStratum">verticalStratum</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:fruitMass">fruitMass</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:fruitSet">fruitSet</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:heterospecificPollenGrainsQuantity">heterospecificPollenGrainsQuantity</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:pollenTubesQuantity">pollenTubesQuantity</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:removedPollenGrainsQuantity">removedPollenGrainsQuantity</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:seedMass">seedMass</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:seedSet">seedSet</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:antherDehiscenceType">antherDehiscenceType</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:apomiticSystem">apomiticSystem</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:availableFlowerQuantity">availableFlowerQuantity</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:cospecificPollenGrainsQuantity">cospecificPollenGrainsQuantity</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floralAdvertisement">floralAdvertisement</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floralReward">floralReward</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floralSymmetry">floralSymmetry</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floralSystem">floralSystem</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:florwerShape">florwerShape</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerHabit">flowerHabit</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerLongevity">flowerLongevity</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerOpeningPeriod">flowerOpeningPeriod</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerType">flowerType</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:functionalFlowerLifespan">functionalFlowerLifespan</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:habit">habit</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:humanUse">humanUse</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:matingSystem">matingSystem</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:ovuleQuantity">ovuleQuantity</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:selfIncompatibilityType">selfIncompatibilityType</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:sexualSystem">sexualSystem</a>
+    </div>
+
 <table class="table table-sm table-bordered">
     <tbody>
-        <tr class="table-secondary"><th colspan="2">habit <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/habit">http://rs.rebipp.org.br/rebipp/terms/habit</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The general appearance, characteristic form, or mode of growth of a plant. Also refer to the substrate where the plant grows of by which the aerial parts are supported</td></tr>
-        <tr><td class="theme-label">Comments</td><td>The most usual terms are tree, bush, climber, herb. Additionally, the mode of growth (aquatic, terrestrial, rupiculous, epiphytic) can be included here. Examples: aquatic herb, epiphytic herb, rupiculous bush. Term reference (literature): Gonçalves and Lorenzi (2011)</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>árvore</code>, 'arbusto<code>, </code>erva<code>, </code>liana`</td></tr>
+        <tr class="table-primary"><th colspan="2">InteractionOutcome <span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/InteractionOutcome">http://rs.rebipp.org.br/ppi/terms/InteractionOutcome</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>An outcome as a result or a effect of the interaction(s) on the subject or object of the interaction</td></tr>
+        <tr><td class="theme-label">Comments</td><td>An outcome is related to one or more interactions, but limited to the same subject or object of the related interactions (e.g. a dwc:Occurrence or a dwc:Taxon)</td></tr>
+        <tr><td class="theme-label">Examples</td><td>The mass of a fruit exposed to multiple visitors was 100 grams</td></tr>
+    </tbody>
+</table>
+
+<p class="invisible">
+    <a id="rebipp:caste"></a><a id="caste"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">caste <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/caste">http://rs.rebipp.org.br/ppi/terms/caste</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The society division that is specialized in the function it performs and distinguished by anatomical or morphological differences from other individuals of the society</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Best pratices is to use a controlled vocabulary</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>soldier</code>, <code>queen </code>, <code>worker </code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:flowerOpening"></a><a id="flowerOpening"></a></p>
+    <a id="rebipp:accumlatedNectarVolume"></a><a id="accumlatedNectarVolume"></a></p>
 <table class="table table-sm table-bordered">
     <tbody>
-        <tr class="table-secondary"><th colspan="2">flowerOpening <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/flowerOpening">http://rs.rebipp.org.br/rebipp/terms/flowerOpening</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Whether the corolla of the flower opens or not, exposing its reproductive organs to floral visitors</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Term reference (literature): Faegri and van der Pijl (1979); Willmer (2011); Rech et al. (2014)</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>cleistogamous</code> (non-opening flower), <code>chasmogamous</code> (opening flower)</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:functionalFlowerLifespan"></a><a id="functionalFlowerLifespan"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">functionalFlowerLifespan <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/functionalFlowerLifespan">http://rs.rebipp.org.br/rebipp/terms/functionalFlowerLifespan</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The time when female and male flower whorls [IGV1] are functioning. Specifically, the period of time when stigma is receptive to the germination of pollen grains, and/or anthers present viable pollen grains</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Term reference (literature): Dafni et al. (2005); Willmer (2011); Rech et al. (2014).</td></tr>
-        <tr><td class="theme-label">Examples</td><td>ISO 8601</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:totalFlowerLifespan"></a><a id="totalFlowerLifespan"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">totalFlowerLifespan <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/totalFlowerLifespan">http://rs.rebipp.org.br/rebipp/terms/totalFlowerLifespan</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Period in days comprising the time of flower opening up to flower senescence, when floral parts begin to wilt and fall off (Willmer 2011; Rech et al. 2014).</td></tr>
+        <tr class="table-secondary"><th colspan="2">accumlatedNectarVolume <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/accumlatedNectarVolume">http://rs.rebipp.org.br/ppi/terms/accumlatedNectarVolume</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The total volume in microliters of nectar accumulated at the end of a flower lifespan which was prevented from visiting</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>1</code>, <code>2</code>, <code>3</code></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>5</code>, <code>10</code>, <code>5.5</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:floralSymmetry"></a><a id="floralSymmetry"></a></p>
+    <a id="rebipp:accumulatedNectarConcentration"></a><a id="accumulatedNectarConcentration"></a></p>
 <table class="table table-sm table-bordered">
     <tbody>
-        <tr class="table-secondary"><th colspan="2">floralSymmetry <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/flowerSymmetry">http://rs.rebipp.org.br/rebipp/terms/flowerSymmetry</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Floral symmetry describes whether, and how, a flower, in particular its perianth, can be divided into two or more identical or mirror-image parts [AN1]</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Term reference (literature): Faegri and van der Pijl (1979); Willmer (2011); Rech et al. (2014); Neal et al. (1998). According to Willmer (2011), there are essentially two main types of symmetry in flowers: bilateral symmetry (also termed zygomorphic, dorsiventral, lateral or irregular) and radial symmetry (also termed actinomorphic or regular).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>zygomorphic</code>(bilateral symmetry), <code>actinomorphic</code> (radial symmetry), <code>asymmetric</code> (no plain of symmetry)</td></tr>
+        <tr class="table-secondary"><th colspan="2">accumulatedNectarConcentration <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/accumulatedNectarConcentration">http://rs.rebipp.org.br/ppi/terms/accumulatedNectarConcentration</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The concentration of the nectar, in percentage of sugar, accumulated at the end of a flower lifespan which was prevented from visiting</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space ( <code>|</code> ) and use a controlled vocabulary</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>10.2</code>, <code>25</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:flowerType"></a><a id="flowerType"></a></p>
+    <a id="rebipp:antherPollenGrainsQuantity"></a><a id="antherPollenGrainsQuantity"></a></p>
 <table class="table table-sm table-bordered">
     <tbody>
-        <tr class="table-secondary"><th colspan="2">flowerType <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/flowerType">http://rs.rebipp.org.br/rebipp/terms/flowerType</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td></td></tr>
+        <tr class="table-secondary"><th colspan="2">antherPollenGrainsQuantity <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/antherPollenGrainsQuantity">http://rs.rebipp.org.br/ppi/terms/antherPollenGrainsQuantity</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The number of pollen grains (male gametophytes) found in the anther(s) of a flower</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>brush</code>, <code>campanulate</code>, <code>bell-shaped</code>, <code>trumpet-shaped</code>, <code>open disk</code>, <code>tube keel</code>, <code>trap</code></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>1523</code>,<code>2641</code>, <code>1146</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:flowerOrientation"></a><a id="flowerOrientation"></a></p>
+    <a id="rebipp:cospecificPollenGrainsQuantitySingleVisit"></a><a id="cospecificPollenGrainsQuantitySingleVisit"></a></p>
 <table class="table table-sm table-bordered">
     <tbody>
-        <tr class="table-secondary"><th colspan="2">flowerOrientation <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/flowerOrientation">http://rs.rebipp.org.br/rebipp/terms/flowerOrientation</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The position (plan in relation to the ground surface) )in which the open flower is presented to floral visitors</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Term reference (literature): Faegri and van der Pijl (1979); Willmer (2011); Rech et al. (2014).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>pendent</code>, <code>erect</code>, <code>horizontal</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:attractiveBract"></a><a id="attractiveBract"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">attractiveBract <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/attractiveBract">http://rs.rebipp.org.br/rebipp/terms/attractiveBract</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Modified or specialized leaf, especially that associated with a reproductive structure such as a flower, inflorescence axis or cone scale. Bracts are often (but not always) different from foliage leaves. They may be smaller, larger, or of a different color, shape, or texture. Typically, they also look different from the parts of the flower, such as the petals or sepals. The state of having bracts is referred to as bracteate or bracteolate, and conversely the state of lacking them is referred to as ebracteate and ebracteolate, without bracts</td></tr>
+        <tr class="table-secondary"><th colspan="2">cospecificPollenGrainsQuantitySingleVisit <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/cospecificPollenGrainsQuantitySingleVisit">http://rs.rebipp.org.br/ppi/terms/cospecificPollenGrainsQuantitySingleVisit</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The number or enumeration value for the quantity of coespecific pollen grains deposited on the flower's stigma(s) exposed to a single visitor at the end of flower anthesis</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>present</code>, <code>absent</code></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>223</code>, <code>100</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:bractsColor"></a><a id="bractsColor"></a></p>
+    <a id="rebipp:fertilizedOvulesQuantity"></a><a id="fertilizedOvulesQuantity"></a></p>
 <table class="table table-sm table-bordered">
     <tbody>
-        <tr class="table-secondary"><th colspan="2">bractsColor <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/bractsColor">http://rs.rebipp.org.br/rebipp/terms/bractsColor</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The approximate predominant color of the bracts.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>red</code>, <code>orange, </code>yellow<code>, </code>violet`</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:calyx"></a><a id="calyx"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">calyx <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/calyx">http://rs.rebipp.org.br/rebipp/terms/calyx</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Outermost whorl of the flower; collective term for all sepals of a flower.[JAS1]</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Applied only to whorled flowers and not to flowers with spiral phyllotaxis.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>present</code>, <code>absent</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:sepalsLength"></a><a id="sepalsLength"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">sepalsLength <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/sepalsLength">http://rs.rebipp.org.br/rebipp/terms/sepalsLength</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Length from the base to the tip of the largest sepal, or length of a single sepal if sepals are the same size.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>2.2</code>, <code>10</code>, <code>15.3</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:sepalsWidth"></a><a id="sepalsWidth"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">sepalsWidth <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/sepalsWidth">http://rs.rebipp.org.br/rebipp/terms/sepalsWidth</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Width of the largest free sepal, or width of a single free sepal if they are the same size (wider portion of the measured sepal).</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>2.2</code>, <code>10</code>, <code>15.3</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:sepalsColor"></a><a id="sepalsColor"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">sepalsColor <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/sepalsColor">http://rs.rebipp.org.br/rebipp/terms/sepalsColor</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Predominant color of sepals</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>green</code>, <code>red</code>, <code>yellow</code>, <code>purple</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:sepalsFusion"></a><a id="sepalsFusion"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">sepalsFusion <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/sepalsFusion">http://rs.rebipp.org.br/rebipp/terms/sepalsFusion</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Dialysepalous - calyx with free sepals (synonymous: aposepalous). Gamosepalous - calyx with joined sepals (synonymous: synsepalous).[JAS1]</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Term reference (literature): Harris and Harris (2001)</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>gamosepalous</code>, <code>dialysepalous</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:corolla"></a><a id="corolla"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">corolla <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/corolla">http://rs.rebipp.org.br/rebipp/terms/corolla</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The second whorl of the flower, inside or above the calyx and outside the stamens; the collective name for all petals of a flower.[JAS1]</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Applied only to whorled flowers and not to flowers with spiral phyllotaxis. Term reference (literature): Beentje (2016); Harris & Harris (2001)</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>present</code>, <code>absent</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:petalsLength"></a><a id="petalsLength"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">petalsLength <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/petalsLength">http://rs.rebipp.org.br/rebipp/terms/petalsLength</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Length from the base to the tip of the largest petal, or length of a single petal if petals are the same size.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>2.2</code>, <code>10</code>, <code>15.3</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:petalsWidth"></a><a id="petalsWidth"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">petalsWidth <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/petalsWidth">http://rs.rebipp.org.br/rebipp/terms/petalsWidth</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Width of the largest free petal (wider portion of the petal), or width of a single free petal if they are the same size.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>2.2</code>, <code>10</code>, <code>15.3</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:petalsColor"></a><a id="petalsColor"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">petalsColor <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/petalsColor">http://rs.rebipp.org.br/rebipp/terms/petalsColor</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Predominant color of petals.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>green</code>, <code>red</code>, <code>yellow</code>, <code>purple</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:petalsFusion"></a><a id="petalsFusion"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">petalsFusion <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/petalsFusion">http://rs.rebipp.org.br/rebipp/terms/petalsFusion</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Dialypetalous – corolla with free petals (synonymous: apopetalous). Gamopetalous corolla with joined petals (synonymous: synpetalous).[JAS1]</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Term reference (literature): Harris & Harris (2001)</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>gamopetalous</code>, <code>dialypetalous</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:androecium"></a><a id="androecium"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">androecium <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/androecium">http://rs.rebipp.org.br/rebipp/terms/androecium</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>All stamens (male sexual whorl) in a flower, collectively.[JAS1]</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Term reference (literature): Harris & Harris (2001).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>present</code>, <code>absent</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:numberOfStamens"></a><a id="numberOfStamens"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">numberOfStamens <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/numberOfStamens">http://rs.rebipp.org.br/rebipp/terms/numberOfStamens</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Average Number of stamens (male sporophyll) of a flower. (colocar n, sd)</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>4</code>, <code>6</code>, <code>3</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:numberOfStaminodes"></a><a id="numberOfStaminodes"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">numberOfStaminodes <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/numberOfStaminodes">http://rs.rebipp.org.br/rebipp/terms/numberOfStaminodes</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Number of sterile or abortive stamens, usually much smaller than a stamen and not producing pollen grains. (Colocar n, media e desvio padrão)</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>4</code>, <code>6</code>, <code>3</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:stamenHeight"></a><a id="stamenHeight"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">stamenHeight <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/stamenHeight">http://rs.rebipp.org.br/rebipp/terms/stamenHeight</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Length from the base to the tipof the largest stamen, or length of a single stamen if they are the same size.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>2</code>, <code>4.4</code>, <code>6.1</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:antherDehiscenceType"></a><a id="antherDehiscenceType"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">antherDehiscenceType <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/antherDehiscenceType">http://rs.rebipp.org.br/rebipp/terms/antherDehiscenceType</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Anther dehiscence refers to the opening of the anther in releasing pollen grains, and anther dehiscence type is the physical mechanism of anther dehiscence</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Term reference (literature): Simpson (2010); Kearns &Inoyye (1993).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>longitudinal</code>, <code>poricidal</code>, <code>transverse</code>, <code>valvar</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:numberOfPollenGrains"></a><a id="numberOfPollenGrains"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">numberOfPollenGrains <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/numberOfPollenGrains">http://rs.rebipp.org.br/rebipp/terms/numberOfPollenGrains</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Number of pollen grains (male gametophytes) per floral bud  (colocar n, media e desvio )</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr class="table-secondary"><th colspan="2">fertilizedOvulesQuantity <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/fertilizedOvulesQuantity">http://rs.rebipp.org.br/ppi/terms/fertilizedOvulesQuantity</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The number or enumeration value for the quantity of fertilized ovules in a flower which the `Interaction` was recorded</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Should be filled with the number of pollen tubes growing in the style and fertilizing ovules after one visit.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:gynoecium"></a><a id="gynoecium"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">gynoecium <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/gynoecium">http://rs.rebipp.org.br/rebipp/terms/gynoecium</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>All carpels (female sexual whorl) of a flower, collectively</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>present</code>, <code>absent</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:numberOfStigmas"></a><a id="numberOfStigmas"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">numberOfStigmas <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/numberOfStigmas">http://rs.rebipp.org.br/rebipp/terms/numberOfStigmas</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Number of stigmas (pollen receptor on the gynoecium, which may be either sessile on the ovary or on top of the style or style arms). (n, media e desvio)</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>1</code>, <code>2</code>, <code>3</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:stigmaticArea"></a><a id="stigmaticArea"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">stigmaticArea <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/stigmaticArea">http://rs.rebipp.org.br/rebipp/terms/stigmaticArea</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Stigmatic surface or area is the part of the gynoecium receptive to pollen</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>10</code>, <code>20.5</code>, <code>3.2</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:styleLength"></a><a id="styleLength"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">styleLength <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/styleLength">http://rs.rebipp.org.br/rebipp/terms/styleLength</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Length from the base to the tipof the style, part of the gynoecium between the ovary and the stigma</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Term reference (literature): Beentje (2016).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>2.5</code>, <code>13</code>, <code>5</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:ovulesCount"></a><a id="ovulesCount"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">ovulesCount <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/ovulesCount">http://rs.rebipp.org.br/rebipp/terms/ovulesCount</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Ovules (megasporangium enveloped by integuments), after fertilization originates the seeds</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Term reference (literature): Simpson (2010); Judd et al. (2009).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>8</code>, <code>16</code>, <code>25</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:floralResource"></a><a id="floralResource"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">floralResource <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/floralResource">http://rs.rebipp.org.br/rebipp/terms/floralResource</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Floral resource available to anthophilous animals.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Term reference (literature): Willmer et al. 2011</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>nectar</code>, <code>pollen</code>, <code>oil</code>, <code>gum</code>, <code>resin</code>, <code>perfume</code>, <code>floral tissues</code>, <code>none</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:accumulatedNectarVolumeOpeningFlower"></a><a id="accumulatedNectarVolumeOpeningFlower"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">accumulatedNectarVolumeOpeningFlower <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/accumalatedNectarVolumeOpeningFlower">http://rs.rebipp.org.br/rebipp/terms/accumalatedNectarVolumeOpeningFlower</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Average volume of nectar accumulated at the beginning of anthesis on flowers that were prevented from visitation</td></tr>
-        <tr><td class="theme-label">Comments</td><td>General guidelines for filling fields: Values must be in microliters.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>10</code>, <code>22</code>, <code>30.4</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:nectarConcentrationFlowerOpening"></a><a id="nectarConcentrationFlowerOpening"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">nectarConcentrationFlowerOpening <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/nectarConcentrationFlowerOpening">http://rs.rebipp.org.br/rebipp/terms/nectarConcentrationFlowerOpening</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Average nectar concentration measured at the beginning of anthesis on flowers that were prevented from visitation Concentration of nectar accumulated by a flower that was prevented from visitation after it is fully opened</td></tr>
-        <tr><td class="theme-label">Comments</td><td>General guidelines for filling fields: Values must be in % Brix</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>3.2</code>, <code>5.0</code>, <code>12.1</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:accumulatedNectarVolumeFlowerLifespan"></a><a id="accumulatedNectarVolumeFlowerLifespan"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">accumulatedNectarVolumeFlowerLifespan <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/accumulatedNectarVolumeFlowerLifespan">http://rs.rebipp.org.br/rebipp/terms/accumulatedNectarVolumeFlowerLifespan</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Volume of nectar accumulated by a flower that was prevented from visitation at the end of its lifespan</td></tr>
-        <tr><td class="theme-label">Comments</td><td>General guidelines for filling fields: Values must be in microliters</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>2.0</code>, <code>3.4</code>, <code>22.3</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:nectarConcentrationFlowerLifespan"></a><a id="nectarConcentrationFlowerLifespan"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">nectarConcentrationFlowerLifespan <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/nectarConcentrationFlowerLifespan">http://rs.rebipp.org.br/rebipp/terms/nectarConcentrationFlowerLifespan</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Concentration of nectar accumulated by a flower that was prevented from visitation at the end of its lifespan</td></tr>
-        <tr><td class="theme-label">Comments</td><td>General guidelines for filling fields: Values must be in % Brix</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>3.2</code>, <code>5.0</code>, <code>12.1</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:phenologyPattern"></a><a id="phenologyPattern"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">phenologyPattern <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/phenologyPattern">http://rs.rebipp.org.br/rebipp/terms/phenologyPattern</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>General classification for the timing of flowering of a species at a given population across years.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>We adopted Newstron et al. 1994 classification for tropical plant phenology, based on the frequency that a species flowers across years</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>continual</code>, <code>sub-annual</code>, <code>annual</code>, <code>supra-annual</code>, <code>irregular</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:floweringSeason"></a><a id="floweringSeason"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">floweringSeason <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/floweringSeason">http://rs.rebipp.org.br/rebipp/terms/floweringSeason</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The season of the year when the species is flowering (broadly defined as wet season, dry season or both). Na localização da ocorrência.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>wet</code>, <code>dry</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:floweringDuration"></a><a id="floweringDuration"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">floweringDuration <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/floweringDuration">http://rs.rebipp.org.br/rebipp/terms/floweringDuration</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The total number of months the species is flowering in a year</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>0</code>, <code>1</code>, <code>2</code>, <code>3</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:flowersCount"></a><a id="flowersCount"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">flowersCount <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/flowersCount">http://rs.rebipp.org.br/rebipp/terms/flowersCount</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The number of open flowers available to visiting animals by one plant individual in the population of a given species at a particular time</td></tr>
-        <tr><td class="theme-label">Comments</td><td>General guidelines for filling fields: Fill with the number of flowers.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>10</code>, <code>50</code>, <code>100</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:floralAbundance"></a><a id="floralAbundance"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">floralAbundance <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/floralAbundance">http://rs.rebipp.org.br/rebipp/terms/floralAbundance</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The number of flowers sampled by all individuals sampled in the population of a given species during its flowering</td></tr>
-        <tr><td class="theme-label">Comments</td><td>General guidelines for filling fields: Fill with the number of flowers</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>10</code>, <code>50</code>, <code>100</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:floweringPlantsSampled"></a><a id="floweringPlantsSampled"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">floweringPlantsSampled <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/floweringPlantsSampled">http://rs.rebipp.org.br/rebipp/terms/floweringPlantsSampled</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The number of flowering individuals sampled in the population of a given species during its flowering</td></tr>
-        <tr><td class="theme-label">Comments</td><td><code>10</code>, <code>30</code>, <code>50</code></td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:selfIncompatibility"></a><a id="selfIncompatibility"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">selfIncompatibility <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/selfIncompatibility">http://rs.rebipp.org.br/rebipp/terms/selfIncompatibility</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A recognition process between pollen and pistil followed by selective inhibition of the self-pollen development</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>present</code>, <code>absent</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:selfIncompatibilityType"></a><a id="selfIncompatibilityType"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">selfIncompatibilityType <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/selfIncompatibilityType">http://rs.rebipp.org.br/rebipp/terms/selfIncompatibilityType</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td></td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>gametophytic</code>, <code>sporophytic</code>, <code>late-action</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:isi"></a><a id="isi"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">isi <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/isi">http://rs.rebipp.org.br/rebipp/terms/isi</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The ratio of the percentage of fruit or seed set after manual self-pollination and cross-pollination (ISI)</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>0.3</code>, <code>0.45</code>, <code>0.97</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:autogamyIndex"></a><a id="autogamyIndex"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">autogamyIndex <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/autogamyIndex">http://rs.rebipp.org.br/rebipp/terms/autogamyIndex</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The ratio of the percentage fruit or seed set after autonomous self-pollination and cross pollination (IA)</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>0.3</code>, <code>0.45</code>, <code>0.97</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:apomixis"></a><a id="apomixis"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">apomixis <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/apomixis">http://rs.rebipp.org.br/rebipp/terms/apomixis</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Capacity of seed set without sexual reproduction</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>present</code>, <code>absent</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -3618,120 +212,123 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
 <table class="table table-sm table-bordered">
     <tbody>
         <tr class="table-secondary"><th colspan="2">flowerSexuality <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/flowerSexuality">http://rs.rebipp.org.br/rebipp/terms/flowerSexuality</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Presence of male (androecium), female (gynoecium) or both whorls in a flower. Unisexual flowers present only one gender while bisexual flowers present both</td></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/flowerSexuality">http://rs.rebipp.org.br/ppi/terms/flowerSexuality</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The sexuality of the flower which this `Interaction` was recorded regarding to the presence of both (bisexual) stamens (male organs) and pistils (carpels) (female organs), or unisexual, with only male (staminate flower) or female (pistillate or carpellate flower) functional organs.</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>bisexual</code>, <code>unisexual</code></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>bisexual</code>, <code>male</code>, <code>female</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:plantSexuality"></a><a id="plantSexuality"></a></p>
+    <a id="rebipp:pollenTubesQuantitySingleVisit"></a><a id="pollenTubesQuantitySingleVisit"></a></p>
 <table class="table table-sm table-bordered">
     <tbody>
-        <tr class="table-secondary"><th colspan="2">plantSexuality <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/plantSexuality">http://rs.rebipp.org.br/rebipp/terms/plantSexuality</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Number and types of (functional) gender in the individuals of a plant population.</td></tr>
+        <tr class="table-secondary"><th colspan="2">pollenTubesQuantitySingleVisit <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/pollenTubesQuantitySingleVisit">http://rs.rebipp.org.br/ppi/terms/pollenTubesQuantitySingleVisit</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The number or enumeration value for the quantity of pollen tubes growing in the style of the flower in which the `Interaction` was recorded when exposed to a single visitor</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Should be filled with the number of pollen tubes growing in the style after a period of multiple visits.</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>2</code>, <code>4</code>, <code>10</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:pollinate"></a><a id="pollinate"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">pollinate <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/pollinate">http://rs.rebipp.org.br/ppi/terms/pollinate</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Indicates if the animal touches the reproductive structures (anthers and stigmas) of a flower during the visit (pollination)</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use values which can be converted to boolean (<code>TRUE</code> or <code>FALSE</code>) such as <code>0</code>/<code>1</code>, <code>true</code>/<code>false</code>, <code>yes</code>/<code>no</code>.</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>yes</code>, <code>true</code>, <code>0</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:removedPollenGrainsQuantitySingleVisit"></a><a id="removedPollenGrainsQuantitySingleVisit"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">removedPollenGrainsQuantitySingleVisit <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/removedPollenGrainsQuantitySingleVisit">http://rs.rebipp.org.br/ppi/terms/removedPollenGrainsQuantitySingleVisit</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The number or enumeration value for the quantity of pollen grains removed from the anther(s) of a flower exposed to a single visitor</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>monoecious</code>, <code>ginomonoecious</code>, <code>andromonoecious</code>, <code>trimonoecious</code>, <code>dioecious</code>, <code>temporal dioecious</code> (monoecious + dichogamy), <code>ginodioecious</code>, <code>androdioecious</code>, <code>tridioecious</code>, <code>poligamodioecious</code></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>243</code>, <code>550</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:herkogamy"></a><a id="herkogamy"></a></p>
+    <a id="rebipp:standingCropFlowerLongevity"></a><a id="standingCropFlowerLongevity"></a></p>
 <table class="table table-sm table-bordered">
     <tbody>
-        <tr class="table-secondary"><th colspan="2">herkogamy <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/herkogamy">http://rs.rebipp.org.br/rebipp/terms/herkogamy</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Pollen presentation (anther height) and pollen receipt (stigma height) spatially separated</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Term reference (literature): Webb & Lloyd, 1986</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>reverse</code>, <code>approach</code>, <code>absent</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:stylarHeteromorphism"></a><a id="stylarHeteromorphism"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">stylarHeteromorphism <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/stylarHeteromorphism">http://rs.rebipp.org.br/rebipp/terms/stylarHeteromorphism</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Presence of at least two style morphs in the population (individuals with long styles and individuals with short styles).</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>dimorphism</code>, <code>polymorphism</code>, <code>absent</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:heterostyly"></a><a id="heterostyly"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">heterostyly <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/heterostyly">http://rs.rebipp.org.br/rebipp/terms/heterostyly</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Reciprocal arrangement of sex-whorls heights in the floral morphs. Webb & Lloyd 1986</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>dystyly</code>, <code>tristyly</code>, <code>absent</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:enantiostyly"></a><a id="enantiostyly"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">enantiostyly <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/enantiostyly">http://rs.rebipp.org.br/rebipp/terms/enantiostyly</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Reciprocal and mirrored arrangement of sex-organ positions in the floral morphs. Webb & Lloyd 1986.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>monomorphic</code>, <code>dimorphic</code>, <code>absent</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:heteranthery"></a><a id="heteranthery"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">heteranthery <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/heteranthery">http://rs.rebipp.org.br/rebipp/terms/heteranthery</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Presence of two stamens whorls with distinct anther heights in a flower.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>present</code>, <code>absent</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:dichogamy"></a><a id="dichogamy"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">dichogamy <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/dichogamy">http://rs.rebipp.org.br/rebipp/terms/dichogamy</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Pollen presentation (anther dehiscence) and pollen receipt (stigma receptivity) temporally separated. Webb & Lloyd 1986</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>protandry</code>, <code>protogyny</code>, <code>absent</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:flexistyly"></a><a id="flexistyly"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">flexistyly <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/flexistyly">http://rs.rebipp.org.br/rebipp/terms/flexistyly</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A form of polymorphism in which the style and stigma of hermaphroditic flowers move over time; A system of multiple floral morphologies which promote outbreeding by a combination of dichogamy and herkogamy</td></tr>
+        <tr class="table-secondary"><th colspan="2">standingCropFlowerLongevity <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/standingCropFlowerLongevity">http://rs.rebipp.org.br/ppi/terms/standingCropFlowerLongevity</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The elapsed time in hours or an enumerated value between the moment in which a flower opens and its senescence, describing when the standing crop measures were taken during the flower longevity</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:flowerMovement"></a><a id="flowerMovement"></a></p>
+    <a id="rebipp:standingCropNectarConcentration"></a><a id="standingCropNectarConcentration"></a></p>
 <table class="table table-sm table-bordered">
     <tbody>
-        <tr class="table-secondary"><th colspan="2">flowerMovement <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/floralMovement">http://rs.rebipp.org.br/rebipp/terms/floralMovement</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td></td></tr>
+        <tr class="table-secondary"><th colspan="2">standingCropNectarConcentration <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/standingCropNectarConcentration">http://rs.rebipp.org.br/ppi/terms/standingCropNectarConcentration</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The concentration of nectar, as a percentage of sugar, available to visitors at a given time of a flower longevity</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>styles movement</code>, <code>anthers movement</code></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>25</code>,<code>75</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:floralAdvertisement"></a><a id="floralAdvertisement"></a></p>
+    <a id="rebipp:standingCropNectarVolume"></a><a id="standingCropNectarVolume"></a></p>
 <table class="table table-sm table-bordered">
     <tbody>
-        <tr class="table-secondary"><th colspan="2">floralAdvertisement <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/floralAdvertisement">http://rs.rebipp.org.br/rebipp/terms/floralAdvertisement</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Structures and substances that function advertising the flower and its rewards to pollinators; usually as visual, olfactory and tactile stimuli.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Term reference (literature): Willmer et al. 2011</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>colored structure</code>; <code>presence of perfume</code> (diurnal); <code>presence of perfume</code> (nocturnal); <code>presence of osmophores</code></td></tr>
+        <tr class="table-secondary"><th colspan="2">standingCropNectarVolume <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/standingCropNectarVolume">http://rs.rebipp.org.br/ppi/terms/standingCropNectarVolume</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The total volume in microliters of nectar available to visitors at a given time of a flower longevity</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>5</code>, <code>10</code>, <code>8.5</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:stigmaticArea"></a><a id="stigmaticArea"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">stigmaticArea <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/stigmaticArea">http://rs.rebipp.org.br/ppi/terms/stigmaticArea</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The total surface area in square millimeters of the stigma(s) of a flower</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>10</code>, <code>25</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:styleLength"></a><a id="styleLength"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">styleLength <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/styleLength">http://rs.rebipp.org.br/ppi/terms/styleLength</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The average length from the base to the tip of the style(s) of flower(s) of this plant Occurrence</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>12.5</code>, <code>6.5</code>, <code>20.0</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:animalPlaceOfContact"></a><a id="animalPlaceOfContact"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">animalPlaceOfContact <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/animalPlaceOfContact">http://rs.rebipp.org.br/ppi/terms/animalPlaceOfContact</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of places (i.e. body parts) of the animal body that contacts its interacting partner during an `Interaction`</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space ( <code>|</code> ) and to use a controlled vocabulary</td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:attractiveStructure"></a><a id="attractiveStructure"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">attractiveStructure <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/attractiveStructure">http://rs.rebipp.org.br/ppi/terms/attractiveStructure</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The plant structure which is found to visually attract the visiting animal</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate the values (singular) in a list with space vertical bar space ( | ).
+
+Recommended best practice is to use a controlled vocabulary such as Plant Ontology (PO) 
+</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>bract</code>, <code>bract | petal</code>, (<code><a href="http://purl.obolibrary.org/obo/PO_0009032">http://purl.obolibrary.org/obo/PO_0009032</a></code>)[<a href="http://purl.obolibrary.org/obo/PO_0009032">http://purl.obolibrary.org/obo/PO_0009032</a>]</td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -3739,97 +336,90 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
 <table class="table table-sm table-bordered">
     <tbody>
         <tr class="table-secondary"><th colspan="2">attractiveStructureColor <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/attractiveStructureColor">http://rs.rebipp.org.br/rebipp/terms/attractiveStructureColor</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The predominant color of the attractive structures</td></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/attractiveStructureColor">http://rs.rebipp.org.br/ppi/terms/attractiveStructureColor</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The predominant color of the plant's structure which visually attracts the visiting animal</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate the values with space vertical bar space ( | ) and sort them in the same order of the structures listed in <code>attractiveStructure</code>.
+
+Recommended best practice is to use a controlled such as Plant Trait Ontology (TO)
+</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>blue</code>, <code>red | yellow</code>, (<code><a href="http://purl.obolibrary.org/obo/PATO_0000951">http://purl.obolibrary.org/obo/PATO_0000951</a></code>)[<a href="http://purl.obolibrary.org/obo/PATO_0000951">http://purl.obolibrary.org/obo/PATO_0000951</a>] (purple)</td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:collectingBodyPart"></a><a id="collectingBodyPart"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">collectingBodyPart <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/collectingBodyPart">http://rs.rebipp.org.br/ppi/terms/collectingBodyPart</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The animal body part (e.g. organ) used to access the floral resources</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>green</code>, <code>white</code>, <code>red</code>, <code>yellow</code></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>glossa</code>, <code>bill</code>, <code>tongue</code>, (<a href="http://purl.obolibrary.org/obo/HAO_0000376">http://purl.obolibrary.org/obo/HAO_0000376</a>)[<a href="http://purl.obolibrary.org/obo/HAO_0000376">http://purl.obolibrary.org/obo/HAO_0000376</a>]</td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:conspecificPollenGrains"></a><a id="conspecificPollenGrains"></a></p>
+    <a id="rebipp:collectingBodyPartLength"></a><a id="collectingBodyPartLength"></a></p>
 <table class="table table-sm table-bordered">
     <tbody>
-        <tr class="table-secondary"><th colspan="2">conspecificPollenGrains <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/conspecificPollenGrains">http://rs.rebipp.org.br/rebipp/terms/conspecificPollenGrains</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Number of conspecific pollen grains deposited on the stigma after one visit</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Should be filled with the number of conspecific pollen grains counted on the stigma.</td></tr>
+        <tr class="table-secondary"><th colspan="2">collectingBodyPartLength <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/collectingBodyPartLength">http://rs.rebipp.org.br/ppi/terms/collectingBodyPartLength</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The length in millimeters of the body part used to access the floral resource</td></tr>
+        <tr><td class="theme-label">Comments</td><td>The <code>collectingBodyPart</code> should be provided in order to access which body part this length is related to.</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>12</code>,  <code>100</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:flowersVisitedQuantity"></a><a id="flowersVisitedQuantity"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">flowersVisitedQuantity <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/flowersVisitedQuantity">http://rs.rebipp.org.br/ppi/terms/flowersVisitedQuantity</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The number or enumeration value for the quantity of flowers visited in this `Interaction`</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:conspecificPollenGrainsMultipleVisits"></a><a id="conspecificPollenGrainsMultipleVisits"></a></p>
+    <a id="rebipp:plantPlaceOfContact"></a><a id="plantPlaceOfContact"></a></p>
 <table class="table table-sm table-bordered">
     <tbody>
-        <tr class="table-secondary"><th colspan="2">conspecificPollenGrainsMultipleVisits <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/conspecificPollenGrainsMultipleVisits">http://rs.rebipp.org.br/rebipp/terms/conspecificPollenGrainsMultipleVisits</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Number of conspecific pollen grains deposited on the stigma after multiple visits</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Should be filled with the number of conspecific pollen grains counted on the stigma after a period of multiple visits</td></tr>
+        <tr class="table-secondary"><th colspan="2">plantPlaceOfContact <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/plantPlaceOfContact">http://rs.rebipp.org.br/ppi/terms/plantPlaceOfContact</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of places (i.e. structures) in the plant that contacts its interacting partner during an `Interaction`</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space ( <code>|</code> ) and to use a controlled vocabulary
+</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:heterospecificPollenGrains"></a><a id="heterospecificPollenGrains"></a></p>
+    <a id="rebipp:resourceCollected"></a><a id="resourceCollected"></a></p>
 <table class="table table-sm table-bordered">
     <tbody>
-        <tr class="table-secondary"><th colspan="2">heterospecificPollenGrains <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/heterospecificPollenGrains">http://rs.rebipp.org.br/rebipp/terms/heterospecificPollenGrains</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Number of heterospecific pollen grains deposited on the stigmas</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Should be filled with the number of heterospecific pollen grains counted on the stigma.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
+        <tr class="table-secondary"><th colspan="2">resourceCollected <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/resourceCollected">http://rs.rebipp.org.br/ppi/terms/resourceCollected</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of floral resources used or removed by an animal from a flower during an Interaction</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space ( <code>|</code> ) and to use a controlled vocabulary</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>pollen</code>, <code>pollen | nectar | oil</code>, <code>ovules</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:removedPollenGrains"></a><a id="removedPollenGrains"></a></p>
+    <a id="rebipp:verticalStratum"></a><a id="verticalStratum"></a></p>
 <table class="table table-sm table-bordered">
     <tbody>
-        <tr class="table-secondary"><th colspan="2">removedPollenGrains <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/removedPollenGrains">http://rs.rebipp.org.br/rebipp/terms/removedPollenGrains</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Number of pollen grains removed from anthers after one visit</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Should be filled with the number of pollen grains removed from the anthers after one visit.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
+        <tr class="table-secondary"><th colspan="2">verticalStratum <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/verticalStratum">http://rs.rebipp.org.br/ppi/terms/verticalStratum</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The vertical layering (i.e. stratum) of a habitat where the `Interaction` occurs</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>canopy</code>, <code>understory</code>, <code>forest floor</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:removedPollenGrainsMultipleVisits"></a><a id="removedPollenGrainsMultipleVisits"></a></p>
+    <a id="rebipp:fruitMass"></a><a id="fruitMass"></a></p>
 <table class="table table-sm table-bordered">
     <tbody>
-        <tr class="table-secondary"><th colspan="2">removedPollenGrainsMultipleVisits <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/removedPollenGrainsMultipleVisits">http://rs.rebipp.org.br/rebipp/terms/removedPollenGrainsMultipleVisits</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Number of pollen grains removed from anthers after multiple visits</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Should be filled with the number of pollen grains removed from the anthers after a period of multiple visits.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:pollenTubesCount"></a><a id="pollenTubesCount"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">pollenTubesCount <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/pollenTubesCount">http://rs.rebipp.org.br/rebipp/terms/pollenTubesCount</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Number of pollen tubes after one visit</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Should be filled with the number of pollen tubes growing in the style after one visit.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:pollenTubesCountMultipleVisits"></a><a id="pollenTubesCountMultipleVisits"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">pollenTubesCountMultipleVisits <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/pollenTubesCountMultipleVisits">http://rs.rebipp.org.br/rebipp/terms/pollenTubesCountMultipleVisits</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Number of pollen tubes after multiple visits</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Should be filled with the number of pollen tubes growing in the style after a period of multiple visits</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:fertilizedOvulesCount"></a><a id="fertilizedOvulesCount"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">fertilizedOvulesCount <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/fertilizedOvulesCount">http://rs.rebipp.org.br/rebipp/terms/fertilizedOvulesCount</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Number of fertilized ovules after one visit</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Should be filled with the number of pollen tubes growing in the style and fertilizing ovules after one visit</td></tr>
+        <tr class="table-secondary"><th colspan="2">fruitMass <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/fruitMass">http://rs.rebipp.org.br/ppi/terms/fruitMass</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The mass in grams of a fruit of a flower exposed to a single visitor</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
@@ -3838,8 +428,52 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
 <table class="table table-sm table-bordered">
     <tbody>
         <tr class="table-secondary"><th colspan="2">fruitSet <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/fruitSet">http://rs.rebipp.org.br/rebipp/terms/fruitSet</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Percentage of flowers that set fruit after exposition to a single visit</td></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/fruitSet">http://rs.rebipp.org.br/ppi/terms/fruitSet</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Percentage of flowers exposed to floral visitors during anthesis that set fruit </td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:heterospecificPollenGrainsQuantity"></a><a id="heterospecificPollenGrainsQuantity"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">heterospecificPollenGrainsQuantity <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/heterospecificPollenGrainsQuantity">http://rs.rebipp.org.br/ppi/terms/heterospecificPollenGrainsQuantity</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The number or enumeration value for the quantity of heterospecific pollen grains deposited on the stigma(s) of a flower exposed to multiple visitors</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>435</code>, <code>600</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:pollenTubesQuantity"></a><a id="pollenTubesQuantity"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">pollenTubesQuantity <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/pollenTubesQuantity">http://rs.rebipp.org.br/ppi/terms/pollenTubesQuantity</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The number or enumeration value for the quantity of pollen tubes growing in the style of the flower in which the Interaction was recorded when exposed to multiple visitors</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Should be filled with the number of pollen grains removed from the anthers after one visit</td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:removedPollenGrainsQuantity"></a><a id="removedPollenGrainsQuantity"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">removedPollenGrainsQuantity <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/removedPollenGrainsQuantity">http://rs.rebipp.org.br/ppi/terms/removedPollenGrainsQuantity</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The number or enumeration value for the quantity of pollen grains removed from the anther(s) of a flower exposed to multiple visitors</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>156</code>, <code>350</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:seedMass"></a><a id="seedMass"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">seedMass <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/seedMass">http://rs.rebipp.org.br/ppi/terms/seedMass</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The mass in miligrams of mature seeds of a fruit from a flower exposed to a single visitor</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
@@ -3849,319 +483,242 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
 <table class="table table-sm table-bordered">
     <tbody>
         <tr class="table-secondary"><th colspan="2">seedSet <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/seedSet">http://rs.rebipp.org.br/rebipp/terms/seedSet</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Number of mature seeds per fruit from flowers exposed to a single visit</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Should be filled with the seed number per fruit</td></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/seedSet">http://rs.rebipp.org.br/ppi/terms/seedSet</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Number of mature seeds of a fruit from a flower exposed to a single visitor</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:fruitMass"></a><a id="fruitMass"></a></p>
+    <a id="rebipp:antherDehiscenceType"></a><a id="antherDehiscenceType"></a></p>
 <table class="table table-sm table-bordered">
     <tbody>
-        <tr class="table-secondary"><th colspan="2">fruitMass <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/fruitMass">http://rs.rebipp.org.br/rebipp/terms/fruitMass</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Mass of fruits from flowers exposed to a single visit in grams (g)</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Should be filled with the fruit mass</td></tr>
+        <tr class="table-secondary"><th colspan="2">antherDehiscenceType <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/antherDehiscenceType">http://rs.rebipp.org.br/ppi/terms/antherDehiscenceType</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The physical mechanism of anther dehiscence (release of the pollen grains) of the recorded plant species</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>poricidal</code>, <code>longitudinal</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:apomiticSystem"></a><a id="apomiticSystem"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">apomiticSystem <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/apomiticSystem">http://rs.rebipp.org.br/ppi/terms/apomiticSystem</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The general mode of asexual reproduction through seeds of a plant species</td></tr>
+        <tr><td class="theme-label">Comments</td><td>In absence or presence, but unknown, apomictic system the value should be filled according (<code>absence</code>, <code>unknown</code>)</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>gametophytic</code>, <code>absent</code>, <code>unknown</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:availableFlowerQuantity"></a><a id="availableFlowerQuantity"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">availableFlowerQuantity <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/availableFlowerQuantity">http://rs.rebipp.org.br/ppi/terms/availableFlowerQuantity</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The number or enumeration value for the quantity of open flowers or inflorescences available to visitors</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>0</code>, <code>30</code>, <code>40</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:cospecificPollenGrainsQuantity"></a><a id="cospecificPollenGrainsQuantity"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">cospecificPollenGrainsQuantity <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/cospecificPollenGrainsQuantity">http://rs.rebipp.org.br/ppi/terms/cospecificPollenGrainsQuantity</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The number or enumeration value for the quantity of coespecific pollen grains deposited on the flower's stigma(s) exposed to multiple visitors at the end of flower anthesis</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>356</code>, <code>500</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:floralAdvertisement"></a><a id="floralAdvertisement"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">floralAdvertisement <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/floralAdvertisement">http://rs.rebipp.org.br/ppi/terms/floralAdvertisement</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of structures and substances that function advertising the flowers (and its rewards) to floral visitors. Usually as visual, olfactory and tactile stimuli</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Term reference (literature): Willmer et al. 2011   </td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
+<p class="invisible">
+    <a id="rebipp:floralReward"></a><a id="floralReward"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">floralReward <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/floralReward">http://rs.rebipp.org.br/ppi/terms/floralReward</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of rewards offered by flowers to visiting animals in order to award their services.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Absence of reward applies when flowers are pollinated by deceit (no reward offered to visiting animals).
 
+Recommended best practice is to separate the values in a list with space vertical bar space ( <code>|</code> ) and use a controlled vocabulary of floral rewards.
+</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>nectar</code>, <code>pollen | nectar</code>, <code>absence of reward</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:floralSymmetry"></a><a id="floralSymmetry"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">floralSymmetry <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/floralSymmetry">http://rs.rebipp.org.br/ppi/terms/floralSymmetry</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The symmetry describing whether, and how, a flower, in particular its perianth, can be divided into two or more identical or mirror-image parts.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>There are essentially two main types of symmetry in flowers: bilateral symmetry (also termed zygomorphic, dorsiventral, lateral or irregular) and radial symmetry (also termed actinomorphic or regular).
 
-## AnimalTrait
+Recommended best practice is to use a controlled vocabulary such as  Phenotype and Ant Trait Ontology (PATO)
+</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>zygomorphic</code>, (<code><a href="http://purl.obolibrary.org/obo/PATO_0001327">http://purl.obolibrary.org/obo/PATO_0001327</a></code>)[<a href="http://purl.obolibrary.org/obo/PATO_0001327">http://purl.obolibrary.org/obo/PATO_0001327</a>]
+</td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:floralSystem"></a><a id="floralSystem"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">floralSystem <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/floralSystem">http://rs.rebipp.org.br/ppi/terms/floralSystem</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The floral system (morphological, temporal or movement-based mechanism) in which bisexual flowers optimize their reproductive success, through mechanisms that promote self- or cross-pollination.</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>herkogamy</code>, <code>heterostyly</code>, <code>stylar dimorphism</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:florwerShape"></a><a id="florwerShape"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">florwerShape <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/florwerShape">http://rs.rebipp.org.br/ppi/terms/florwerShape</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The overall shape of the flowers</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>bush</code>, <code>campanulate</code>, <code>tube</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:flowerHabit"></a><a id="flowerHabit"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">flowerHabit <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/flowerHabit">http://rs.rebipp.org.br/ppi/terms/flowerHabit</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The position (in relation to the ground) the open flower is presented to flower visitors.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Term reference (literature): Faegri and van der Pijl (1979); Willmer (2011); Rech et al. (2014).</td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:flowerLongevity"></a><a id="flowerLongevity"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">flowerLongevity <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/flowerLongevity">http://rs.rebipp.org.br/ppi/terms/flowerLongevity</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The total period of time in hours comprising the time between flower opening and flower senescence (when floral parts begin to wilt and fall off or the ovary starts to develop into fruit)</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>1</code>, <code>8</code>, <code>72</code>, <code>120</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:flowerOpeningPeriod"></a><a id="flowerOpeningPeriod"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">flowerOpeningPeriod <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/flowerOpeningPeriod">http://rs.rebipp.org.br/ppi/terms/flowerOpeningPeriod</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The period of the day which a sample of chasmogamous flowers' buds open their corolla, exposing the reproductive parts to flower visitors.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary of discrete periods or use a time interval that conforms to ISO 8601:2004(E).</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>morning</code>, <code>night</code>, <code>6:00:00Z/12:30:00Z</code> (the interval between 6am UTC and 12:30pm UTC)</td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:flowerType"></a><a id="flowerType"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">flowerType <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/flowerType">http://rs.rebipp.org.br/ppi/terms/flowerType</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The type of flower describing whether the flower's corolla opens or not, exposing its reproductive parts to floral visitors (cleistogamous, chasmogamous or mixed)</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. Example: Plant Trait Ontology</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>cleistogamous</code>, <code>chasmogamous</code>, (<code><a href="http://purl.obolibrary.org/obo/TO_0000882">http://purl.obolibrary.org/obo/TO_0000882</a></code>)[<a href="http://purl.obolibrary.org/obo/TO_0000882">http://purl.obolibrary.org/obo/TO_0000882</a>]</td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:functionalFlowerLifespan"></a><a id="functionalFlowerLifespan"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">functionalFlowerLifespan <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/functionalFlowerLifespan">http://rs.rebipp.org.br/ppi/terms/functionalFlowerLifespan</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The total period of time in hours in which the female and male flower parts of the recorded plant species are functioning.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>The period of time when stigma is receptive to the germination of pollen grains, ovules are receptive to the pollen tubes and anthers present viable pollen grains</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>1</code>, <code>8</code>, <code>72</code>, <code>120</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:habit"></a><a id="habit"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">habit <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/habit">http://rs.rebipp.org.br/ppi/terms/habit</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The general appearance, characteristic form, or mode of growth of a plant species represente in the record. Also refer to the substrate where the plant grows by which the aerial parts are supported.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>The most usual terms are tree, bush, climber, herb. Additionally, the mode of growth (aquatic, terrestrial, rupiculous, epiphytic) can be included here. Examples: aquatic herb, epiphytic herb, rupiculous bush. Term reference (literature): Gonçalves and Lorenzi (2011)</td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:humanUse"></a><a id="humanUse"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">humanUse <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/humanUse">http://rs.rebipp.org.br/ppi/terms/humanUse</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Use made of the plant species by humans. Ways in which species are utilized by people, including Folklore</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. Example: Economic Botany Data Standard (<a href="http://www.kew.org/tdwguses/index.htm">http://www.kew.org/tdwguses/index.htm</a>) 
+</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>human food </code>, <code>animal food</code>, <code>medicine</code>, <code>ritual</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:matingSystem"></a><a id="matingSystem"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">matingSystem <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/matingSystem">http://rs.rebipp.org.br/ppi/terms/matingSystem</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The general mode of gene transfer from one generation to the next through sexual reproduction of the plant species represented in the Occurrence</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.
+</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>autogamous</code>, <code>xenogamous</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:ovuleQuantity"></a><a id="ovuleQuantity"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">ovuleQuantity <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/ovuleQuantity">http://rs.rebipp.org.br/ppi/terms/ovuleQuantity</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A number or enumeration value for the quantity of ovules in flower(s) of the represented plant species</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>3</code>, <code>4</code>, <code>200.45</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="rebipp:selfIncompatibilityType"></a><a id="selfIncompatibilityType"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">selfIncompatibilityType <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/selfIncompatibilityType">http://rs.rebipp.org.br/ppi/terms/selfIncompatibilityType</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The type or class of the self-incompatibility system of the plant species</td></tr>
+        <tr><td class="theme-label">Comments</td><td>f a self-incompatibility system is absent this term should be filled according (<code>absent</code>)
 
-<div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:sociality">sociality</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:behavior">behavior</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:bodySize">bodySize</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:bodyMass">bodyMass</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:lengthOrganAccessingFloraResource">lengthOrganAccessingFloraResource</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:intertegularDistance">intertegularDistance</a>
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">AnimalTrait <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/AnimalTrait">http://rs.rebipp.org.br/rebipp/terms/AnimalTrait</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A animal trait (morphological, behavoral, biochemical, phenological or any other trait that describe the animal)</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-
-<p class="invisible">
-    <a id="rebipp:sociality"></a><a id="sociality"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">sociality <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/sociality">http://rs.rebipp.org.br/rebipp/terms/sociality</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Level of sociality of the flower visitor or pollinator</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Michener C.D. (1974) The Social Behavior of Bees. Harvard Univ. Press, Cambridge, MA. 404p.Rubenstein D.R., Abbot P. (2017) Comparative social evolution. Cambridge University Press, New York.Wilson E.O. (1971) The Insect Societies. The Belknap Press of Harvard University Press, Cambridge</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>social</code>, <code>solitary</code></td></tr>
+Recommended best practice is to use a controlled vocabulary.
+</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>gametophytic</code>, <code>sporophytic</code>, <code>absent</code>,<code>unkown</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:behavior"></a><a id="behavior"></a></p>
+    <a id="rebipp:sexualSystem"></a><a id="sexualSystem"></a></p>
 <table class="table table-sm table-bordered">
     <tbody>
-        <tr class="table-secondary"><th colspan="2">behavior <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/behavior">http://rs.rebipp.org.br/rebipp/terms/behavior</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A description of the behavior shown by the visitor at the time the interaction with the flower was recorded. Recommended best practice if there is a controlled vocabulary</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>roosting</code>, <code>foraging</code>, <code>running</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:bodySize"></a><a id="bodySize"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">bodySize <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/bodySize">http://rs.rebipp.org.br/rebipp/terms/bodySize</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td></td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:bodyMass"></a><a id="bodyMass"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">bodyMass <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/bodyMass">http://rs.rebipp.org.br/rebipp/terms/bodyMass</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td></td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:lengthOrganAccessingFloraResource"></a><a id="lengthOrganAccessingFloraResource"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">lengthOrganAccessingFloraResource <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/lengthOrganAcessingFloralResource">http://rs.rebipp.org.br/rebipp/terms/lengthOrganAcessingFloralResource</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Length of the organ used to access the floral resource (mm)</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Glossa length (bees), bill length (birds and hummingbirds), tongue length (bats), proboscis length (butterfly and moth)</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:intertegularDistance"></a><a id="intertegularDistance"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">intertegularDistance <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/intertegularDistance">http://rs.rebipp.org.br/rebipp/terms/intertegularDistance</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Distance between the insertion points of the wings and a standard measure of adult body size in bees</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-
-
-## Interaction
-
-<div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:ecologicalInteraction">ecologicalInteraction</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:visitorBehavior">visitorBehavior</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:resourceUsed">resourceUsed</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:durationOfInteraction">durationOfInteraction</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:structuredTouched">structuredTouched</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:placeOfContact">placeOfContact</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:heightInThePlant">heightInThePlant</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowersVisited">flowersVisited</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:collectingMethod">collectingMethod</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:collectingTechnique">collectingTechnique</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:numberOfCollectingTechniqueUnits">numberOfCollectingTechniqueUnits</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:trapColor">trapColor</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:round">round</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:methodReference">methodReference</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:collectingEffort">collectingEffort</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:periodicity">periodicity</a>
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">Interaction <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/Interaction">http://rs.rebipp.org.br/rebipp/terms/Interaction</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Describes a interaction between an animal and a plant</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-
-<p class="invisible">
-    <a id="rebipp:ecologicalInteraction"></a><a id="ecologicalInteraction"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">ecologicalInteraction <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/ecologicalInteraction">http://rs.rebipp.org.br/rebipp/terms/ecologicalInteraction</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The mutual or reciprocal action or influence among organisms Simple closed field; only one option is possible.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Identification of the interaction</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>plant-flower visitor</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:visitorBehavior"></a><a id="visitorBehavior"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">visitorBehavior <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/visitorBehavior">http://rs.rebipp.org.br/rebipp/terms/visitorBehavior</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The behavior presented by an animal in a flower for a given record</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>breeding</code>, <code>oviposition</code>, <code>ingesting</code>, <code>collecting</code>, <code>resting</code>, <code>touch reproductive structures</code>, <code>robbery</code>, <code>theft</code>, <code>sucking</code>, <code>buzzing</code>, <code>cleaning</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:resourceUsed"></a><a id="resourceUsed"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">resourceUsed <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/resourceUsed">http://rs.rebipp.org.br/rebipp/terms/resourceUsed</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The floral resource used or removed by an animal</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>pollen</code>, <code>nectar</code>, <code>floral resin</code>, <code>oil</code>, <code>fragrance</code>, <code>ovules</code>, <code>shelter</code>, <code>stigma exudates</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:durationOfInteraction"></a><a id="durationOfInteraction"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">durationOfInteraction <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/durationOfInteraction">http://rs.rebipp.org.br/rebipp/terms/durationOfInteraction</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The time from the arrival of the animal into the focal (sampling) unit (flower, inflorescence, individual plant) to it’s departure.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:structuredTouched"></a><a id="structuredTouched"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">structuredTouched <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/structureTouched">http://rs.rebipp.org.br/rebipp/terms/structureTouched</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The plant structure touched by visitors</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>flower</code>, <code>infrlorescence</code>, <code>leaves</code>, <code>branch</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:placeOfContact"></a><a id="placeOfContact"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">placeOfContact <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/placeOfContact">http://rs.rebipp.org.br/rebipp/terms/placeOfContact</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The place of the animal body or flower reproductive verticil (stigma and/or stamens, anther) that contacts its interacting partners, related to pollen removal and/or pollen deposition</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Place of the visitor’s body that contacts the plant and vice-versa: touches stigma</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>throat</code>, <code>wing</code>, <code>probocis</code>, <code>feet</code>, <code>thorax</code>, <code>abdomen</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:heightInThePlant"></a><a id="heightInThePlant"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">heightInThePlant <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/heightInThePlant">http://rs.rebipp.org.br/rebipp/terms/heightInThePlant</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The height where the interaction occurs in a vertical projection from the ground to the recorded interaction, reported in meters</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:flowersVisited"></a><a id="flowersVisited"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">flowersVisited <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/flowersVisited">http://rs.rebipp.org.br/rebipp/terms/flowersVisited</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Number of flowers visited by a single pollinator individual</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:collectingMethod"></a><a id="collectingMethod"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">collectingMethod <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/collectingMethod">http://rs.rebipp.org.br/rebipp/terms/collectingMethod</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Detailed description of the data sample protocol used in the field. Was it based on sampling by plots, transects, or fortuitous observation?</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>plot</code>, <code>transect, </code>opportunistic`</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:collectingTechnique"></a><a id="collectingTechnique"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">collectingTechnique <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/collectingTechnique">http://rs.rebipp.org.br/rebipp/terms/collectingTechnique</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Describe whether some widely known technique was used for data collection (e.g., pan trap, bowl trap, Moerick trap, funnel trap, netting, malaise)</td></tr>
-        <tr><td class="theme-label">Comments</td><td>pan trap<code>, </code>bowl trap<code>, </code>Moerick trap<code>, </code>funnel trap<code>, </code>netting<code>, </code>malaise`</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:numberOfCollectingTechniqueUnits"></a><a id="numberOfCollectingTechniqueUnits"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">numberOfCollectingTechniqueUnits <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/numberOfCollectingTechniqueUnits">http://rs.rebipp.org.br/rebipp/terms/numberOfCollectingTechniqueUnits</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>If any specific technique was used (e.g. pan traps), then add the number of sampling units used for sampling (e.g. traps).</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Number of traps</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:trapColor"></a><a id="trapColor"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">trapColor <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/trapColor">http://rs.rebipp.org.br/rebipp/terms/trapColor</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Depending on the traps used, then specify their color if relevant.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>red</code>,<code>blue</code>, <code>green</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:round"></a><a id="round"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">round <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/round">http://rs.rebipp.org.br/rebipp/terms/round</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Number of the visit to collect data, when there is more than one. Number of times related to sample an evaluation unit</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:methodReference"></a><a id="methodReference"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">methodReference <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/methodReference">http://rs.rebipp.org.br/rebipp/terms/methodReference</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Bibliographic reference of the method, citation. If a specific method described in the literature was used, then a bibliographic reference of the method should be provided</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:collectingEffort"></a><a id="collectingEffort"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">collectingEffort <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/collectingEffort">http://rs.rebipp.org.br/rebipp/terms/collectingEffort</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Sampling effort can be expressed many ways: as search time per site, as search within a given distance of a reference point or line, or as total number of sites or replicates needed to find a pattern</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Continuous numerical value, time (hours)</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:periodicity"></a><a id="periodicity"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">periodicity <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/rebipp/terms/periodicity">http://rs.rebipp.org.br/rebipp/terms/periodicity</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The frequency with which observations were conducted</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Days. Interval in days between observations.</td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
+        <tr class="table-secondary"><th colspan="2">sexualSystem <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/sexualSystem">http://rs.rebipp.org.br/ppi/terms/sexualSystem</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The gender expression and its occurrence at population or species levels. It is based in the presence and distribution of fertile whorls within the flower.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>monoceius</code>, <code>dioceius</code></td></tr>
     </tbody>
 </table>
 

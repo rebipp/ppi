@@ -1,24 +1,24 @@
 # Site settings
-title: REBIPP
-description: Website for the REBIPP standard.
+title: REBIPP - Plant-Pollinator Interactions
+description: Website for the REBIPP Plant-Pollinator Interactions standard.
 #url: "https://dwc.tdwg.org"
 
 navbar:
   left:
   - text: Terms
     href: terms/
-  - text: Guides
-    menu:
-    - text: Simple REBIPP standard
-      href: simple/
-    - text: Text
-      href: text/
-    - text: XML
-      href: xml/
-    - text: RDF
-      href: rdf/
-  - text: Namespace policy
-    href: namespace/
+  # - text: Guides
+    # menu:
+    # - text: Simple REBIPP standard
+      # href: simple/
+    # - text: Text
+      # href: text/
+    # - text: XML
+      # href: xml/
+    # - text: RDF
+      # href: rdf/
+  # - text: Namespace policy
+    # href: namespace/
   right:
   - text: GitHub
     href: https://github.com/BioComp-USP/rebipp-data-standard
