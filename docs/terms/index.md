@@ -7,26 +7,10 @@ container: fluid
 This page provides a list of all currently recommended terms of the REBIPP Plant-Pollinator Interactions standard. Convenient [files of these terms](https://github.com/BioComp-USP/rebipp-data-standard/tree/master/dist) and [their full history](https://github.com/BioComp-USP/rebipp-data-standard/blob/master/vocabulary/term_versions.csv) can be found in the [Plant-Pollinator Interactions repository](https://github.com/BioComp-USP/rebipp-data-standard).
 
 
-## PlantTrait
-
-<div class="my-4">
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">PlantTrait <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/PlantTrait">http://rs.rebipp.org.br/ppi/terms/PlantTrait</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A trait is a single feature or quantifiable measurement of a plant resource (rdf:Resource)</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to dwc:Occurrence, dwc:Organism, dwc:MaterialSample, dwc:Event, dwc:Location, dwc:GeologicalContext, dwc:Identification, or dwc:Taxon.</td></tr>
-        <tr><td class="theme-label">Examples</td><td>A habit of a plant. The symmetry of flowers of a plant</td></tr>
-    </tbody>
-</table>
-
-
-
 ## AnimalTrait
 
 <div class="my-4">
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:caste">caste</a>
     </div>
 
 <table class="table table-sm table-bordered">
@@ -36,108 +20,6 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
         <tr><td class="theme-label">Definition</td><td>A trait is a single feature or quantifiable measurement of a animal resource (rdf:Resource)</td></tr>
         <tr><td class="theme-label">Comments</td><td>Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to dwc:Occurrence, dwc:Organism, dwc:MaterialSample, dwc:Event, dwc:Location, dwc:GeologicalContext, dwc:Identification, or dwc:Taxon.</td></tr>
         <tr><td class="theme-label">Examples</td><td>A caste of a bee</td></tr>
-    </tbody>
-</table>
-
-
-
-## Interaction
-
-<div class="my-4">
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">Interaction <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/Interaction">http://rs.rebipp.org.br/ppi/terms/Interaction</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An interaction event that occurs at some location during some time.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td>A bee visits a flower of a plant</td></tr>
-    </tbody>
-</table>
-
-
-
-## FlowerTrait
-
-<div class="my-4">
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">FlowerTrait <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/FlowerTrait">http://rs.rebipp.org.br/ppi/terms/FlowerTrait</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A trait is a single feature or quantifiable measurement of a flower of a plant resource (rdf:Resource)</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-
-
-
-## InteractionOutcome
-
-<div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:caste">caste</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:accumlatedNectarVolume">accumlatedNectarVolume</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:accumulatedNectarConcentration">accumulatedNectarConcentration</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:antherPollenGrainsQuantity">antherPollenGrainsQuantity</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:cospecificPollenGrainsQuantitySingleVisit">cospecificPollenGrainsQuantitySingleVisit</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:fertilizedOvulesQuantity">fertilizedOvulesQuantity</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerSexuality">flowerSexuality</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:pollenTubesQuantitySingleVisit">pollenTubesQuantitySingleVisit</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:pollinate">pollinate</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:removedPollenGrainsQuantitySingleVisit">removedPollenGrainsQuantitySingleVisit</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:standingCropFlowerLongevity">standingCropFlowerLongevity</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:standingCropNectarConcentration">standingCropNectarConcentration</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:standingCropNectarVolume">standingCropNectarVolume</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:stigmaticArea">stigmaticArea</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:styleLength">styleLength</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:animalPlaceOfContact">animalPlaceOfContact</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:attractiveStructure">attractiveStructure</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:attractiveStructureColor">attractiveStructureColor</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:collectingBodyPart">collectingBodyPart</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:collectingBodyPartLength">collectingBodyPartLength</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowersVisitedQuantity">flowersVisitedQuantity</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:plantPlaceOfContact">plantPlaceOfContact</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:resourceCollected">resourceCollected</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:verticalStratum">verticalStratum</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:fruitMass">fruitMass</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:fruitSet">fruitSet</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:heterospecificPollenGrainsQuantity">heterospecificPollenGrainsQuantity</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:pollenTubesQuantity">pollenTubesQuantity</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:removedPollenGrainsQuantity">removedPollenGrainsQuantity</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:seedMass">seedMass</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:seedSet">seedSet</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:antherDehiscenceType">antherDehiscenceType</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:apomiticSystem">apomiticSystem</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:availableFlowerQuantity">availableFlowerQuantity</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:cospecificPollenGrainsQuantity">cospecificPollenGrainsQuantity</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floralAdvertisement">floralAdvertisement</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floralReward">floralReward</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floralSymmetry">floralSymmetry</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floralSystem">floralSystem</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:florwerShape">florwerShape</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerHabit">flowerHabit</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerLongevity">flowerLongevity</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerOpeningPeriod">flowerOpeningPeriod</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerType">flowerType</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:functionalFlowerLifespan">functionalFlowerLifespan</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:habit">habit</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:humanUse">humanUse</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:matingSystem">matingSystem</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:ovuleQuantity">ovuleQuantity</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:selfIncompatibilityType">selfIncompatibilityType</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:sexualSystem">sexualSystem</a>
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">InteractionOutcome <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/InteractionOutcome">http://rs.rebipp.org.br/ppi/terms/InteractionOutcome</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An outcome as a result or a effect of the interaction(s) on the subject or object of the interaction</td></tr>
-        <tr><td class="theme-label">Comments</td><td>An outcome is related to one or more interactions, but limited to the same subject or object of the related interactions (e.g. a dwc:Occurrence or a dwc:Taxon)</td></tr>
-        <tr><td class="theme-label">Examples</td><td>The mass of a fruit exposed to multiple visitors was 100 grams</td></tr>
     </tbody>
 </table>
 
@@ -152,6 +34,37 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
         <tr><td class="theme-label">Examples</td><td><code>soldier</code>, <code>queen </code>, <code>worker </code></td></tr>
     </tbody>
 </table>
+
+
+## FlowerTrait
+
+<div class="my-4">
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:accumlatedNectarVolume">accumlatedNectarVolume</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:accumulatedNectarConcentration">accumulatedNectarConcentration</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:antherPollenGrainsQuantity">antherPollenGrainsQuantity</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:cospecificPollenGrainsQuantitySingleVisit">cospecificPollenGrainsQuantitySingleVisit</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:fertilizedOvulesQuantity">fertilizedOvulesQuantity</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerSexuality">flowerSexuality</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:pollenTubesQuantitySingleVisit">pollenTubesQuantitySingleVisit</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:pollinate">pollinate</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:removedPollenGrainsQuantitySingleVisit">removedPollenGrainsQuantitySingleVisit</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:standingCropFlowerLongevity">standingCropFlowerLongevity</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:standingCropNectarConcentration">standingCropNectarConcentration</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:standingCropNectarVolume">standingCropNectarVolume</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:stigmaticArea">stigmaticArea</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:styleLength">styleLength</a>
+    </div>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">FlowerTrait <span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/FlowerTrait">http://rs.rebipp.org.br/ppi/terms/FlowerTrait</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A trait is a single feature or quantifiable measurement of a flower of a plant resource (rdf:Resource)</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+
 <p class="invisible">
     <a id="rebipp:accumlatedNectarVolume"></a><a id="accumlatedNectarVolume"></a></p>
 <table class="table table-sm table-bordered">
@@ -306,6 +219,32 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
         <tr><td class="theme-label">Examples</td><td><code>12.5</code>, <code>6.5</code>, <code>20.0</code></td></tr>
     </tbody>
 </table>
+
+
+## Interaction
+
+<div class="my-4">
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:animalPlaceOfContact">animalPlaceOfContact</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:attractiveStructure">attractiveStructure</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:attractiveStructureColor">attractiveStructureColor</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:collectingBodyPart">collectingBodyPart</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:collectingBodyPartLength">collectingBodyPartLength</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowersVisitedQuantity">flowersVisitedQuantity</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:plantPlaceOfContact">plantPlaceOfContact</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:resourceCollected">resourceCollected</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:verticalStratum">verticalStratum</a>
+    </div>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">Interaction <span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/Interaction">http://rs.rebipp.org.br/ppi/terms/Interaction</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>An interaction event that occurs at some location during some time.</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td>A bee visits a flower of a plant</td></tr>
+    </tbody>
+</table>
+
 <p class="invisible">
     <a id="rebipp:animalPlaceOfContact"></a><a id="animalPlaceOfContact"></a></p>
 <table class="table table-sm table-bordered">
@@ -412,6 +351,30 @@ Recommended best practice is to use a controlled such as Plant Trait Ontology (T
         <tr><td class="theme-label">Examples</td><td><code>canopy</code>, <code>understory</code>, <code>forest floor</code></td></tr>
     </tbody>
 </table>
+
+
+## InteractionOutcome
+
+<div class="my-4">
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:fruitMass">fruitMass</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:fruitSet">fruitSet</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:heterospecificPollenGrainsQuantity">heterospecificPollenGrainsQuantity</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:pollenTubesQuantity">pollenTubesQuantity</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:removedPollenGrainsQuantity">removedPollenGrainsQuantity</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:seedMass">seedMass</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:seedSet">seedSet</a>
+    </div>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">InteractionOutcome <span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/InteractionOutcome">http://rs.rebipp.org.br/ppi/terms/InteractionOutcome</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>An outcome as a result or a effect of the interaction(s) on the subject or object of the interaction</td></tr>
+        <tr><td class="theme-label">Comments</td><td>An outcome is related to one or more interactions, but limited to the same subject or object of the related interactions (e.g. a dwc:Occurrence or a dwc:Taxon)</td></tr>
+        <tr><td class="theme-label">Examples</td><td>The mass of a fruit exposed to multiple visitors was 100 grams</td></tr>
+    </tbody>
+</table>
+
 <p class="invisible">
     <a id="rebipp:fruitMass"></a><a id="fruitMass"></a></p>
 <table class="table table-sm table-bordered">
@@ -489,6 +452,43 @@ Recommended best practice is to use a controlled such as Plant Trait Ontology (T
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
+
+
+## PlantTrait
+
+<div class="my-4">
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:antherDehiscenceType">antherDehiscenceType</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:apomiticSystem">apomiticSystem</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:availableFlowerQuantity">availableFlowerQuantity</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:cospecificPollenGrainsQuantity">cospecificPollenGrainsQuantity</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floralAdvertisement">floralAdvertisement</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floralReward">floralReward</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floralSymmetry">floralSymmetry</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floralSystem">floralSystem</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:florwerShape">florwerShape</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerHabit">flowerHabit</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerLongevity">flowerLongevity</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerOpeningPeriod">flowerOpeningPeriod</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerType">flowerType</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:functionalFlowerLifespan">functionalFlowerLifespan</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:habit">habit</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:humanUse">humanUse</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:matingSystem">matingSystem</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:ovuleQuantity">ovuleQuantity</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:selfIncompatibilityType">selfIncompatibilityType</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:sexualSystem">sexualSystem</a>
+    </div>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">PlantTrait <span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/PlantTrait">http://rs.rebipp.org.br/ppi/terms/PlantTrait</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A trait is a single feature or quantifiable measurement of a plant resource (rdf:Resource)</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to dwc:Occurrence, dwc:Organism, dwc:MaterialSample, dwc:Event, dwc:Location, dwc:GeologicalContext, dwc:Identification, or dwc:Taxon.</td></tr>
+        <tr><td class="theme-label">Examples</td><td>A habit of a plant. The symmetry of flowers of a plant</td></tr>
+    </tbody>
+</table>
+
 <p class="invisible">
     <a id="rebipp:antherDehiscenceType"></a><a id="antherDehiscenceType"></a></p>
 <table class="table table-sm table-bordered">
