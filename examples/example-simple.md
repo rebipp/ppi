@@ -11,7 +11,7 @@ Amaranthaceae	| Pfaffia tuberosa |Apidae | Ceratina asunciana | 44111 | M | 26/2
 Amaranthaceae	| Pfaffia tuberosa | Halictidae | Dialictus (Chloralictus) sp.9 | 43917 | M | 22/2/2003 | 13:38
 Amaranthaceae	| Pfaffia tuberosa | Halictidae | Dialictus (Chloralictus) parvus | 43714 |F | 3/5/2003 | 15:40
 
-## Standarized Data (Event-ResourceRealionship Model)
+## Standarized Data (Event-ResourceRelationship Model)
 
 **Event Core** (*interaction.csv*):
 
