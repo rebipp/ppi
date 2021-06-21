@@ -330,6 +330,7 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:apomiticSystemEmbryoOrigin">apomiticSystemEmbryoOrigin</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:apomiticSystemFertilization">apomiticSystemFertilization</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:apomiticSystemReproduction">apomiticSystemReproduction</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:sexualSystem">sexualSystem</a>
     </div>
 
 <table class="table table-sm table-bordered">
@@ -475,12 +476,22 @@ Recommended best practice is to use a controlled vocabulary.
         <tr><td class="theme-label">Examples</td><td>facultative, obligate</td></tr>
     </tbody>
 </table>
+<p class="invisible">
+    <a id="rebipp:sexualSystem"></a><a id="sexualSystem"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">sexualSystem <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/sexualSystem">http://rs.rebipp.org.br/ppi/terms/sexualSystem</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The distribution of floral types within and among the individuals of same population</td></tr>
+        <tr><td class="theme-label">Comments</td><td>The gender expression is based in the presence and distribution of fertile whorls within the flower (bisexual, staminate flower, pistillate or carpellate flower). Recommended best practice is to use a controlled vocabulary</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>monoceius</code>, <code>dioceius</code></td></tr>
+    </tbody>
+</table>
 
 
 ## ReproductiveSuccess
 
 <div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:sexualSystem">sexualSystem</a>
     </div>
 
 <table class="table table-sm table-bordered">
@@ -493,15 +504,4 @@ Recommended best practice is to use a controlled vocabulary.
     </tbody>
 </table>
 
-<p class="invisible">
-    <a id="rebipp:sexualSystem"></a><a id="sexualSystem"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">sexualSystem <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/sexualSystem">http://rs.rebipp.org.br/ppi/terms/sexualSystem</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The distribution of floral types within and among the individuals of same population</td></tr>
-        <tr><td class="theme-label">Comments</td><td>The gender expression is based in the presence and distribution of fertile whorls within the flower (bisexual, staminate flower, pistillate or carpellate flower). Recommended best practice is to use a controlled vocabulary</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>monoceius</code>, <code>dioceius</code></td></tr>
-    </tbody>
-</table>
 
