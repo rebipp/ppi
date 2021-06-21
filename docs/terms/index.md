@@ -33,7 +33,7 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
     <tbody>
         <tr class="table-primary"><th colspan="2">ReproductiveSuccess <span class="badge badge-primary float-right">Class</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/ReproductiveSuccess">http://rs.rebipp.org.br/ppi/terms/ReproductiveSuccess</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A reproduct success measurement as a result or a effect of the interaction(s) on the subject or object of the interaction</td></tr>
+        <tr><td class="theme-label">Definition</td><td>A reproductive success measurement as a result or a effect of the interaction(s) on the subject or object of the interaction</td></tr>
         <tr><td class="theme-label">Comments</td><td>An outcome is related to one or more interactions, but limited to the same subject or object of the related interactions (e.g. a dwc:Occurrence or a dwc:Taxon)</td></tr>
         <tr><td class="theme-label">Examples</td><td>The mass of a fruit exposed to multiple visitors was 100 grams</td></tr>
     </tbody>
