@@ -7,60 +7,10 @@ container: fluid
 This page provides a list of all currently recommended terms of the REBIPP Plant-Pollinator Interactions standard. Convenient [files of these terms](https://github.com/BioComp-USP/rebipp-data-standard/tree/master/dist) and [their full history](https://github.com/BioComp-USP/rebipp-data-standard/blob/master/vocabulary/term_versions.csv) can be found in the [Plant-Pollinator Interactions repository](https://github.com/BioComp-USP/rebipp-data-standard).
 
 
-## Interaction
-
-<div class="my-4">
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">Interaction <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/Interaction">http://rs.rebipp.org.br/ppi/terms/Interaction</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An interaction event that occurs at some location during some time.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td>A bee visits a flower of a plant</td></tr>
-    </tbody>
-</table>
-
-
-
-## ReproductiveSuccess
-
-<div class="my-4">
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">ReproductiveSuccess <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/ReproductiveSuccess">http://rs.rebipp.org.br/ppi/terms/ReproductiveSuccess</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A reproductive success measurement as a result or a effect of the interaction(s) on the subject or object of the interaction</td></tr>
-        <tr><td class="theme-label">Comments</td><td>An outcome is related to one or more interactions, but limited to the same subject or object of the related interactions (e.g. a dwc:Occurrence or a dwc:Taxon)</td></tr>
-        <tr><td class="theme-label">Examples</td><td>The mass of a fruit exposed to multiple visitors was 100 grams</td></tr>
-    </tbody>
-</table>
-
-
-
-## Flower
-
-<div class="my-4">
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">Flower <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/Flower">http://rs.rebipp.org.br/ppi/terms/Flower</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Any attribute of a particular flower or a definied group of flowers </td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td>The shape and the number of anther of a flower</td></tr>
-    </tbody>
-</table>
-
-
-
 ## Animal
 
 <div class="my-4">
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:caste">caste</a>
     </div>
 
 <table class="table table-sm table-bordered">
@@ -73,9 +23,20 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
     </tbody>
 </table>
 
+<p class="invisible">
+    <a id="rebipp:caste"></a><a id="caste"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">caste <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/caste">http://rs.rebipp.org.br/ppi/terms/caste</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The society division that is specialized in the function it performs and distinguished by anatomical or morphological differences from other individuals of the society</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best pratices is to use a controlled vocabulary</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>soldier</code>, <code>queen </code>, <code>worker </code></td></tr>
+    </tbody>
+</table>
 
 
-## Plant
+## Flower
 
 <div class="my-4">
         <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:antherPollenGrainsQuantity">antherPollenGrainsQuantity</a>
@@ -91,34 +52,15 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
         <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerLongevity">flowerLongevity</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerOpeningPeriod">flowerOpeningPeriod</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:functionalFlowerLifespanInHours">functionalFlowerLifespanInHours</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:visitedFlowerSex">visitedFlowerSex</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:animalPlaceOfContact">animalPlaceOfContact</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:nectarCollectingBodyPart">nectarCollectingBodyPart</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:collectingBodyPartLengthInMilimiters">collectingBodyPartLengthInMilimiters</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerPlaceOfContact">flowerPlaceOfContact</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:resourceCollected">resourceCollected</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:antherDehiscenceType">antherDehiscenceType</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerAbundance">flowerAbundance</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floralSymmetry">floralSymmetry</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floralSystem">floralSystem</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:habit">habit</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:humanUse">humanUse</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:matingSystem">matingSystem</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:selfIncompatibilityType">selfIncompatibilityType</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:apomiticSystemEmbryoOrigin">apomiticSystemEmbryoOrigin</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:apomiticSystemFertilization">apomiticSystemFertilization</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:apomiticSystemReproduction">apomiticSystemReproduction</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:sexualSystem">sexualSystem</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:visitedFlowersQuantity">visitedFlowersQuantity</a>
     </div>
 
 <table class="table table-sm table-bordered">
     <tbody>
-        <tr class="table-primary"><th colspan="2">Plant <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/Plant">http://rs.rebipp.org.br/ppi/terms/Plant</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Any attribute of a particular plant or a defined group of plants inviduals</td></tr>
+        <tr class="table-primary"><th colspan="2">Flower <span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/Flower">http://rs.rebipp.org.br/ppi/terms/Flower</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Any attribute of a particular flower or a definied group of flowers </td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td>The shape and the number of anther of a flower</td></tr>
     </tbody>
 </table>
 
@@ -270,6 +212,30 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>1</code>, <code>8</code>, <code>72</code>, <code>120</code></td></tr>
     </tbody>
 </table>
+
+
+## Interaction
+
+<div class="my-4">
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:visitedFlowerSex">visitedFlowerSex</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:animalPlaceOfContact">animalPlaceOfContact</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:nectarCollectingBodyPart">nectarCollectingBodyPart</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:collectingBodyPartLengthInMilimiters">collectingBodyPartLengthInMilimiters</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerPlaceOfContact">flowerPlaceOfContact</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:resourceCollected">resourceCollected</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:visitedFlowersQuantity">visitedFlowersQuantity</a>
+    </div>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">Interaction <span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/Interaction">http://rs.rebipp.org.br/ppi/terms/Interaction</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>An interaction event that occurs at some location during some time.</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td>A bee visits a flower of a plant</td></tr>
+    </tbody>
+</table>
+
 <p class="invisible">
     <a id="rebipp:visitedFlowerSex"></a><a id="visitedFlowerSex"></a></p>
 <table class="table table-sm table-bordered">
@@ -337,6 +303,45 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>pollen</code>, <code>pollen | nectar | oil</code>, <code>ovules</code></td></tr>
     </tbody>
 </table>
+<p class="invisible">
+    <a id="rebipp:visitedFlowersQuantity"></a><a id="visitedFlowersQuantity"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">visitedFlowersQuantity <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/visitedFlowersQuantity">http://rs.rebipp.org.br/ppi/terms/visitedFlowersQuantity</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The total number of flowers visited by the `Animal`</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>12</code>, <code>20</code></td></tr>
+    </tbody>
+</table>
+
+
+## Plant
+
+<div class="my-4">
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:antherDehiscenceType">antherDehiscenceType</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerAbundance">flowerAbundance</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floralSymmetry">floralSymmetry</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floralSystem">floralSystem</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:habit">habit</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:humanUse">humanUse</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:matingSystem">matingSystem</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:selfIncompatibilityType">selfIncompatibilityType</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:apomiticSystemEmbryoOrigin">apomiticSystemEmbryoOrigin</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:apomiticSystemFertilization">apomiticSystemFertilization</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:apomiticSystemReproduction">apomiticSystemReproduction</a>
+    </div>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">Plant <span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/Plant">http://rs.rebipp.org.br/ppi/terms/Plant</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Any attribute of a particular plant or a defined group of plants inviduals</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+
 <p class="invisible">
     <a id="rebipp:antherDehiscenceType"></a><a id="antherDehiscenceType"></a></p>
 <table class="table table-sm table-bordered">
@@ -470,6 +475,24 @@ Recommended best practice is to use a controlled vocabulary.
         <tr><td class="theme-label">Examples</td><td>facultative, obligate</td></tr>
     </tbody>
 </table>
+
+
+## ReproductiveSuccess
+
+<div class="my-4">
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:sexualSystem">sexualSystem</a>
+    </div>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">ReproductiveSuccess <span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/ReproductiveSuccess">http://rs.rebipp.org.br/ppi/terms/ReproductiveSuccess</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A reproductive success measurement as a result or a effect of the interaction(s) on the subject or object of the interaction</td></tr>
+        <tr><td class="theme-label">Comments</td><td>An outcome is related to one or more interactions, but limited to the same subject or object of the related interactions (e.g. a dwc:Occurrence or a dwc:Taxon)</td></tr>
+        <tr><td class="theme-label">Examples</td><td>The mass of a fruit exposed to multiple visitors was 100 grams</td></tr>
+    </tbody>
+</table>
+
 <p class="invisible">
     <a id="rebipp:sexualSystem"></a><a id="sexualSystem"></a></p>
 <table class="table table-sm table-bordered">
@@ -479,17 +502,6 @@ Recommended best practice is to use a controlled vocabulary.
         <tr><td class="theme-label">Definition</td><td>The distribution of floral types within and among the individuals of same population</td></tr>
         <tr><td class="theme-label">Comments</td><td>The gender expression is based in the presence and distribution of fertile whorls within the flower (bisexual, staminate flower, pistillate or carpellate flower). Recommended best practice is to use a controlled vocabulary</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>monoceius</code>, <code>dioceius</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:visitedFlowersQuantity"></a><a id="visitedFlowersQuantity"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">visitedFlowersQuantity <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/visitedFlowersQuantity">http://rs.rebipp.org.br/ppi/terms/visitedFlowersQuantity</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The total number of flowers visited by the `Animal`</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>12</code>, <code>20</code></td></tr>
     </tbody>
 </table>
 

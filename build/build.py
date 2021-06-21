@@ -202,8 +202,8 @@ class RebippDigester(object):
             ]
         """
         template_data = []
-        in_class = "PlantTrait"
-        # sequence matters in config and it starts with PlantTrait which we populate here ad-hoc
+        in_class = "Animal"
+        # sequence matters in config and it starts with Plant which we populate here ad-hoc
         class_group = {}
         class_group["label"] = ""
         class_group["iri"] = None
