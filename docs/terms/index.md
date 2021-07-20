@@ -681,7 +681,7 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
                     <tr class="table-danger">
                     <th colspan="2">numberOfRemovedPollenGrains
                 <span class="badge badge-secondary float-right">Property</span>
-                                    <span class="badge badge-danger float-right">Not Recommended</spa>
+                                    <span class="badge badge-danger float-right">Not Recommended</span>
                             </th>
         </tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/numberOfRemovedPollenGrains">http://rs.rebipp.org.br/ppi/terms/numberOfRemovedPollenGrains</a></td></tr>
@@ -698,7 +698,7 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
                     <tr class="table-danger">
                     <th colspan="2">numberOfConspecificPollenGrains
                 <span class="badge badge-secondary float-right">Property</span>
-                                    <span class="badge badge-danger float-right">Not Recommended</spa>
+                                    <span class="badge badge-danger float-right">Not Recommended</span>
                             </th>
         </tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/numberOfConspecificPollenGrains">http://rs.rebipp.org.br/ppi/terms/numberOfConspecificPollenGrains</a></td></tr>
@@ -715,7 +715,7 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
                     <tr class="table-danger">
                     <th colspan="2">numberOfHeterospecificPollenGrains
                 <span class="badge badge-secondary float-right">Property</span>
-                                    <span class="badge badge-danger float-right">Not Recommended</spa>
+                                    <span class="badge badge-danger float-right">Not Recommended</span>
                             </th>
         </tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/numberOfHeterospecificPollenGrains">http://rs.rebipp.org.br/ppi/terms/numberOfHeterospecificPollenGrains</a></td></tr>
@@ -732,7 +732,7 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
                     <tr class="table-danger">
                     <th colspan="2">numberOfFertilizedOvules
                 <span class="badge badge-secondary float-right">Property</span>
-                                    <span class="badge badge-danger float-right">Not Recommended</spa>
+                                    <span class="badge badge-danger float-right">Not Recommended</span>
                             </th>
         </tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/numberOfFertilizedOvules">http://rs.rebipp.org.br/ppi/terms/numberOfFertilizedOvules</a></td></tr>
@@ -749,7 +749,7 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
                     <tr class="table-danger">
                     <th colspan="2">numberOfPollenTubes
                 <span class="badge badge-secondary float-right">Property</span>
-                                    <span class="badge badge-danger float-right">Not Recommended</spa>
+                                    <span class="badge badge-danger float-right">Not Recommended</span>
                             </th>
         </tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/numberOfPollenTubes">http://rs.rebipp.org.br/ppi/terms/numberOfPollenTubes</a></td></tr>
@@ -766,7 +766,7 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
                     <tr class="table-danger">
                     <th colspan="2">seedMassInMiligrams
                 <span class="badge badge-secondary float-right">Property</span>
-                                    <span class="badge badge-danger float-right">Not Recommended</spa>
+                                    <span class="badge badge-danger float-right">Not Recommended</span>
                             </th>
         </tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/seedMassInMiligrams">http://rs.rebipp.org.br/ppi/terms/seedMassInMiligrams</a></td></tr>
@@ -783,7 +783,7 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
                     <tr class="table-danger">
                     <th colspan="2">seedSet
                 <span class="badge badge-secondary float-right">Property</span>
-                                    <span class="badge badge-danger float-right">Not Recommended</spa>
+                                    <span class="badge badge-danger float-right">Not Recommended</span>
                             </th>
         </tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/seedSet">http://rs.rebipp.org.br/ppi/terms/seedSet</a></td></tr>
@@ -800,7 +800,7 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
                     <tr class="table-danger">
                     <th colspan="2">fruitMassInGrams
                 <span class="badge badge-secondary float-right">Property</span>
-                                    <span class="badge badge-danger float-right">Not Recommended</spa>
+                                    <span class="badge badge-danger float-right">Not Recommended</span>
                             </th>
         </tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/fruitMassInGrams">http://rs.rebipp.org.br/ppi/terms/fruitMassInGrams</a></td></tr>
@@ -817,7 +817,7 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
                     <tr class="table-danger">
                     <th colspan="2">fruitSet
                 <span class="badge badge-secondary float-right">Property</span>
-                                    <span class="badge badge-danger float-right">Not Recommended</spa>
+                                    <span class="badge badge-danger float-right">Not Recommended</span>
                             </th>
         </tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/fruitSet">http://rs.rebipp.org.br/ppi/terms/fruitSet</a></td></tr>
@@ -834,7 +834,7 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
                     <tr class="table-danger">
                     <th colspan="2">numberOfExposedFlowers
                 <span class="badge badge-secondary float-right">Property</span>
-                                    <span class="badge badge-danger float-right">Not Recommended</spa>
+                                    <span class="badge badge-danger float-right">Not Recommended</span>
                             </th>
         </tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/numberOfExposedFlowers">http://rs.rebipp.org.br/ppi/terms/numberOfExposedFlowers</a></td></tr>
@@ -872,7 +872,7 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
                     <tr class="table-danger">
                     <th colspan="2">accumlatedNectarVolumeInMicroliters
                 <span class="badge badge-secondary float-right">Property</span>
-                                    <span class="badge badge-danger float-right">Not Recommended</spa>
+                                    <span class="badge badge-danger float-right">Not Recommended</span>
                             </th>
         </tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/accumlatedNectarVolumeInMicroliters">http://rs.rebipp.org.br/ppi/terms/accumlatedNectarVolumeInMicroliters</a></td></tr>
@@ -889,7 +889,7 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
                     <tr class="table-danger">
                     <th colspan="2">accumulatedNectarConcentration
                 <span class="badge badge-secondary float-right">Property</span>
-                                    <span class="badge badge-danger float-right">Not Recommended</spa>
+                                    <span class="badge badge-danger float-right">Not Recommended</span>
                             </th>
         </tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/accumulatedNectarConcentration">http://rs.rebipp.org.br/ppi/terms/accumulatedNectarConcentration</a></td></tr>
@@ -906,7 +906,7 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
                     <tr class="table-danger">
                     <th colspan="2">accumulatedNectarHours
                 <span class="badge badge-secondary float-right">Property</span>
-                                    <span class="badge badge-danger float-right">Not Recommended</spa>
+                                    <span class="badge badge-danger float-right">Not Recommended</span>
                             </th>
         </tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/accumulatedNectarHours">http://rs.rebipp.org.br/ppi/terms/accumulatedNectarHours</a></td></tr>
@@ -923,7 +923,7 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
                     <tr class="table-danger">
                     <th colspan="2">accumulatedNectarFlowers
                 <span class="badge badge-secondary float-right">Property</span>
-                                    <span class="badge badge-danger float-right">Not Recommended</spa>
+                                    <span class="badge badge-danger float-right">Not Recommended</span>
                             </th>
         </tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/accumulatedNectarFlowers">http://rs.rebipp.org.br/ppi/terms/accumulatedNectarFlowers</a></td></tr>
