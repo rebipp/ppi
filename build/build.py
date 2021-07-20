@@ -86,7 +86,7 @@ class RebippDigester(object):
         """
         with RebippBuildReader(self.term_versions) as versions:
             for vterm in csv.DictReader(io.TextIOWrapper(versions), delimiter=','):
-                if vterm["status"] == "recommended":
+                if vterm["status"] == "recommended" or vterm["status"] == "not recommended":
                     yield vterm
 
     def _store_versions(self):
@@ -152,6 +152,7 @@ class RebippDigester(object):
         term_data["rdf_type"] = vs_term['rdf_type']
         namespace_url, _ = self.split_iri(term_iri)
         term_data["namespace"] = self.resolve_namespace_abbrev(namespace_url)
+        term_data["css_class"] = vs_term['status']
 
         return term_data
 
@@ -213,6 +214,7 @@ class RebippDigester(object):
         class_group["rdf_type"] = None
         class_group["terms"] = []
         class_group["namespace"] = None
+        class_group["css_class"] = None
 
         for term in self.versions(): # sequence of the terms file used as order
             term_data = self.get_term_definition(term['term_iri'])

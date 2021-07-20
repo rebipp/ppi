@@ -1,6 +1,6 @@
-# Plant-Pollinator Interactions Data Standard
+# Plant-Pollinator Interactions Vocabulary
 
-Plant-Pollinator Interactions is a standardized vocabulary maintained by the Brazilian Network on Plant-Pollinator Interactions. It extends [Darwin Core](https://github.com/tdwg/dwc) data stadanrd, and includes a glossary of terms (in other contexts these might be called properties, elements, fields, columns, attributes, or concepts) intended to facilitate the sharing of information about plant-pollinator interactions by providing identifiers, labels, and definitions.
+Plant-Pollinator Interactions is a standardized vocabulary maintained by the Brazilian Network on Plant-Pollinator Interactions. It extends [Darwin Core](https://github.com/tdwg/dwc) data standard, and includes a glossary of terms (in other contexts these might be called properties, elements, fields, columns, attributes, or concepts) intended to facilitate the sharing of information about plant-pollinator interactions by providing identifiers, labels, and definitions.
 
 # Documents
 
