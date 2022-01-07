@@ -1,27 +1,29 @@
 # Site settings
-title: REBIPP - Plant-Pollinator Interactions
-description: Website for the REBIPP Plant-Pollinator Interactions standard.
-#url: "https://dwc.tdwg.org"
+title: REBIPP - Plant-Pollinator Interactions Vocabulary
+description: Website for the REBIPP Plant-Pollinator Interactions vocabulary.
+url: "https://ppi.rebipp.org.br"
 
 navbar:
   left:
   - text: Terms
     href: terms/
-  # - text: Guides
-    # menu:
-    # - text: Simple REBIPP standard
-      # href: simple/
-    # - text: Text
-      # href: text/
-    # - text: XML
-      # href: xml/
-    # - text: RDF
-      # href: rdf/
-  # - text: Namespace policy
-    # href: namespace/
+  - text: Guides
+    menu:
+    - text: PPI Quick Reference
+      href: terms/
+    - text: Text (Darwin Core Archive)
+      href: text/
+    - text: XML
+      href: xml/
+    - text: RDF
+      href: rdf/
+  - text: Namespace policy
+    href: namespace/
+  - text: Questions & Answers (separate site)
+    href: https://github.com/rebipp/ppi-qa/blob/master/README.
   right:
   - text: GitHub
-    href: https://github.com/BioComp-USP/rebipp-data-standard
+    href: https://github.com/rebipp/ppi
 
 js: >-
   $(document).ready(function() {
@@ -32,8 +34,6 @@ js: >-
 # Build settings
 markdown: kramdown
 # theme: tdwg-theme-jekyll
-remote_theme: BioComp-USP/tdwg-theme-jekyll
+remote_theme: rebipp/tdwg-theme-jekyll
 plugins:
   - jekyll-feed
-
-#theme: tdwg-theme-jekyll

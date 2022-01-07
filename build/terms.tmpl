@@ -6,9 +6,15 @@
 container: fluid
 ---
 
-# Plant-Pollinator Interactions terms quick reference guide
+# Plant-Pollinator Interactions vocabulary quick reference guide
 
-This page provides a list of all currently recommended terms of the REBIPP Plant-Pollinator Interactions standard. Convenient [files of these terms](https://github.com/BioComp-USP/rebipp-data-standard/tree/master/dist) and [their full history](https://github.com/BioComp-USP/rebipp-data-standard/blob/master/vocabulary/term_versions.csv) can be found in the [Plant-Pollinator Interactions repository](https://github.com/BioComp-USP/rebipp-data-standard).
+This document is intended to be an easy-to-read reference of the currently (as of 2022-01-06) recommended terms maintained as part of the [Darwin Core standard](https://www.tdwg.org/standards/dwc/) and is maintained by the [Brazilian Network on Plant-Pollinator Interactions](https://www.rebipp.org.br/).
+
+This page is not part of the standard, but combines the normative term names and definitions with the non-normative comments and examples that are meant to help people to use the terms consistently. Capitalized terms, such as Occurrence, are [Darwin Core](http://dwc.tdwg.org) classes, which are special category terms used to group sets of terms for convenience. Comprehensive metadata for current and obsolete terms in human readable form are found in the document [List of PPI terms](../list/).
+
+Additional [files with just the current term names](https://github.com/rebipp/ppi/tree/master/dist) and a [file with the full term history](https://github.com/rebipp/ppi/blob/master/vocabulary/term_versions.csv) can be found in the [PPI repository](https://github.com/rebipp/ppi).
+
+For inquiries about how to use Plant-Pollinator Interactions vocabulary, either enter an issue in the [PPI Questions & Answers site](https://github.com/rebipp/ppi-qa/blob/master/README.md) or enter an issue in the [alternative form](https://tinyurl.com/ppi-qa), which will have the same effect. See the bottom of this document for how to [cite PPI](#cite-ppi).
 
 {% for class_group in class_groups %}
 
@@ -21,7 +27,7 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
 </div>
 
 {% if class_group.iri is not none %}
-{# Class (the above will exclude the Record-level class_group) #}
+{# Class #}
 <table class="table table-sm table-bordered">
     <tbody>
         <tr class="table-primary"><th colspan="2">{{ class_group.label }} <span class="badge badge-primary float-right">Class</span></th></tr>
@@ -36,7 +42,7 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
 {% for term in class_group.terms %}
 {# Term #}
 <p class="invisible">
-    <a id="{{ term.namespace }}:{{ term.label }}"></a>{% if term.namespace != "dwciri" %}<a id="{{ term.label }}"></a>{% endif %}
+    <a id="{{ term.namespace }}:{{ term.label }}"></a><a id="{{ term.label }}"></a>
 </p>
 
 <table class="table table-sm table-bordered">
@@ -62,3 +68,12 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
 {% endfor %}
 
 {% endfor %}
+
+# Cite PPI
+To cite the document upon which this page is built, use the following:
+
+REBIPP. 2022. List of Plant-Pollinator Interactions vocabulary terms. Brazilian Network on Plant-Pollinator Interactions (REBIPP). <http://rs.rebipp.org.br/ppi/doc/list/>
+
+To cite this document specifically, use the following:
+
+REBIPP. 2022. Plant-Pollinator Interactions vocabulary quick reference guide. Brazilian Network on Plant-Pollinator Interactions (REBIPP). <https://ppi.rebipp.org.br/terms/>

@@ -1,9 +1,10 @@
 #
-# S. Van Hoey
+# Author: S. Van Hoey
+# Contributors: John Wieczorek
 #
-# Build script for tdwg rebipp handling
+# Build script for tdwg dwc handling
 #
-
+__version__ = '2021-07-30T-03:00'
 import io
 import os
 import re
@@ -15,14 +16,8 @@ from urllib import request
 from jinja2 import FileSystemLoader, Environment
 
 NAMESPACES = {
-    # 'http://rs.tdwg.org/dwc/iri/' : 'dwciri',
-    # 'http://rs.tdwg.org/dwc/terms/' : 'dwc',
-    'http://rs.rebipp.org.br/ppi/terms/' : 'rebipp',
-    # 'http://purl.org/dc/elements/1.1/' : 'dc',
-    # 'http://purl.org/dc/terms/' : 'dcterms',
-    # 'http://rs.tdwg.org/dwc/terms/attributes/' : 'tdwgutility'
-}
-
+    'http://rs.rebipp.org.br/ppi/terms/' : 'ppi',
+    'http://rs.tdwg.org/dwc/terms/attributes/' : 'tdwgutility'}
 
 class ProvidedTermsError(Exception):
     """inconsistency in the available terms Error"""
@@ -33,37 +28,37 @@ class RdfTypeError(Exception):
     """rdftype encountered that is not known by builder"""
     pass
 
-class RebippNamespaceError(Exception):
+class DwcNamespaceError(Exception):
     """Namespace link is not available in the currently provided links"""
     pass
 
-class RebippBuildReader():
+class DwcBuildReader():
 
-    def __init__(self, rebipp_build_file):
+    def __init__(self, dwc_build_file):
         """Custom Reader switching between raw Github or local file"""
-        self.rebipp_build_file = rebipp_build_file
+        self.dwc_build_file = dwc_build_file
 
     def __enter__(self):
-        if "https://raw.github" in self.rebipp_build_file:
-            self.open_rebipp_term = request.urlopen(self.rebipp_build_file)
+        if "https://raw.github" in self.dwc_build_file:
+            self.open_dwc_term = request.urlopen(self.dwc_build_file)
         else:
-            self.open_rebipp_term = open(self.rebipp_build_file, 'rb')
-        return self.open_rebipp_term
+            self.open_dwc_term = open(self.dwc_build_file, 'rb')
+        return self.open_dwc_term
 
     def __exit__(self, *args):
-        self.open_rebipp_term.close()
+        self.open_dwc_term.close()
 
 
-class RebippDigester(object):
+class DwcDigester(object):
 
     def __init__(self, term_versions):
-        """Digest the term document of Rebipp to support automatic
+        """Digest the term document of Darwin Core to support automatic
         generation of derivatives
 
         Parameters
         -----------
         term_versions : str
-            Either a relative path and filename of the normative Rebipp document
+            Either a relative path and filename of the normative Dwc document
             or a URL link to the raw Github version of the file
 
         Notes
@@ -84,9 +79,9 @@ class RebippDigester(object):
         """Iterator providing the terms as represented in the normative term
         versions file
         """
-        with RebippBuildReader(self.term_versions) as versions:
+        with DwcBuildReader(self.term_versions) as versions:
             for vterm in csv.DictReader(io.TextIOWrapper(versions), delimiter=','):
-                if vterm["status"] == "recommended" or vterm["status"] == "not recommended":
+                if vterm["status"] == "recommended":
                     yield vterm
 
     def _store_versions(self):
@@ -127,7 +122,7 @@ class RebippDigester(object):
             valid key of the NAMESPACES variable
         """
         if namespace not in NAMESPACES.keys():
-            raise RebippNamespaceError("The namespace url is currently not supported in NAMESPACES")
+            raise DwcNamespaceError("The namespace url is currently not supported in NAMESPACES")
         return NAMESPACES[namespace]
 
     def get_term_definition(self, term_iri):
@@ -143,7 +138,7 @@ class RebippDigester(object):
         vs_term = self._select_versions_term(term_iri)
 
         term_data = {}
-        term_data["label"] = vs_term['label']
+        term_data["label"] = vs_term['term_localName'] # See https://github.com/tdwg/dwc/issues/253#issuecomment-670098202
         term_data["iri"] = term_iri
         term_data["class"] = vs_term['organized_in']
         term_data["definition"] = self.convert_link(vs_term['definition'])
@@ -152,8 +147,6 @@ class RebippDigester(object):
         term_data["rdf_type"] = vs_term['rdf_type']
         namespace_url, _ = self.split_iri(term_iri)
         term_data["namespace"] = self.resolve_namespace_abbrev(namespace_url)
-        term_data["css_class"] = vs_term['status']
-
         return term_data
 
     @staticmethod
@@ -173,7 +166,7 @@ class RebippDigester(object):
             url = inputstring.group()
             return "<a href=\"{}\">{}</a>".format(url, url)
 
-        regx = "(http[s]?://[\w\d:#@%/;$()~_?\+-;=\\\.&]*)(?<![\)\.])"
+        regx = "(http[s]?://[\w\d:#@%/;$()~_?\+-;=\\\.&]*)(?<![\)\.,])"
         return re.sub(regx, _handle_matched, text_with_urls)
 
     def process_terms(self):
@@ -204,9 +197,9 @@ class RebippDigester(object):
         """
         template_data = []
         in_class = "Animal"
-        # sequence matters in config and it starts with Plant which we populate here ad-hoc
+        # sequence matters in config and it starts with Record-level which we populate here ad-hoc
         class_group = {}
-        class_group["label"] = ""
+        class_group["label"] = "Animal"
         class_group["iri"] = None
         class_group["class"] = None
         class_group["definition"] = None
@@ -214,19 +207,33 @@ class RebippDigester(object):
         class_group["rdf_type"] = None
         class_group["terms"] = []
         class_group["namespace"] = None
-        class_group["css_class"] = None
 
+        addedUseWithIRI = False
         for term in self.versions(): # sequence of the terms file used as order
             term_data = self.get_term_definition(term['term_iri'])
-            # new class encountered
+            test = term['term_iri']
+            print(f'{test=}')
             if term_data["rdf_type"] == "http://www.w3.org/2000/01/rdf-schema#Class":
+                # new class encountered
                 # store previous section in template_data
-                if class_group["iri"] != None:
-                    template_data.append(class_group)
+                template_data.append(class_group)
                 #start new class group
                 class_group = term_data
                 class_group["terms"] = []
                 in_class = term_data["label"] # check on the class working in
+            elif term['term_iri']=='http://purl.org/dc/terms/language':
+                # Vulnerable to ordering terms in term_versions.csv, but...
+                # This is the first row of dwciri terms
+                # store previous section in template_data
+                print(f'{term=}\n{term_data=}')
+                template_data.append(class_group)
+                #start a class group for UseWithIRI
+                class_group = {"label":"UseWithIRI"}
+                class_group["terms"] = []
+                in_class = "UseWithIRI" # check on the class working in
+                addedUseWithIRI = True
+                class_group['terms'].append(term_data)
+                print(f'{class_group=}')
             else:
                 class_group['terms'].append(term_data)
         # save the last class to template_data
@@ -261,8 +268,8 @@ class RebippDigester(object):
         index_page.write(str(html))
         index_page.close()
 
-    def simple_rebipp_terms(self):
-        """Only extract those terms that are simple rebipp, defined as `simple`
+    def simple_dwc_terms(self):
+        """Only extract those terms that are simple dwc, defined as `simple`
         in the flags column of the config file of terms
         """
         properties = []
@@ -273,30 +280,30 @@ class RebippDigester(object):
                 properties.append(term_data["label"])
         return properties
 
-    def create_rebipp_list(self, file_output="../dist/simple_rebipp_vertical.csv"):
-        """Build a list of simple rebipp terms and write it to file
+    def create_dwc_list(self, file_output="../dist/simple_ppi_vertical.csv"):
+        """Build a list of simple dwc terms and write it to file
 
         Parameters
         -----------
         file_output : str
             relative path and filename to write the resulting list
         """
-        with codecs.open(file_output, 'w', 'utf-8') as rebipp_list_file:
-            for term in self.simple_rebipp_terms():
-                rebipp_list_file.write(term + "\n")
+        with codecs.open(file_output, 'w', 'utf-8') as dwc_list_file:
+            for term in self.simple_dwc_terms():
+                dwc_list_file.write(term + "\n")
 
-    def create_rebipp_header(self, file_output="../dist/simple_rebipp_horizontal.csv"):
-        """Build a header of simple rebipp terms and write it to file
+    def create_dwc_header(self, file_output="../dist/simple_ppi_horizontal.csv"):
+        """Build a header of simple dwc terms and write it to file
 
         Parameters
         -----------
         file_output : str
             relative path and filename to write the resulting list
         """
-        with codecs.open(file_output, 'w', 'utf-8') as rebipp_header_file:
-            properties = self.simple_rebipp_terms()
-            rebipp_header_file.write(",".join(properties))
-            rebipp_header_file.write("\n")
+        with codecs.open(file_output, 'w', 'utf-8') as dwc_header_file:
+            properties = self.simple_dwc_terms()
+            dwc_header_file.write(",".join(properties))
+            dwc_header_file.write("\n")
 
 def main():
     """Building up the quick reference html and derivatives"""
@@ -304,12 +311,12 @@ def main():
     term_versions_file = "../vocabulary/term_versions.csv"
 
     print("Running build process:")
-    my_rebipp = RebippDigester(term_versions_file)
+    my_dwc = DwcDigester(term_versions_file)
     print("Building quick reference guide")
-    my_rebipp.create_html()
-    print("Building simple REBIPP CSV files")
-    my_rebipp.create_rebipp_list()
-    my_rebipp.create_rebipp_header()
+    my_dwc.create_html()
+    print("Building simple PPI CSV files")
+    my_dwc.create_dwc_list()
+    my_dwc.create_dwc_header()
     print("Done!")
 
 

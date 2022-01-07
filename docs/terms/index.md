@@ -2,15 +2,29 @@
 container: fluid
 ---
 
-# Plant-Pollinator Interactions terms quick reference guide
+# Plant-Pollinator Interactions vocabulary quick reference guide
 
-This page provides a list of all currently recommended terms of the REBIPP Plant-Pollinator Interactions standard. Convenient [files of these terms](https://github.com/BioComp-USP/rebipp-data-standard/tree/master/dist) and [their full history](https://github.com/BioComp-USP/rebipp-data-standard/blob/master/vocabulary/term_versions.csv) can be found in the [Plant-Pollinator Interactions repository](https://github.com/BioComp-USP/rebipp-data-standard).
+This document is intended to be an easy-to-read reference of the currently (as of 2022-01-06) recommended terms maintained as part of the [Darwin Core standard](https://www.tdwg.org/standards/dwc/) and is maintained by the [Brazilian Network on Plant-Pollinator Interactions](https://www.rebipp.org.br/).
+
+This page is not part of the standard, but combines the normative term names and definitions with the non-normative comments and examples that are meant to help people to use the terms consistently. Capitalized terms, such as Occurrence, are [Darwin Core](http://dwc.tdwg.org) classes, which are special category terms used to group sets of terms for convenience. Comprehensive metadata for current and obsolete terms in human readable form are found in the document [List of PPI terms](../list/).
+
+Additional [files with just the current term names](https://github.com/rebipp/ppi/tree/master/dist) and a [file with the full term history](https://github.com/rebipp/ppi/blob/master/vocabulary/term_versions.csv) can be found in the [PPI repository](https://github.com/rebipp/ppi).
+
+For inquiries about how to use Plant-Pollinator Interactions vocabulary, either enter an issue in the [PPI Questions & Answers site](https://github.com/rebipp/ppi-qa/blob/master/README.md) or enter an issue in the [alternative form](https://tinyurl.com/ppi-qa), which will have the same effect. See the bottom of this document for how to [cite PPI](#cite-ppi).
 
 
 ## Animal
 
 <div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:caste">caste</a>
+    </div>
+
+
+
+
+## Animal
+
+<div class="my-4">
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:caste">caste</a>
     </div>
 
 <table class="table table-sm table-bordered">
@@ -24,7 +38,8 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
 </table>
 
 <p class="invisible">
-    <a id="rebipp:caste"></a><a id="caste"></a></p>
+    <a id="ppi:caste"></a><a id="caste"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
@@ -41,22 +56,261 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
 </table>
 
 
+## Plant
+
+<div class="my-4">
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:antherDehiscenceType">antherDehiscenceType</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:flowerAbundance">flowerAbundance</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:floralSymmetry">floralSymmetry</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:floralSystem">floralSystem</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:plantHabit">plantHabit</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:humanUse">humanUse</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:matingSystem">matingSystem</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:selfIncompatibilityType">selfIncompatibilityType</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:apomiticSystemEmbryoOrigin">apomiticSystemEmbryoOrigin</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:apomiticSystemFertilization">apomiticSystemFertilization</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:apomiticSystemReproduction">apomiticSystemReproduction</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:sexualSystem">sexualSystem</a>
+    </div>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">Plant <span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/Plant">http://rs.rebipp.org.br/ppi/terms/Plant</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Any attribute of a particular plant or a defined group of plants inviduals</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+
+<p class="invisible">
+    <a id="ppi:antherDehiscenceType"></a><a id="antherDehiscenceType"></a>
+</p>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+                    <tr class="table-secondary">
+                    <th colspan="2">antherDehiscenceType
+                <span class="badge badge-secondary float-right">Property</span>
+                            </th>
+        </tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/antherDehiscenceType">http://rs.rebipp.org.br/ppi/terms/antherDehiscenceType</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The physical mechanism of anther dehiscence (release of the pollen grains)</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>poricidal</code>, <code>longitudinal</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="ppi:flowerAbundance"></a><a id="flowerAbundance"></a>
+</p>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+                    <tr class="table-secondary">
+                    <th colspan="2">flowerAbundance
+                <span class="badge badge-secondary float-right">Property</span>
+                            </th>
+        </tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/flowerAbundance">http://rs.rebipp.org.br/ppi/terms/flowerAbundance</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The number of open flowers or inflorescences on the plant</td></tr>
+        <tr><td class="theme-label">Comments</td><td>If it is an estimate then you should describe the accuracy of the measurement using <a href="http://rs.tdwg.org/dwc/terms/measurementAccuracy">http://rs.tdwg.org/dwc/terms/measurementAccuracy</a></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>0</code>, <code>30</code>, <code>40</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="ppi:floralSymmetry"></a><a id="floralSymmetry"></a>
+</p>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+                    <tr class="table-secondary">
+                    <th colspan="2">floralSymmetry
+                <span class="badge badge-secondary float-right">Property</span>
+                            </th>
+        </tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/floralSymmetry">http://rs.rebipp.org.br/ppi/terms/floralSymmetry</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The symmetry describing whether, and how, a flower, in particular its perianth, can be divided into two or more identical or mirror-image parts.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Phenotype and Trait Ontology</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>zygomorphic</code>, <code>bilateral</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="ppi:floralSystem"></a><a id="floralSystem"></a>
+</p>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+                    <tr class="table-secondary">
+                    <th colspan="2">floralSystem
+                <span class="badge badge-secondary float-right">Property</span>
+                            </th>
+        </tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/floralSystem">http://rs.rebipp.org.br/ppi/terms/floralSystem</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The system by which bisexual flowers optimize their reproductive success, through mechanisms that promote self- or cross-pollination</td></tr>
+        <tr><td class="theme-label">Comments</td><td>It can be a morphological, temporal or movement-based mechanism.
+Recommended best practice is to use a controlled vocabulary.</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>herkogamy</code>, <code>heterostyly</code>, <code>stylar dimorphism</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="ppi:plantHabit"></a><a id="plantHabit"></a>
+</p>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+                    <tr class="table-secondary">
+                    <th colspan="2">plantHabit
+                <span class="badge badge-secondary float-right">Property</span>
+                            </th>
+        </tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/plantHabit">http://rs.rebipp.org.br/ppi/terms/plantHabit</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The general appearance, characteristic form, or mode of growth of the plant</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>tree</code>, <code>bush</code>, <code>herb</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="ppi:humanUse"></a><a id="humanUse"></a>
+</p>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+                    <tr class="table-secondary">
+                    <th colspan="2">humanUse
+                <span class="badge badge-secondary float-right">Property</span>
+                            </th>
+        </tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/humanUse">http://rs.rebipp.org.br/ppi/terms/humanUse</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Ways in which species are utilized by people, including cultural use</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.
+</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>human food </code>, <code>animal food</code>, <code>medicine</code>, <code>ritual</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="ppi:matingSystem"></a><a id="matingSystem"></a>
+</p>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+                    <tr class="table-secondary">
+                    <th colspan="2">matingSystem
+                <span class="badge badge-secondary float-right">Property</span>
+                            </th>
+        </tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/matingSystem">http://rs.rebipp.org.br/ppi/terms/matingSystem</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of the modes of gene transfer from one generation to the next through sexual reproduction</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space ( | ) and to use a controlled vocabulary.</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>autogamous</code>, <code>xenogamous</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="ppi:selfIncompatibilityType"></a><a id="selfIncompatibilityType"></a>
+</p>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+                    <tr class="table-secondary">
+                    <th colspan="2">selfIncompatibilityType
+                <span class="badge badge-secondary float-right">Property</span>
+                            </th>
+        </tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/selfIncompatibilityType">http://rs.rebipp.org.br/ppi/terms/selfIncompatibilityType</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The type or class of self-incompatibility system of the plant species</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. If the plant has no self-incompatibility system use the value <code>absent</code>.</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>gametophytic</code>, <code>sporophytic</code>, <code>absent</code>, <code>homomorphic sporophytic</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="ppi:apomiticSystemEmbryoOrigin"></a><a id="apomiticSystemEmbryoOrigin"></a>
+</p>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+                    <tr class="table-secondary">
+                    <th colspan="2">apomiticSystemEmbryoOrigin
+                <span class="badge badge-secondary float-right">Property</span>
+                            </th>
+        </tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/apomiticSystemEmbryoOrigin">http://rs.rebipp.org.br/ppi/terms/apomiticSystemEmbryoOrigin</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The general mode of apomixis embryo origin of a plant</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.
+</td></tr>
+        <tr><td class="theme-label">Examples</td><td>gametophytic,sporpophytic
+</td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="ppi:apomiticSystemFertilization"></a><a id="apomiticSystemFertilization"></a>
+</p>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+                    <tr class="table-secondary">
+                    <th colspan="2">apomiticSystemFertilization
+                <span class="badge badge-secondary float-right">Property</span>
+                            </th>
+        </tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/apomiticSystemFertilization">http://rs.rebipp.org.br/ppi/terms/apomiticSystemFertilization</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The general mode of apomixis endosperm development of a plant</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.
+</td></tr>
+        <tr><td class="theme-label">Examples</td><td>autonomous,pseudogamy</td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="ppi:apomiticSystemReproduction"></a><a id="apomiticSystemReproduction"></a>
+</p>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+                    <tr class="table-secondary">
+                    <th colspan="2">apomiticSystemReproduction
+                <span class="badge badge-secondary float-right">Property</span>
+                            </th>
+        </tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/apomiticSystemReproduction">http://rs.rebipp.org.br/ppi/terms/apomiticSystemReproduction</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The general mode of apomixis reproduction of a plant</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.
+</td></tr>
+        <tr><td class="theme-label">Examples</td><td>facultative, obligate</td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="ppi:sexualSystem"></a><a id="sexualSystem"></a>
+</p>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+                    <tr class="table-secondary">
+                    <th colspan="2">sexualSystem
+                <span class="badge badge-secondary float-right">Property</span>
+                            </th>
+        </tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/sexualSystem">http://rs.rebipp.org.br/ppi/terms/sexualSystem</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The distribution of floral types within and among the individuals of the same population</td></tr>
+        <tr><td class="theme-label">Comments</td><td>The gender expression is based in the presence and distribution of fertile whorls within the flower. Recommended best practice is to use a controlled vocabulary</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>monoceius</code>, <code>dioceius</code></td></tr>
+    </tbody>
+</table>
+
+
 ## Flower
 
 <div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:antherPollenGrainsQuantity">antherPollenGrainsQuantity</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:stigmaticAreaInSquareMilimiters">stigmaticAreaInSquareMilimiters</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:styleLengthInMilimiters">styleLengthInMilimiters</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:coloredFlowerStructure">coloredFlowerStructure</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerColor">flowerColor</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:florwerShape">florwerShape</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerOrientation">flowerOrientation</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerOpeningType">flowerOpeningType</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floralAttractants">floralAttractants</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:ovuleQuantity">ovuleQuantity</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerLongevity">flowerLongevity</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerOpeningPeriod">flowerOpeningPeriod</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:functionalFlowerLifespanInHours">functionalFlowerLifespanInHours</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:antherPollenGrainsQuantity">antherPollenGrainsQuantity</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:stigmaticAreaInSquareMilimiters">stigmaticAreaInSquareMilimiters</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:styleLengthInMilimiters">styleLengthInMilimiters</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:coloredFlowerStructure">coloredFlowerStructure</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:flowerColor">flowerColor</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:flowerShape">flowerShape</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:flowerOrientation">flowerOrientation</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:flowerOpeningType">flowerOpeningType</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:floralAttractants">floralAttractants</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:ovuleQuantity">ovuleQuantity</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:flowerLongevity">flowerLongevity</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:flowerOpeningPeriod">flowerOpeningPeriod</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:functionalFlowerLifespanInHours">functionalFlowerLifespanInHours</a>
     </div>
 
 <table class="table table-sm table-bordered">
@@ -70,7 +324,8 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
 </table>
 
 <p class="invisible">
-    <a id="rebipp:antherPollenGrainsQuantity"></a><a id="antherPollenGrainsQuantity"></a></p>
+    <a id="ppi:antherPollenGrainsQuantity"></a><a id="antherPollenGrainsQuantity"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
@@ -86,7 +341,8 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:stigmaticAreaInSquareMilimiters"></a><a id="stigmaticAreaInSquareMilimiters"></a></p>
+    <a id="ppi:stigmaticAreaInSquareMilimiters"></a><a id="stigmaticAreaInSquareMilimiters"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
@@ -102,7 +358,8 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:styleLengthInMilimiters"></a><a id="styleLengthInMilimiters"></a></p>
+    <a id="ppi:styleLengthInMilimiters"></a><a id="styleLengthInMilimiters"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
@@ -118,7 +375,8 @@ This page provides a list of all currently recommended terms of the REBIPP Plant
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:coloredFlowerStructure"></a><a id="coloredFlowerStructure"></a></p>
+    <a id="ppi:coloredFlowerStructure"></a><a id="coloredFlowerStructure"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
@@ -137,7 +395,8 @@ Recommended best practice is to use a controlled vocabulary.
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:flowerColor"></a><a id="flowerColor"></a></p>
+    <a id="ppi:flowerColor"></a><a id="flowerColor"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
@@ -155,23 +414,25 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:florwerShape"></a><a id="florwerShape"></a></p>
+    <a id="ppi:flowerShape"></a><a id="flowerShape"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
                     <tr class="table-secondary">
-                    <th colspan="2">florwerShape
+                    <th colspan="2">flowerShape
                 <span class="badge badge-secondary float-right">Property</span>
                             </th>
         </tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/florwerShape">http://rs.rebipp.org.br/ppi/terms/florwerShape</a></td></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/flowerShape">http://rs.rebipp.org.br/ppi/terms/flowerShape</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The overall shape of the flowers</td></tr>
         <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>bush</code>, <code>campanulate</code>, <code>tube</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:flowerOrientation"></a><a id="flowerOrientation"></a></p>
+    <a id="ppi:flowerOrientation"></a><a id="flowerOrientation"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
@@ -187,7 +448,8 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:flowerOpeningType"></a><a id="flowerOpeningType"></a></p>
+    <a id="ppi:flowerOpeningType"></a><a id="flowerOpeningType"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
@@ -203,7 +465,8 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:floralAttractants"></a><a id="floralAttractants"></a></p>
+    <a id="ppi:floralAttractants"></a><a id="floralAttractants"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
@@ -219,7 +482,8 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:ovuleQuantity"></a><a id="ovuleQuantity"></a></p>
+    <a id="ppi:ovuleQuantity"></a><a id="ovuleQuantity"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
@@ -235,7 +499,8 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:flowerLongevity"></a><a id="flowerLongevity"></a></p>
+    <a id="ppi:flowerLongevity"></a><a id="flowerLongevity"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
@@ -251,7 +516,8 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:flowerOpeningPeriod"></a><a id="flowerOpeningPeriod"></a></p>
+    <a id="ppi:flowerOpeningPeriod"></a><a id="flowerOpeningPeriod"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
@@ -267,7 +533,8 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:functionalFlowerLifespanInHours"></a><a id="functionalFlowerLifespanInHours"></a></p>
+    <a id="ppi:functionalFlowerLifespanInHours"></a><a id="functionalFlowerLifespanInHours"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
@@ -287,13 +554,13 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
 ## Interaction
 
 <div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:visitedFlowerSex">visitedFlowerSex</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:animalPlaceOfContact">animalPlaceOfContact</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:nectarCollectingBodyPart">nectarCollectingBodyPart</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:nectarCollectingBodyPartLengthInMilimiters">nectarCollectingBodyPartLengthInMilimiters</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerPlaceOfContact">flowerPlaceOfContact</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:resourceCollected">resourceCollected</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:visitedFlowersQuantity">visitedFlowersQuantity</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:visitedFlowerSex">visitedFlowerSex</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:animalPlaceOfContact">animalPlaceOfContact</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:nectarCollectingBodyPart">nectarCollectingBodyPart</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:nectarCollectingBodyPartLengthInMilimiters">nectarCollectingBodyPartLengthInMilimiters</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:flowerPlaceOfContact">flowerPlaceOfContact</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:resourceCollected">resourceCollected</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:visitedFlowersQuantity">visitedFlowersQuantity</a>
     </div>
 
 <table class="table table-sm table-bordered">
@@ -307,7 +574,8 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
 </table>
 
 <p class="invisible">
-    <a id="rebipp:visitedFlowerSex"></a><a id="visitedFlowerSex"></a></p>
+    <a id="ppi:visitedFlowerSex"></a><a id="visitedFlowerSex"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
@@ -323,7 +591,8 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:animalPlaceOfContact"></a><a id="animalPlaceOfContact"></a></p>
+    <a id="ppi:animalPlaceOfContact"></a><a id="animalPlaceOfContact"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
@@ -339,7 +608,8 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:nectarCollectingBodyPart"></a><a id="nectarCollectingBodyPart"></a></p>
+    <a id="ppi:nectarCollectingBodyPart"></a><a id="nectarCollectingBodyPart"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
@@ -355,7 +625,8 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:nectarCollectingBodyPartLengthInMilimiters"></a><a id="nectarCollectingBodyPartLengthInMilimiters"></a></p>
+    <a id="ppi:nectarCollectingBodyPartLengthInMilimiters"></a><a id="nectarCollectingBodyPartLengthInMilimiters"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
@@ -371,7 +642,8 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:flowerPlaceOfContact"></a><a id="flowerPlaceOfContact"></a></p>
+    <a id="ppi:flowerPlaceOfContact"></a><a id="flowerPlaceOfContact"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
@@ -388,7 +660,8 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:resourceCollected"></a><a id="resourceCollected"></a></p>
+    <a id="ppi:resourceCollected"></a><a id="resourceCollected"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
@@ -404,7 +677,8 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:visitedFlowersQuantity"></a><a id="visitedFlowersQuantity"></a></p>
+    <a id="ppi:visitedFlowersQuantity"></a><a id="visitedFlowersQuantity"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
@@ -421,246 +695,19 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
 </table>
 
 
-## Plant
-
-<div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:antherDehiscenceType">antherDehiscenceType</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:flowerAbundance">flowerAbundance</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floralSymmetry">floralSymmetry</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:floralSystem">floralSystem</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:plantHabit">plantHabit</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:humanUse">humanUse</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:matingSystem">matingSystem</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:selfIncompatibilityType">selfIncompatibilityType</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:apomiticSystemEmbryoOrigin">apomiticSystemEmbryoOrigin</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:apomiticSystemFertilization">apomiticSystemFertilization</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:apomiticSystemReproduction">apomiticSystemReproduction</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:sexualSystem">sexualSystem</a>
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">Plant <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/Plant">http://rs.rebipp.org.br/ppi/terms/Plant</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Any attribute of a particular plant or a defined group of plants inviduals</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td></td></tr>
-    </tbody>
-</table>
-
-<p class="invisible">
-    <a id="rebipp:antherDehiscenceType"></a><a id="antherDehiscenceType"></a></p>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-                    <tr class="table-secondary">
-                    <th colspan="2">antherDehiscenceType
-                <span class="badge badge-secondary float-right">Property</span>
-                            </th>
-        </tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/antherDehiscenceType">http://rs.rebipp.org.br/ppi/terms/antherDehiscenceType</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The physical mechanism of anther dehiscence (release of the pollen grains)</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>poricidal</code>, <code>longitudinal</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:flowerAbundance"></a><a id="flowerAbundance"></a></p>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-                    <tr class="table-secondary">
-                    <th colspan="2">flowerAbundance
-                <span class="badge badge-secondary float-right">Property</span>
-                            </th>
-        </tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/flowerAbundance">http://rs.rebipp.org.br/ppi/terms/flowerAbundance</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The number of open flowers or inflorescences on the plant</td></tr>
-        <tr><td class="theme-label">Comments</td><td>If it is an estimate then you should describe the accuracy of the measurement using <a href="http://rs.tdwg.org/dwc/terms/measurementAccuracy">http://rs.tdwg.org/dwc/terms/measurementAccuracy</a></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>0</code>, <code>30</code>, <code>40</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:floralSymmetry"></a><a id="floralSymmetry"></a></p>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-                    <tr class="table-secondary">
-                    <th colspan="2">floralSymmetry
-                <span class="badge badge-secondary float-right">Property</span>
-                            </th>
-        </tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/floralSymmetry">http://rs.rebipp.org.br/ppi/terms/floralSymmetry</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The symmetry describing whether, and how, a flower, in particular its perianth, can be divided into two or more identical or mirror-image parts.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary such as the Phenotype and Trait Ontology</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>zygomorphic</code>, <code>bilateral</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:floralSystem"></a><a id="floralSystem"></a></p>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-                    <tr class="table-secondary">
-                    <th colspan="2">floralSystem
-                <span class="badge badge-secondary float-right">Property</span>
-                            </th>
-        </tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/floralSystem">http://rs.rebipp.org.br/ppi/terms/floralSystem</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The system by which bisexual flowers optimize their reproductive success, through mechanisms that promote self- or cross-pollination</td></tr>
-        <tr><td class="theme-label">Comments</td><td>It can be a morphological, temporal or movement-based mechanism.
-Recommended best practice is to use a controlled vocabulary.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>herkogamy</code>, <code>heterostyly</code>, <code>stylar dimorphism</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:plantHabit"></a><a id="plantHabit"></a></p>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-                    <tr class="table-secondary">
-                    <th colspan="2">plantHabit
-                <span class="badge badge-secondary float-right">Property</span>
-                            </th>
-        </tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/plantHabit">http://rs.rebipp.org.br/ppi/terms/plantHabit</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The general appearance, characteristic form, or mode of growth of the plant</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>tree</code>, <code>bush</code>, <code>herb</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:humanUse"></a><a id="humanUse"></a></p>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-                    <tr class="table-secondary">
-                    <th colspan="2">humanUse
-                <span class="badge badge-secondary float-right">Property</span>
-                            </th>
-        </tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/humanUse">http://rs.rebipp.org.br/ppi/terms/humanUse</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Ways in which species are utilized by people, including cultural use</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. 
-</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>human food </code>, <code>animal food</code>, <code>medicine</code>, <code>ritual</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:matingSystem"></a><a id="matingSystem"></a></p>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-                    <tr class="table-secondary">
-                    <th colspan="2">matingSystem
-                <span class="badge badge-secondary float-right">Property</span>
-                            </th>
-        </tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/matingSystem">http://rs.rebipp.org.br/ppi/terms/matingSystem</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of the modes of gene transfer from one generation to the next through sexual reproduction</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space ( | ) and to use a controlled vocabulary.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>autogamous</code>, <code>xenogamous</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:selfIncompatibilityType"></a><a id="selfIncompatibilityType"></a></p>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-                    <tr class="table-secondary">
-                    <th colspan="2">selfIncompatibilityType
-                <span class="badge badge-secondary float-right">Property</span>
-                            </th>
-        </tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/selfIncompatibilityType">http://rs.rebipp.org.br/ppi/terms/selfIncompatibilityType</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The type or class of self-incompatibility system of the plant species</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. If the plant has no self-incompatibility system use the value <code>absent</code>.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>gametophytic</code>, <code>sporophytic</code>, <code>absent</code>, <code>homomorphic sporophytic</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:apomiticSystemEmbryoOrigin"></a><a id="apomiticSystemEmbryoOrigin"></a></p>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-                    <tr class="table-secondary">
-                    <th colspan="2">apomiticSystemEmbryoOrigin
-                <span class="badge badge-secondary float-right">Property</span>
-                            </th>
-        </tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/apomiticSystemEmbryoOrigin">http://rs.rebipp.org.br/ppi/terms/apomiticSystemEmbryoOrigin</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The general mode of apomixis embryo origin of a plant</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. 
-</td></tr>
-        <tr><td class="theme-label">Examples</td><td>gametophytic,sporpophytic
-</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:apomiticSystemFertilization"></a><a id="apomiticSystemFertilization"></a></p>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-                    <tr class="table-secondary">
-                    <th colspan="2">apomiticSystemFertilization
-                <span class="badge badge-secondary float-right">Property</span>
-                            </th>
-        </tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/apomiticSystemFertilization">http://rs.rebipp.org.br/ppi/terms/apomiticSystemFertilization</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The general mode of apomixis endosperm development of a plant</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. 
-</td></tr>
-        <tr><td class="theme-label">Examples</td><td>autonomous,pseudogamy</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:apomiticSystemReproduction"></a><a id="apomiticSystemReproduction"></a></p>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-                    <tr class="table-secondary">
-                    <th colspan="2">apomiticSystemReproduction
-                <span class="badge badge-secondary float-right">Property</span>
-                            </th>
-        </tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/apomiticSystemReproduction">http://rs.rebipp.org.br/ppi/terms/apomiticSystemReproduction</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The general mode of apomixis reproduction of a plant</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. 
-</td></tr>
-        <tr><td class="theme-label">Examples</td><td>facultative, obligate</td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="rebipp:sexualSystem"></a><a id="sexualSystem"></a></p>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-                    <tr class="table-secondary">
-                    <th colspan="2">sexualSystem
-                <span class="badge badge-secondary float-right">Property</span>
-                            </th>
-        </tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/sexualSystem">http://rs.rebipp.org.br/ppi/terms/sexualSystem</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The distribution of floral types within and among the individuals of the same population</td></tr>
-        <tr><td class="theme-label">Comments</td><td>The gender expression is based in the presence and distribution of fertile whorls within the flower. Recommended best practice is to use a controlled vocabulary</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>monoceius</code>, <code>dioceius</code></td></tr>
-    </tbody>
-</table>
-
-
 ## ReproductiveSuccess
 
 <div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:numberOfRemovedPollenGrains">numberOfRemovedPollenGrains</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:numberOfConspecificPollenGrains">numberOfConspecificPollenGrains</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:numberOfHeterospecificPollenGrains">numberOfHeterospecificPollenGrains</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:numberOfFertilizedOvules">numberOfFertilizedOvules</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:numberOfPollenTubes">numberOfPollenTubes</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:seedMassInMiligrams">seedMassInMiligrams</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:seedSet">seedSet</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:fruitMassInGrams">fruitMassInGrams</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:fruitSet">fruitSet</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:numberOfExposedFlowers">numberOfExposedFlowers</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:numberOfRemovedPollenGrains">numberOfRemovedPollenGrains</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:numberOfConspecificPollenGrains">numberOfConspecificPollenGrains</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:numberOfHeterospecificPollenGrains">numberOfHeterospecificPollenGrains</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:numberOfFertilizedOvules">numberOfFertilizedOvules</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:numberOfPollenTubes">numberOfPollenTubes</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:seedMassInMiligrams">seedMassInMiligrams</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:seedSet">seedSet</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:fruitMassInGrams">fruitMassInGrams</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:fruitSet">fruitSet</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:numberOfExposedFlowers">numberOfExposedFlowers</a>
     </div>
 
 <table class="table table-sm table-bordered">
@@ -674,14 +721,14 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
 </table>
 
 <p class="invisible">
-    <a id="rebipp:numberOfRemovedPollenGrains"></a><a id="numberOfRemovedPollenGrains"></a></p>
+    <a id="ppi:numberOfRemovedPollenGrains"></a><a id="numberOfRemovedPollenGrains"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
-                    <tr class="table-danger">
+                    <tr class="table-secondary">
                     <th colspan="2">numberOfRemovedPollenGrains
                 <span class="badge badge-secondary float-right">Property</span>
-                                    <span class="badge badge-danger float-right">Not Recommended</span>
                             </th>
         </tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/numberOfRemovedPollenGrains">http://rs.rebipp.org.br/ppi/terms/numberOfRemovedPollenGrains</a></td></tr>
@@ -691,14 +738,14 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:numberOfConspecificPollenGrains"></a><a id="numberOfConspecificPollenGrains"></a></p>
+    <a id="ppi:numberOfConspecificPollenGrains"></a><a id="numberOfConspecificPollenGrains"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
-                    <tr class="table-danger">
+                    <tr class="table-secondary">
                     <th colspan="2">numberOfConspecificPollenGrains
                 <span class="badge badge-secondary float-right">Property</span>
-                                    <span class="badge badge-danger float-right">Not Recommended</span>
                             </th>
         </tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/numberOfConspecificPollenGrains">http://rs.rebipp.org.br/ppi/terms/numberOfConspecificPollenGrains</a></td></tr>
@@ -708,14 +755,14 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:numberOfHeterospecificPollenGrains"></a><a id="numberOfHeterospecificPollenGrains"></a></p>
+    <a id="ppi:numberOfHeterospecificPollenGrains"></a><a id="numberOfHeterospecificPollenGrains"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
-                    <tr class="table-danger">
+                    <tr class="table-secondary">
                     <th colspan="2">numberOfHeterospecificPollenGrains
                 <span class="badge badge-secondary float-right">Property</span>
-                                    <span class="badge badge-danger float-right">Not Recommended</span>
                             </th>
         </tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/numberOfHeterospecificPollenGrains">http://rs.rebipp.org.br/ppi/terms/numberOfHeterospecificPollenGrains</a></td></tr>
@@ -725,14 +772,14 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:numberOfFertilizedOvules"></a><a id="numberOfFertilizedOvules"></a></p>
+    <a id="ppi:numberOfFertilizedOvules"></a><a id="numberOfFertilizedOvules"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
-                    <tr class="table-danger">
+                    <tr class="table-secondary">
                     <th colspan="2">numberOfFertilizedOvules
                 <span class="badge badge-secondary float-right">Property</span>
-                                    <span class="badge badge-danger float-right">Not Recommended</span>
                             </th>
         </tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/numberOfFertilizedOvules">http://rs.rebipp.org.br/ppi/terms/numberOfFertilizedOvules</a></td></tr>
@@ -742,14 +789,14 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:numberOfPollenTubes"></a><a id="numberOfPollenTubes"></a></p>
+    <a id="ppi:numberOfPollenTubes"></a><a id="numberOfPollenTubes"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
-                    <tr class="table-danger">
+                    <tr class="table-secondary">
                     <th colspan="2">numberOfPollenTubes
                 <span class="badge badge-secondary float-right">Property</span>
-                                    <span class="badge badge-danger float-right">Not Recommended</span>
                             </th>
         </tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/numberOfPollenTubes">http://rs.rebipp.org.br/ppi/terms/numberOfPollenTubes</a></td></tr>
@@ -759,14 +806,14 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:seedMassInMiligrams"></a><a id="seedMassInMiligrams"></a></p>
+    <a id="ppi:seedMassInMiligrams"></a><a id="seedMassInMiligrams"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
-                    <tr class="table-danger">
+                    <tr class="table-secondary">
                     <th colspan="2">seedMassInMiligrams
                 <span class="badge badge-secondary float-right">Property</span>
-                                    <span class="badge badge-danger float-right">Not Recommended</span>
                             </th>
         </tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/seedMassInMiligrams">http://rs.rebipp.org.br/ppi/terms/seedMassInMiligrams</a></td></tr>
@@ -776,14 +823,14 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:seedSet"></a><a id="seedSet"></a></p>
+    <a id="ppi:seedSet"></a><a id="seedSet"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
-                    <tr class="table-danger">
+                    <tr class="table-secondary">
                     <th colspan="2">seedSet
                 <span class="badge badge-secondary float-right">Property</span>
-                                    <span class="badge badge-danger float-right">Not Recommended</span>
                             </th>
         </tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/seedSet">http://rs.rebipp.org.br/ppi/terms/seedSet</a></td></tr>
@@ -793,14 +840,14 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:fruitMassInGrams"></a><a id="fruitMassInGrams"></a></p>
+    <a id="ppi:fruitMassInGrams"></a><a id="fruitMassInGrams"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
-                    <tr class="table-danger">
+                    <tr class="table-secondary">
                     <th colspan="2">fruitMassInGrams
                 <span class="badge badge-secondary float-right">Property</span>
-                                    <span class="badge badge-danger float-right">Not Recommended</span>
                             </th>
         </tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/fruitMassInGrams">http://rs.rebipp.org.br/ppi/terms/fruitMassInGrams</a></td></tr>
@@ -810,14 +857,14 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:fruitSet"></a><a id="fruitSet"></a></p>
+    <a id="ppi:fruitSet"></a><a id="fruitSet"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
-                    <tr class="table-danger">
+                    <tr class="table-secondary">
                     <th colspan="2">fruitSet
                 <span class="badge badge-secondary float-right">Property</span>
-                                    <span class="badge badge-danger float-right">Not Recommended</span>
                             </th>
         </tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/fruitSet">http://rs.rebipp.org.br/ppi/terms/fruitSet</a></td></tr>
@@ -827,14 +874,14 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:numberOfExposedFlowers"></a><a id="numberOfExposedFlowers"></a></p>
+    <a id="ppi:numberOfExposedFlowers"></a><a id="numberOfExposedFlowers"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
-                    <tr class="table-danger">
+                    <tr class="table-secondary">
                     <th colspan="2">numberOfExposedFlowers
                 <span class="badge badge-secondary float-right">Property</span>
-                                    <span class="badge badge-danger float-right">Not Recommended</span>
                             </th>
         </tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/numberOfExposedFlowers">http://rs.rebipp.org.br/ppi/terms/numberOfExposedFlowers</a></td></tr>
@@ -848,10 +895,10 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
 ## NectarDynamics
 
 <div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:accumlatedNectarVolumeInMicroliters">accumlatedNectarVolumeInMicroliters</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:accumulatedNectarConcentration">accumulatedNectarConcentration</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:accumulatedNectarHours">accumulatedNectarHours</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#rebipp:accumulatedNectarFlowers">accumulatedNectarFlowers</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:accumlatedNectarVolumeInMicroliters">accumlatedNectarVolumeInMicroliters</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:accumulatedNectarConcentration">accumulatedNectarConcentration</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:accumulatedNectarHours">accumulatedNectarHours</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ppi:accumulatedNectarFlowers">accumulatedNectarFlowers</a>
     </div>
 
 <table class="table table-sm table-bordered">
@@ -865,14 +912,14 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
 </table>
 
 <p class="invisible">
-    <a id="rebipp:accumlatedNectarVolumeInMicroliters"></a><a id="accumlatedNectarVolumeInMicroliters"></a></p>
+    <a id="ppi:accumlatedNectarVolumeInMicroliters"></a><a id="accumlatedNectarVolumeInMicroliters"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
-                    <tr class="table-danger">
+                    <tr class="table-secondary">
                     <th colspan="2">accumlatedNectarVolumeInMicroliters
                 <span class="badge badge-secondary float-right">Property</span>
-                                    <span class="badge badge-danger float-right">Not Recommended</span>
                             </th>
         </tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/accumlatedNectarVolumeInMicroliters">http://rs.rebipp.org.br/ppi/terms/accumlatedNectarVolumeInMicroliters</a></td></tr>
@@ -882,14 +929,14 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:accumulatedNectarConcentration"></a><a id="accumulatedNectarConcentration"></a></p>
+    <a id="ppi:accumulatedNectarConcentration"></a><a id="accumulatedNectarConcentration"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
-                    <tr class="table-danger">
+                    <tr class="table-secondary">
                     <th colspan="2">accumulatedNectarConcentration
                 <span class="badge badge-secondary float-right">Property</span>
-                                    <span class="badge badge-danger float-right">Not Recommended</span>
                             </th>
         </tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/accumulatedNectarConcentration">http://rs.rebipp.org.br/ppi/terms/accumulatedNectarConcentration</a></td></tr>
@@ -899,14 +946,14 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:accumulatedNectarHours"></a><a id="accumulatedNectarHours"></a></p>
+    <a id="ppi:accumulatedNectarHours"></a><a id="accumulatedNectarHours"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
-                    <tr class="table-danger">
+                    <tr class="table-secondary">
                     <th colspan="2">accumulatedNectarHours
                 <span class="badge badge-secondary float-right">Property</span>
-                                    <span class="badge badge-danger float-right">Not Recommended</span>
                             </th>
         </tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/accumulatedNectarHours">http://rs.rebipp.org.br/ppi/terms/accumulatedNectarHours</a></td></tr>
@@ -916,14 +963,14 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="rebipp:accumulatedNectarFlowers"></a><a id="accumulatedNectarFlowers"></a></p>
+    <a id="ppi:accumulatedNectarFlowers"></a><a id="accumulatedNectarFlowers"></a>
+</p>
 
 <table class="table table-sm table-bordered">
     <tbody>
-                    <tr class="table-danger">
+                    <tr class="table-secondary">
                     <th colspan="2">accumulatedNectarFlowers
                 <span class="badge badge-secondary float-right">Property</span>
-                                    <span class="badge badge-danger float-right">Not Recommended</span>
                             </th>
         </tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.rebipp.org.br/ppi/terms/accumulatedNectarFlowers">http://rs.rebipp.org.br/ppi/terms/accumulatedNectarFlowers</a></td></tr>
@@ -933,3 +980,12 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
     </tbody>
 </table>
 
+
+# Cite PPI
+To cite the document upon which this page is built, use the following:
+
+REBIPP. 2022. List of Plant-Pollinator Interactions vocabulary terms. Brazilian Network on Plant-Pollinator Interactions (REBIPP). <http://rs.rebipp.org.br/ppi/doc/list/>
+
+To cite this document specifically, use the following:
+
+REBIPP. 2022. Plant-Pollinator Interactions vocabulary quick reference guide. Brazilian Network on Plant-Pollinator Interactions (REBIPP). <https://ppi.rebipp.org.br/terms/>
