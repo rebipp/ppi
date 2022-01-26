@@ -9,7 +9,7 @@ navbar:
     menu:
     - text: 'Vocabulary'
       href: terms/
-    - text: 'Controlled Vocabulary':
+    - text: 'Controlled Vocabulary'
       href: cv/
   - text: Guides
     menu:
