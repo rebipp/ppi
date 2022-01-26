@@ -6,7 +6,11 @@ url: "https://ppi.rebipp.org.br"
 navbar:
   left:
   - text: Terms
-    href: terms/
+    menu:
+    - text: 'Vocabulary'
+      href: terms/
+    - text: 'Controlled Vocabulary':
+      href: cv/
   - text: Guides
     menu:
     - text: PPI Quick Reference
