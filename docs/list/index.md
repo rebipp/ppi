@@ -84,11 +84,11 @@ See [Section XXX of the Text Guide](../text/#XXX), [Section XXX of the XML Guide
 [ppi:Interaction](#ppi_Interaction) |
 [ppi:NectarDynamics](#ppi_NectarDynamics) |
 [ppi:Plant](#ppi_Plant) |
-[ppi:ReproductiveSuccess](#ppi_ReproductiveSuccess)
+[ppi:ReproductiveSuccess](#ppi_ReproductiveSuccess) 
 
 **Animal**
 
-[ppi:caste](#ppi_caste)
+[ppi:caste](#ppi_caste) 
 
 **Plant**
 
@@ -103,7 +103,7 @@ See [Section XXX of the Text Guide](../text/#XXX), [Section XXX of the XML Guide
 [ppi:matingSystem](#ppi_matingSystem) |
 [ppi:plantHabit](#ppi_plantHabit) |
 [ppi:selfIncompatibilityType](#ppi_selfIncompatibilityType) |
-[ppi:sexualSystem](#ppi_sexualSystem)
+[ppi:sexualSystem](#ppi_sexualSystem) 
 
 **Flower**
 
@@ -119,7 +119,7 @@ See [Section XXX of the Text Guide](../text/#XXX), [Section XXX of the XML Guide
 [ppi:functionalFlowerLifespanInHours](#ppi_functionalFlowerLifespanInHours) |
 [ppi:ovuleQuantity](#ppi_ovuleQuantity) |
 [ppi:stigmaticAreaInSquareMilimiters](#ppi_stigmaticAreaInSquareMilimiters) |
-[ppi:styleLengthInMilimiters](#ppi_styleLengthInMilimiters)
+[ppi:styleLengthInMilimiters](#ppi_styleLengthInMilimiters) 
 
 **Interaction**
 
@@ -134,14 +134,14 @@ See [Section XXX of the Text Guide](../text/#XXX), [Section XXX of the XML Guide
 [ppi:numberOfPollenTubes](#ppi_numberOfPollenTubes) |
 [ppi:numberOfRemovedPollenGrains](#ppi_numberOfRemovedPollenGrains) |
 [ppi:seedMassInMiligrams](#ppi_seedMassInMiligrams) |
-[ppi:seedSet](#ppi_seedSet)
+[ppi:seedSet](#ppi_seedSet) 
 
 **NectarDynamics**
 
 [ppi:accumlatedNectarVolumeInMicroliters](#ppi_accumlatedNectarVolumeInMicroliters) |
 [ppi:accumulatedNectarConcentration](#ppi_accumulatedNectarConcentration) |
 [ppi:accumulatedNectarFlowers](#ppi_accumulatedNectarFlowers) |
-[ppi:accumulatedNectarHours](#ppi_accumulatedNectarHours)
+[ppi:accumulatedNectarHours](#ppi_accumulatedNectarHours) 
 
 ### 3.2 Index By Label
 
@@ -154,11 +154,11 @@ See [Section XXX of the Text Guide](../text/#XXX), [Section XXX of the XML Guide
 [Interaction](#ppi_Interaction) |
 [Nectar Dynamics](#ppi_NectarDynamics) |
 [Plant](#ppi_Plant) |
-[Reproductive Success](#ppi_ReproductiveSuccess)
+[Reproductive Success](#ppi_ReproductiveSuccess) 
 
 **Animal**
 
-[Caste](#ppi_caste)
+[Caste](#ppi_caste) 
 
 **Plant**
 
@@ -173,7 +173,7 @@ See [Section XXX of the Text Guide](../text/#XXX), [Section XXX of the XML Guide
 [Mating System](#ppi_matingSystem) |
 [Plant Habit](#ppi_plantHabit) |
 [Self Incompatibility Type](#ppi_selfIncompatibilityType) |
-[Sexual System](#ppi_sexualSystem)
+[Sexual System](#ppi_sexualSystem) 
 
 **Flower**
 
@@ -189,7 +189,7 @@ See [Section XXX of the Text Guide](../text/#XXX), [Section XXX of the XML Guide
 [Functional Flower Lifespan In Hours](#ppi_functionalFlowerLifespanInHours) |
 [Ovule Quantity](#ppi_ovuleQuantity) |
 [Stigmatic Area In Square Milimiters](#ppi_stigmaticAreaInSquareMilimiters) |
-[Style Length In Milimiters](#ppi_styleLengthInMilimiters)
+[Style Length In Milimiters](#ppi_styleLengthInMilimiters) 
 
 **Interaction**
 
@@ -204,14 +204,14 @@ See [Section XXX of the Text Guide](../text/#XXX), [Section XXX of the XML Guide
 [Number Of Pollen Tubes](#ppi_numberOfPollenTubes) |
 [Number Of Removed Pollen Grains](#ppi_numberOfRemovedPollenGrains) |
 [Seed Mass In Miligrams](#ppi_seedMassInMiligrams) |
-[Seed Set](#ppi_seedSet)
+[Seed Set](#ppi_seedSet) 
 
 **NectarDynamics**
 
 [Accumlated Nectar Volume In Microliters](#ppi_accumlatedNectarVolumeInMicroliters) |
 [Accumulated Nectar Concentration](#ppi_accumulatedNectarConcentration) |
 [Accumulated Nectar Flowers](#ppi_accumulatedNectarFlowers) |
-[Accumulated Nectar Hours](#ppi_accumulatedNectarHours)
+[Accumulated Nectar Hours](#ppi_accumulatedNectarHours) 
 
 ## 4 Vocabulary
 <table>
