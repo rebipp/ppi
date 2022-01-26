@@ -4,22 +4,22 @@ Title
 : List of Plant-Pollinator Interactions terms
 
 Date version issued
-: 2022-01-06
+: 2021-12-03
 
 Date created
-: 2022-01-06
+: 2021-12-03
 
 Part of Standard
 : <http://www.rebipp.org.br/standards/ppi>
 
 This version
-: <http://rs.rebipp.org.br/ppi/doc/list/2022-01-06>
+: <http://rs.rebipp.org.br/ppi/doc/list/2021-12-03>
 
 Latest version
 : <http://rs.rebipp.org.br/ppi/doc/list/>
 
 Previous version
-: <http://rs.rebipp.org.br/ppi/doc/list/2022-01-06>
+: <http://rs.rebipp.org.br/ppi/doc/list/2021-12-03>
 
 Abstract
 : The Plant-Pollinator Interactions (PPI) is a vocabulary of terms for transmitting information about plant-pollinator interactions using the Darwin Core standard. This document lists all terms in namespaces currently used in the vocabulary.
@@ -31,12 +31,12 @@ Creator
 : Brazilian Network on Plant-Pollinator Interactions
 
 Bibliographic citation
-: REBIPP. 2022. List of Plant-Pollinator Interactions Vocabulary terms. Brazilian Network on Plant-Pollinator Interactions (REBIPP). <http://rs.rebipp.org.br/ppi/doc/list/2022-01-06>
+: REBIPP. 2021. List of Plant-Pollinator Interactions Vocabulary terms. Brazilian Network on Plant-Pollinator Interactions (REBIPP). <http://rs.rebipp.org.br/ppi/doc/list/2021-12-03>
 
 
 ## 1 Introduction (Informative)
 
-This document contains terms that are part of the most recent version of the Plant-Pollinator Interactions vocabulary (<http://rs.rebipp.org.br/version/ppi/2022-01-06>).
+This document contains terms that are part of the most recent version of the Plant-Pollinator Interactions vocabulary (<http://rs.rebipp.org.br/version/ppi/2021-12-03>).
 
 This document includes terms in the namespace `ppi` that contain recommended terms. However, some terms in these namespaces are deprecated or superseded and should no longer be used. Deprecation or supersession is noted in the term metadata. Namespaces that contain only deprecated terms are not included in this document, but metadata about those terms can be retrieved by dereferencing their IRIs.
 
