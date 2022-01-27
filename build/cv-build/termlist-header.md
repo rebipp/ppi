@@ -1,4 +1,4 @@
-# Degree of Establishment Controlled Vocabulary List of Terms
+# Plant-Pollinator Interactions Controlled Vocabulary List of Terms
 
 Title
 : Plant-Pollinator Interactions Controlled Vocabulary List of Terms

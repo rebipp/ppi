@@ -21,10 +21,10 @@ navbar:
       href: xml/
     - text: RDF
       href: rdf/
-  - text: Namespace policy
-    href: namespace/
-  - text: Questions & Answers (separate site)
-    href: https://github.com/rebipp/ppi-qa/blob/master/README.
+    - text: Namespace policy
+      href: namespace/
+    - text: Questions & Answers (separate site)
+      href: https://github.com/rebipp/ppi-qa/blob/master/README.
   right:
   - text: GitHub
     href: https://github.com/rebipp/ppi

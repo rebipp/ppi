@@ -1,4 +1,4 @@
-# Degree of Establishment Controlled Vocabulary List of Terms
+# Plant-Pollinator Interactions Controlled Vocabulary List of Terms
 
 Title
 : Plant-Pollinator Interactions Controlled Vocabulary List of Terms
@@ -58,77 +58,77 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 ## 3 Term index
 
 
-[androdioecy](#ppi_ss007) |
-[andromonoecy](#ppi_ss003) |
-[antherDehiscenceType controlled vocabulary](#ppi_adt) |
-[apomiticSystemEmbryoOrigin controlled vocabulary](#ppi_aeo) |
-[apomiticSystemFertilization controlled vocabulary](#ppi_asf) |
-[apomiticSystemReproduction controlled vocabulary](#ppi_asr) |
-[autogamy](#ppi_ms001) |
-[autonomous](#ppi_asf001) |
-[bell-funnel](#ppi_fs002) |
-[brush](#ppi_fs003) |
-[chemical](#ppi_fa002) |
-[cleistogamy](#ppi_fsy006) |
-[cosexuality](#ppi_ss001) |
-[dichogamy](#ppi_fsy008) |
-[dioecy](#ppi_ss006) |
-[dish](#ppi_fs001) |
-[enantiostyly](#ppi_fsy005) |
-[facultative](#ppi_asr001) |
-[flag](#ppi_fs004) |
-[flexistyly](#ppi_fsy010) |
-[floralAttractants controlled vocabulary](#ppi_fa) |
-[floralSystem controlled vocabulary](#ppi_fsy) |
-[flowerOrientation controlled vocabulary](#ppi_fo) |
-[flowerShape controlled vocabulary](#ppi_fs) |
-[gametophytic](#ppi_si001) |
-[geitonogamy](#ppi_ms002) |
-[gullet](#ppi_fs005) |
-[gynodioecy](#ppi_ss008) |
-[gynomonoecy](#ppi_ss004) |
-[herkogamy](#ppi_fsy001) |
-[heteranthery](#ppi_fsy004) |
-[heterodichogamy](#ppi_fsy009) |
-[heterostyly](#ppi_fsy002) |
-[horizontal](#ppi_fo002) |
-[late-acting](#ppi_si004) |
-[longitudinal](#ppi_adt001) |
-[matingSystem controlled vocabulary](#ppi_ms) |
-[monoecy](#ppi_ss002) |
-[movements of floral whorls](#ppi_fsy011) |
-[obligate](#ppi_asr002) |
-[pendant](#ppi_fo003) |
-[poricidal](#ppi_adt002) |
-[pseudogamy](#ppi_asd002) |
-[resupinate dimorphy](#ppi_fsy007) |
-[selfIncompatibilityType controlled vocabulary](#ppi_si) |
-[sexualSystem controlled vocabulary](#ppi_ss) |
-[sonorous](#ppi_fa004) |
-[sporophytic](#ppi_aeo002) |
-[sporophytic heteromorphic](#ppi_si003) |
-[sporophytic homomorphic](#ppi_si002) |
-[stylar dimorphism](#ppi_fsy003) |
-[tactile](#ppi_fa003) |
-[transverse](#ppi_adt003) |
-[trimonoecy](#ppi_ss005) |
-[tube](#ppi_fs007) |
-[valvular](#ppi_adt004) |
-[vertical](#ppi_fo001) |
-[visual](#ppi_fa001) |
-[xenogamy](#ppi_ms003)
+[androdioecy](#ppicv_ss007) |
+[andromonoecy](#ppicv_ss003) |
+[antherDehiscenceType controlled vocabulary](#ppicv_adt) |
+[apomiticSystemEmbryoOrigin controlled vocabulary](#ppicv_aeo) |
+[apomiticSystemFertilization controlled vocabulary](#ppicv_asf) |
+[apomiticSystemReproduction controlled vocabulary](#ppicv_asr) |
+[autogamy](#ppicv_ms001) |
+[autonomous](#ppicv_asf001) |
+[bell-funnel](#ppicv_fs002) |
+[brush](#ppicv_fs003) |
+[chemical](#ppicv_fa002) |
+[cleistogamy](#ppicv_fsy006) |
+[cosexuality](#ppicv_ss001) |
+[dichogamy](#ppicv_fsy008) |
+[dioecy](#ppicv_ss006) |
+[dish](#ppicv_fs001) |
+[enantiostyly](#ppicv_fsy005) |
+[facultative](#ppicv_asr001) |
+[flag](#ppicv_fs004) |
+[flexistyly](#ppicv_fsy010) |
+[floralAttractants controlled vocabulary](#ppicv_fa) |
+[floralSystem controlled vocabulary](#ppicv_fsy) |
+[flowerOrientation controlled vocabulary](#ppicv_fo) |
+[flowerShape controlled vocabulary](#ppicv_fs) |
+[gametophytic](#ppicv_si001) |
+[geitonogamy](#ppicv_ms002) |
+[gullet](#ppicv_fs005) |
+[gynodioecy](#ppicv_ss008) |
+[gynomonoecy](#ppicv_ss004) |
+[herkogamy](#ppicv_fsy001) |
+[heteranthery](#ppicv_fsy004) |
+[heterodichogamy](#ppicv_fsy009) |
+[heterostyly](#ppicv_fsy002) |
+[horizontal](#ppicv_fo002) |
+[late-acting](#ppicv_si004) |
+[longitudinal](#ppicv_adt001) |
+[matingSystem controlled vocabulary](#ppicv_ms) |
+[monoecy](#ppicv_ss002) |
+[movements of floral whorls](#ppicv_fsy011) |
+[obligate](#ppicv_asr002) |
+[pendant](#ppicv_fo003) |
+[poricidal](#ppicv_adt002) |
+[pseudogamy](#ppicv_asd002) |
+[resupinate dimorphy](#ppicv_fsy007) |
+[selfIncompatibilityType controlled vocabulary](#ppicv_si) |
+[sexualSystem controlled vocabulary](#ppicv_ss) |
+[sonorous](#ppicv_fa004) |
+[sporophytic](#ppicv_aeo002) |
+[sporophytic heteromorphic](#ppicv_si003) |
+[sporophytic homomorphic](#ppicv_si002) |
+[stylar dimorphism](#ppicv_fsy003) |
+[tactile](#ppicv_fa003) |
+[transverse](#ppicv_adt003) |
+[trimonoecy](#ppicv_ss005) |
+[tube](#ppicv_fs007) |
+[valvular](#ppicv_adt004) |
+[vertical](#ppicv_fo001) |
+[visual](#ppicv_fa001) |
+[xenogamy](#ppicv_ms003)
 
 ## 4 Vocabulary
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_adt"></a>Term Name  ppi:adt</th>
+			<th colspan="2"><a id="ppicv_adt"></a>Term Name  ppicv:adt</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/adt">http://rs.rebipp.org.br/ppi/cv/adt</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/adt">http://rs.rebipp.org.br/ppicv/adt</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -136,7 +136,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/adt-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/adt-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/adt-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/adt-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -148,11 +148,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Type</td>
-			<td>Concept</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
+			<td>http://www.w3.org/2004/02/skos/core#ConceptScheme</td>
 		</tr>
 	</tbody>
 </table>
@@ -160,13 +156,13 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_adt001"></a>Term Name  ppi:adt001</th>
+			<th colspan="2"><a id="ppicv_adt001"></a>Term Name  ppicv:adt001</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/adt001">http://rs.rebipp.org.br/ppi/cv/adt001</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/adt001">http://rs.rebipp.org.br/ppicv/adt001</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -174,7 +170,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/adt001-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/adt001-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/adt001-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/adt001-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -196,23 +192,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_adt002"></a>Term Name  ppi:adt002</th>
+			<th colspan="2"><a id="ppicv_adt002"></a>Term Name  ppicv:adt002</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/adt002">http://rs.rebipp.org.br/ppi/cv/adt002</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/adt002">http://rs.rebipp.org.br/ppicv/adt002</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -220,7 +212,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/adt002-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/adt002-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/adt002-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/adt002-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -242,23 +234,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_adt003"></a>Term Name  ppi:adt003</th>
+			<th colspan="2"><a id="ppicv_adt003"></a>Term Name  ppicv:adt003</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/adt003">http://rs.rebipp.org.br/ppi/cv/adt003</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/adt003">http://rs.rebipp.org.br/ppicv/adt003</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -266,7 +254,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/adt003-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/adt003-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/adt003-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/adt003-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -288,23 +276,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_adt004"></a>Term Name  ppi:adt004</th>
+			<th colspan="2"><a id="ppicv_adt004"></a>Term Name  ppicv:adt004</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/adt004">http://rs.rebipp.org.br/ppi/cv/adt004</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/adt004">http://rs.rebipp.org.br/ppicv/adt004</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -312,7 +296,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/adt004-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/adt004-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/adt004-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/adt004-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -334,23 +318,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_aeo"></a>Term Name  ppi:aeo</th>
+			<th colspan="2"><a id="ppicv_aeo"></a>Term Name  ppicv:aeo</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/aeo">http://rs.rebipp.org.br/ppi/cv/aeo</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/aeo">http://rs.rebipp.org.br/ppicv/aeo</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -358,7 +338,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/aeo-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/aeo-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/aeo-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/aeo-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -372,23 +352,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>http://www.w3.org/2004/02/skos/core#ConceptScheme</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_aeo001"></a>Term Name  ppi:aeo001</th>
+			<th colspan="2"><a id="ppicv_aeo001"></a>Term Name  ppicv:aeo001</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/aeo001">http://rs.rebipp.org.br/ppi/cv/aeo001</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/aeo001">http://rs.rebipp.org.br/ppicv/aeo001</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -396,7 +372,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/aeo001-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/aeo001-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/aeo001-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/aeo001-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -418,23 +394,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_aeo002"></a>Term Name  ppi:aeo002</th>
+			<th colspan="2"><a id="ppicv_aeo002"></a>Term Name  ppicv:aeo002</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/aeo002">http://rs.rebipp.org.br/ppi/cv/aeo002</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/aeo002">http://rs.rebipp.org.br/ppicv/aeo002</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -442,7 +414,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/aeo002-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/aeo002-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/aeo002-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/aeo002-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -464,23 +436,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_asd002"></a>Term Name  ppi:asd002</th>
+			<th colspan="2"><a id="ppicv_asd002"></a>Term Name  ppicv:asd002</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/asd002">http://rs.rebipp.org.br/ppi/cv/asd002</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/asd002">http://rs.rebipp.org.br/ppicv/asd002</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -488,7 +456,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/asd002-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/asd002-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/asd002-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/asd002-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -510,23 +478,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_asf"></a>Term Name  ppi:asf</th>
+			<th colspan="2"><a id="ppicv_asf"></a>Term Name  ppicv:asf</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/asf">http://rs.rebipp.org.br/ppi/cv/asf</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/asf">http://rs.rebipp.org.br/ppicv/asf</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -534,7 +498,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/asf-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/asf-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/asf-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/asf-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -548,23 +512,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>http://www.w3.org/2004/02/skos/core#ConceptScheme</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_asf001"></a>Term Name  ppi:asf001</th>
+			<th colspan="2"><a id="ppicv_asf001"></a>Term Name  ppicv:asf001</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/asf001">http://rs.rebipp.org.br/ppi/cv/asf001</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/asf001">http://rs.rebipp.org.br/ppicv/asf001</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -572,7 +532,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/asf001-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/asf001-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/asf001-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/asf001-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -594,23 +554,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_asr"></a>Term Name  ppi:asr</th>
+			<th colspan="2"><a id="ppicv_asr"></a>Term Name  ppicv:asr</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/asr">http://rs.rebipp.org.br/ppi/cv/asr</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/asr">http://rs.rebipp.org.br/ppicv/asr</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -618,7 +574,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/asr-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/asr-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/asr-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/asr-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -632,23 +588,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>http://www.w3.org/2004/02/skos/core#ConceptScheme</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_asr001"></a>Term Name  ppi:asr001</th>
+			<th colspan="2"><a id="ppicv_asr001"></a>Term Name  ppicv:asr001</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/asr001">http://rs.rebipp.org.br/ppi/cv/asr001</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/asr001">http://rs.rebipp.org.br/ppicv/asr001</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -656,7 +608,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/asr001-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/asr001-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/asr001-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/asr001-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -678,23 +630,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_asr002"></a>Term Name  ppi:asr002</th>
+			<th colspan="2"><a id="ppicv_asr002"></a>Term Name  ppicv:asr002</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/asr002">http://rs.rebipp.org.br/ppi/cv/asr002</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/asr002">http://rs.rebipp.org.br/ppicv/asr002</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -702,7 +650,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/asr002-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/asr002-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/asr002-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/asr002-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -724,23 +672,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_fa"></a>Term Name  ppi:fa</th>
+			<th colspan="2"><a id="ppicv_fa"></a>Term Name  ppicv:fa</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/fa">http://rs.rebipp.org.br/ppi/cv/fa</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/fa">http://rs.rebipp.org.br/ppicv/fa</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -748,7 +692,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/fa-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/fa-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/fa-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/fa-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -762,23 +706,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>http://www.w3.org/2004/02/skos/core#ConceptScheme</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_fa001"></a>Term Name  ppi:fa001</th>
+			<th colspan="2"><a id="ppicv_fa001"></a>Term Name  ppicv:fa001</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/fa001">http://rs.rebipp.org.br/ppi/cv/fa001</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/fa001">http://rs.rebipp.org.br/ppicv/fa001</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -786,7 +726,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/fa001-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/fa001-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/fa001-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/fa001-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -804,23 +744,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_fa002"></a>Term Name  ppi:fa002</th>
+			<th colspan="2"><a id="ppicv_fa002"></a>Term Name  ppicv:fa002</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/fa002">http://rs.rebipp.org.br/ppi/cv/fa002</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/fa002">http://rs.rebipp.org.br/ppicv/fa002</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -828,7 +764,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/fa002-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/fa002-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/fa002-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/fa002-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -846,23 +782,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_fa003"></a>Term Name  ppi:fa003</th>
+			<th colspan="2"><a id="ppicv_fa003"></a>Term Name  ppicv:fa003</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/fa003">http://rs.rebipp.org.br/ppi/cv/fa003</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/fa003">http://rs.rebipp.org.br/ppicv/fa003</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -870,7 +802,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/fa003-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/fa003-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/fa003-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/fa003-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -888,23 +820,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_fa004"></a>Term Name  ppi:fa004</th>
+			<th colspan="2"><a id="ppicv_fa004"></a>Term Name  ppicv:fa004</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/fa004">http://rs.rebipp.org.br/ppi/cv/fa004</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/fa004">http://rs.rebipp.org.br/ppicv/fa004</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -912,7 +840,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/fa004-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/fa004-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/fa004-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/fa004-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -930,23 +858,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_fo"></a>Term Name  ppi:fo</th>
+			<th colspan="2"><a id="ppicv_fo"></a>Term Name  ppicv:fo</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/fo">http://rs.rebipp.org.br/ppi/cv/fo</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/fo">http://rs.rebipp.org.br/ppicv/fo</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -954,7 +878,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/fo-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/fo-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/fo-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/fo-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -968,23 +892,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>http://www.w3.org/2004/02/skos/core#ConceptScheme</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_fo001"></a>Term Name  ppi:fo001</th>
+			<th colspan="2"><a id="ppicv_fo001"></a>Term Name  ppicv:fo001</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/fo001">http://rs.rebipp.org.br/ppi/cv/fo001</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/fo001">http://rs.rebipp.org.br/ppicv/fo001</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -992,7 +912,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/fo001-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/fo001-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/fo001-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/fo001-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1014,23 +934,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_fo002"></a>Term Name  ppi:fo002</th>
+			<th colspan="2"><a id="ppicv_fo002"></a>Term Name  ppicv:fo002</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/fo002">http://rs.rebipp.org.br/ppi/cv/fo002</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/fo002">http://rs.rebipp.org.br/ppicv/fo002</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1038,7 +954,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/fo002-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/fo002-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/fo002-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/fo002-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1056,23 +972,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_fo003"></a>Term Name  ppi:fo003</th>
+			<th colspan="2"><a id="ppicv_fo003"></a>Term Name  ppicv:fo003</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/fo003">http://rs.rebipp.org.br/ppi/cv/fo003</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/fo003">http://rs.rebipp.org.br/ppicv/fo003</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1080,7 +992,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/fo003-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/fo003-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/fo003-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/fo003-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1098,23 +1010,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_fs"></a>Term Name  ppi:fs</th>
+			<th colspan="2"><a id="ppicv_fs"></a>Term Name  ppicv:fs</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/fs">http://rs.rebipp.org.br/ppi/cv/fs</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/fs">http://rs.rebipp.org.br/ppicv/fs</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1122,7 +1030,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/fs-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/fs-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/fs-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/fs-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1136,23 +1044,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>http://www.w3.org/2004/02/skos/core#ConceptScheme</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_fs001"></a>Term Name  ppi:fs001</th>
+			<th colspan="2"><a id="ppicv_fs001"></a>Term Name  ppicv:fs001</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/fs001">http://rs.rebipp.org.br/ppi/cv/fs001</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/fs001">http://rs.rebipp.org.br/ppicv/fs001</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1160,7 +1064,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/fs001-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/fs001-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/fs001-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/fs001-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1182,23 +1086,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_fs002"></a>Term Name  ppi:fs002</th>
+			<th colspan="2"><a id="ppicv_fs002"></a>Term Name  ppicv:fs002</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/fs002">http://rs.rebipp.org.br/ppi/cv/fs002</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/fs002">http://rs.rebipp.org.br/ppicv/fs002</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1206,7 +1106,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/fs002-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/fs002-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/fs002-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/fs002-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1228,23 +1128,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_fs003"></a>Term Name  ppi:fs003</th>
+			<th colspan="2"><a id="ppicv_fs003"></a>Term Name  ppicv:fs003</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/fs003">http://rs.rebipp.org.br/ppi/cv/fs003</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/fs003">http://rs.rebipp.org.br/ppicv/fs003</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1252,7 +1148,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/fs003-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/fs003-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/fs003-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/fs003-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1274,23 +1170,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_fs004"></a>Term Name  ppi:fs004</th>
+			<th colspan="2"><a id="ppicv_fs004"></a>Term Name  ppicv:fs004</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/fs004">http://rs.rebipp.org.br/ppi/cv/fs004</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/fs004">http://rs.rebipp.org.br/ppicv/fs004</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1298,7 +1190,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/fs004-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/fs004-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/fs004-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/fs004-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1320,23 +1212,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_fs005"></a>Term Name  ppi:fs005</th>
+			<th colspan="2"><a id="ppicv_fs005"></a>Term Name  ppicv:fs005</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/fs005">http://rs.rebipp.org.br/ppi/cv/fs005</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/fs005">http://rs.rebipp.org.br/ppicv/fs005</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1344,7 +1232,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/fs005-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/fs005-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/fs005-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/fs005-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1366,23 +1254,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_fs007"></a>Term Name  ppi:fs007</th>
+			<th colspan="2"><a id="ppicv_fs007"></a>Term Name  ppicv:fs007</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/fs007">http://rs.rebipp.org.br/ppi/cv/fs007</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/fs007">http://rs.rebipp.org.br/ppicv/fs007</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1390,7 +1274,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/fs007-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/fs007-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/fs007-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/fs007-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1412,23 +1296,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_fsy"></a>Term Name  ppi:fsy</th>
+			<th colspan="2"><a id="ppicv_fsy"></a>Term Name  ppicv:fsy</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/fsy">http://rs.rebipp.org.br/ppi/cv/fsy</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/fsy">http://rs.rebipp.org.br/ppicv/fsy</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1436,7 +1316,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/fsy-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/fsy-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/fsy-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/fsy-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1450,23 +1330,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>http://www.w3.org/2004/02/skos/core#ConceptScheme</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_fsy001"></a>Term Name  ppi:fsy001</th>
+			<th colspan="2"><a id="ppicv_fsy001"></a>Term Name  ppicv:fsy001</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/fsy001">http://rs.rebipp.org.br/ppi/cv/fsy001</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/fsy001">http://rs.rebipp.org.br/ppicv/fsy001</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1474,7 +1350,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/fsy001-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/fsy001-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/fsy001-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/fsy001-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1496,23 +1372,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_fsy002"></a>Term Name  ppi:fsy002</th>
+			<th colspan="2"><a id="ppicv_fsy002"></a>Term Name  ppicv:fsy002</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/fsy002">http://rs.rebipp.org.br/ppi/cv/fsy002</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/fsy002">http://rs.rebipp.org.br/ppicv/fsy002</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1520,7 +1392,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/fsy002-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/fsy002-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/fsy002-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/fsy002-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1542,23 +1414,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_fsy003"></a>Term Name  ppi:fsy003</th>
+			<th colspan="2"><a id="ppicv_fsy003"></a>Term Name  ppicv:fsy003</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/fsy003">http://rs.rebipp.org.br/ppi/cv/fsy003</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/fsy003">http://rs.rebipp.org.br/ppicv/fsy003</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1566,7 +1434,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/fsy003-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/fsy003-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/fsy003-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/fsy003-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1588,23 +1456,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_fsy004"></a>Term Name  ppi:fsy004</th>
+			<th colspan="2"><a id="ppicv_fsy004"></a>Term Name  ppicv:fsy004</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/fsy004">http://rs.rebipp.org.br/ppi/cv/fsy004</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/fsy004">http://rs.rebipp.org.br/ppicv/fsy004</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1612,7 +1476,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/fsy004-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/fsy004-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/fsy004-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/fsy004-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1634,23 +1498,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_fsy005"></a>Term Name  ppi:fsy005</th>
+			<th colspan="2"><a id="ppicv_fsy005"></a>Term Name  ppicv:fsy005</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/fsy005">http://rs.rebipp.org.br/ppi/cv/fsy005</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/fsy005">http://rs.rebipp.org.br/ppicv/fsy005</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1658,7 +1518,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/fsy005-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/fsy005-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/fsy005-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/fsy005-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1680,23 +1540,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_fsy006"></a>Term Name  ppi:fsy006</th>
+			<th colspan="2"><a id="ppicv_fsy006"></a>Term Name  ppicv:fsy006</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/fsy006">http://rs.rebipp.org.br/ppi/cv/fsy006</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/fsy006">http://rs.rebipp.org.br/ppicv/fsy006</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1704,7 +1560,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/fsy006-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/fsy006-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/fsy006-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/fsy006-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1726,23 +1582,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_fsy007"></a>Term Name  ppi:fsy007</th>
+			<th colspan="2"><a id="ppicv_fsy007"></a>Term Name  ppicv:fsy007</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/fsy007">http://rs.rebipp.org.br/ppi/cv/fsy007</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/fsy007">http://rs.rebipp.org.br/ppicv/fsy007</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1750,7 +1602,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/fsy007-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/fsy007-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/fsy007-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/fsy007-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1772,23 +1624,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_fsy008"></a>Term Name  ppi:fsy008</th>
+			<th colspan="2"><a id="ppicv_fsy008"></a>Term Name  ppicv:fsy008</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/fsy008">http://rs.rebipp.org.br/ppi/cv/fsy008</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/fsy008">http://rs.rebipp.org.br/ppicv/fsy008</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1796,7 +1644,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/fsy008-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/fsy008-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/fsy008-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/fsy008-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1818,23 +1666,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_fsy009"></a>Term Name  ppi:fsy009</th>
+			<th colspan="2"><a id="ppicv_fsy009"></a>Term Name  ppicv:fsy009</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/fsy009">http://rs.rebipp.org.br/ppi/cv/fsy009</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/fsy009">http://rs.rebipp.org.br/ppicv/fsy009</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1842,7 +1686,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/fsy009-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/fsy009-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/fsy009-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/fsy009-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1864,23 +1708,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_fsy010"></a>Term Name  ppi:fsy010</th>
+			<th colspan="2"><a id="ppicv_fsy010"></a>Term Name  ppicv:fsy010</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/fsy010">http://rs.rebipp.org.br/ppi/cv/fsy010</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/fsy010">http://rs.rebipp.org.br/ppicv/fsy010</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1888,7 +1728,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/fsy010-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/fsy010-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/fsy010-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/fsy010-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1910,23 +1750,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_fsy011"></a>Term Name  ppi:fsy011</th>
+			<th colspan="2"><a id="ppicv_fsy011"></a>Term Name  ppicv:fsy011</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/fsy011">http://rs.rebipp.org.br/ppi/cv/fsy011</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/fsy011">http://rs.rebipp.org.br/ppicv/fsy011</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1934,7 +1770,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/fsy011-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/fsy011-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/fsy011-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/fsy011-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1956,23 +1792,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_ms"></a>Term Name  ppi:ms</th>
+			<th colspan="2"><a id="ppicv_ms"></a>Term Name  ppicv:ms</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/ms">http://rs.rebipp.org.br/ppi/cv/ms</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/ms">http://rs.rebipp.org.br/ppicv/ms</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1980,7 +1812,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/ms-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/ms-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/ms-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/ms-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1994,23 +1826,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>http://www.w3.org/2004/02/skos/core#ConceptScheme</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_ms001"></a>Term Name  ppi:ms001</th>
+			<th colspan="2"><a id="ppicv_ms001"></a>Term Name  ppicv:ms001</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/ms001">http://rs.rebipp.org.br/ppi/cv/ms001</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/ms001">http://rs.rebipp.org.br/ppicv/ms001</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2018,7 +1846,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/ms001-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/ms001-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/ms001-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/ms001-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2040,23 +1868,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_ms002"></a>Term Name  ppi:ms002</th>
+			<th colspan="2"><a id="ppicv_ms002"></a>Term Name  ppicv:ms002</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/ms002">http://rs.rebipp.org.br/ppi/cv/ms002</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/ms002">http://rs.rebipp.org.br/ppicv/ms002</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2064,7 +1888,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/ms002-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/ms002-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/ms002-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/ms002-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2086,23 +1910,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_ms003"></a>Term Name  ppi:ms003</th>
+			<th colspan="2"><a id="ppicv_ms003"></a>Term Name  ppicv:ms003</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/ms003">http://rs.rebipp.org.br/ppi/cv/ms003</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/ms003">http://rs.rebipp.org.br/ppicv/ms003</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2110,7 +1930,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/ms003-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/ms003-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/ms003-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/ms003-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2132,23 +1952,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_si"></a>Term Name  ppi:si</th>
+			<th colspan="2"><a id="ppicv_si"></a>Term Name  ppicv:si</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/si">http://rs.rebipp.org.br/ppi/cv/si</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/si">http://rs.rebipp.org.br/ppicv/si</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2156,7 +1972,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/si-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/si-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/si-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/si-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2170,23 +1986,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>http://www.w3.org/2004/02/skos/core#ConceptScheme</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_si001"></a>Term Name  ppi:si001</th>
+			<th colspan="2"><a id="ppicv_si001"></a>Term Name  ppicv:si001</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/si001">http://rs.rebipp.org.br/ppi/cv/si001</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/si001">http://rs.rebipp.org.br/ppicv/si001</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2194,7 +2006,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/si001-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/si001-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/si001-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/si001-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2216,23 +2028,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_si002"></a>Term Name  ppi:si002</th>
+			<th colspan="2"><a id="ppicv_si002"></a>Term Name  ppicv:si002</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/si002">http://rs.rebipp.org.br/ppi/cv/si002</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/si002">http://rs.rebipp.org.br/ppicv/si002</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2240,7 +2048,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/si002-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/si002-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/si002-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/si002-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2262,23 +2070,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_si003"></a>Term Name  ppi:si003</th>
+			<th colspan="2"><a id="ppicv_si003"></a>Term Name  ppicv:si003</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/si003">http://rs.rebipp.org.br/ppi/cv/si003</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/si003">http://rs.rebipp.org.br/ppicv/si003</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2286,7 +2090,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/si003-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/si003-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/si003-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/si003-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2308,23 +2112,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_si004"></a>Term Name  ppi:si004</th>
+			<th colspan="2"><a id="ppicv_si004"></a>Term Name  ppicv:si004</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/si004">http://rs.rebipp.org.br/ppi/cv/si004</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/si004">http://rs.rebipp.org.br/ppicv/si004</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2332,7 +2132,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/si004-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/si004-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/si004-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/si004-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2354,23 +2154,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_ss"></a>Term Name  ppi:ss</th>
+			<th colspan="2"><a id="ppicv_ss"></a>Term Name  ppicv:ss</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/ss">http://rs.rebipp.org.br/ppi/cv/ss</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/ss">http://rs.rebipp.org.br/ppicv/ss</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2378,7 +2174,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/ss-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/ss-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/ss-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/ss-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2392,23 +2188,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>http://www.w3.org/2004/02/skos/core#ConceptScheme</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_ss001"></a>Term Name  ppi:ss001</th>
+			<th colspan="2"><a id="ppicv_ss001"></a>Term Name  ppicv:ss001</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/ss001">http://rs.rebipp.org.br/ppi/cv/ss001</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/ss001">http://rs.rebipp.org.br/ppicv/ss001</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2416,7 +2208,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/ss001-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/ss001-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/ss001-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/ss001-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2438,23 +2230,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_ss002"></a>Term Name  ppi:ss002</th>
+			<th colspan="2"><a id="ppicv_ss002"></a>Term Name  ppicv:ss002</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/ss002">http://rs.rebipp.org.br/ppi/cv/ss002</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/ss002">http://rs.rebipp.org.br/ppicv/ss002</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2462,7 +2250,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/ss002-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/ss002-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/ss002-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/ss002-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2484,23 +2272,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_ss003"></a>Term Name  ppi:ss003</th>
+			<th colspan="2"><a id="ppicv_ss003"></a>Term Name  ppicv:ss003</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/ss003">http://rs.rebipp.org.br/ppi/cv/ss003</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/ss003">http://rs.rebipp.org.br/ppicv/ss003</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2508,7 +2292,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/ss003-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/ss003-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/ss003-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/ss003-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2530,23 +2314,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_ss004"></a>Term Name  ppi:ss004</th>
+			<th colspan="2"><a id="ppicv_ss004"></a>Term Name  ppicv:ss004</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/ss004">http://rs.rebipp.org.br/ppi/cv/ss004</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/ss004">http://rs.rebipp.org.br/ppicv/ss004</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2554,7 +2334,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/ss004-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/ss004-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/ss004-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/ss004-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2576,23 +2356,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_ss005"></a>Term Name  ppi:ss005</th>
+			<th colspan="2"><a id="ppicv_ss005"></a>Term Name  ppicv:ss005</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/ss005">http://rs.rebipp.org.br/ppi/cv/ss005</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/ss005">http://rs.rebipp.org.br/ppicv/ss005</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2600,7 +2376,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/ss005-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/ss005-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/ss005-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/ss005-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2622,23 +2398,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_ss006"></a>Term Name  ppi:ss006</th>
+			<th colspan="2"><a id="ppicv_ss006"></a>Term Name  ppicv:ss006</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/ss006">http://rs.rebipp.org.br/ppi/cv/ss006</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/ss006">http://rs.rebipp.org.br/ppicv/ss006</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2646,7 +2418,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/ss006-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/ss006-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/ss006-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/ss006-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2668,23 +2440,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_ss007"></a>Term Name  ppi:ss007</th>
+			<th colspan="2"><a id="ppicv_ss007"></a>Term Name  ppicv:ss007</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/ss007">http://rs.rebipp.org.br/ppi/cv/ss007</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/ss007">http://rs.rebipp.org.br/ppicv/ss007</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2692,7 +2460,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/ss007-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/ss007-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/ss007-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/ss007-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2714,23 +2482,19 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 			<td>Type</td>
 			<td>Concept</td>
 		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
-		</tr>
 	</tbody>
 </table>
 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ppi_ss008"></a>Term Name  ppi:ss008</th>
+			<th colspan="2"><a id="ppicv_ss008"></a>Term Name  ppicv:ss008</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/ss008">http://rs.rebipp.org.br/ppi/cv/ss008</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/ss008">http://rs.rebipp.org.br/ppicv/ss008</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -2738,7 +2502,7 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.rebipp.org.br/ppi/cv/version/ss008-2021-12-03">http://rs.rebipp.org.br/ppi/cv/version/ss008-2021-12-03</a></td>
+			<td><a href="http://rs.rebipp.org.br/ppicv/values/version/ss008-2021-12-03">http://rs.rebipp.org.br/ppicv/values/version/ss008-2021-12-03</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2759,10 +2523,6 @@ Due to the requirements of [Section 1.4.3 of the PPI RDF Guide](http://rs.rebipp
 		<tr>
 			<td>Type</td>
 			<td>Concept</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.rebipp.org.br/decisions/decision-2022-01-06_1">http://rs.rebipp.org.br/decisions/decision-2022-01-06_1</a></td>
 		</tr>
 	</tbody>
 </table>

@@ -4,7 +4,7 @@ container: fluid
 
 # Plant-Pollinator Interactions vocabulary quick reference guide
 
-This document is intended to be an easy-to-read reference of the currently (as of 2021-12-03) recommended terms maintained as part of the [Darwin Core standard](https://www.tdwg.org/standards/dwc/) and is maintained by the [Brazilian Network on Plant-Pollinator Interactions](https://www.rebipp.org.br/).
+This document is intended to be an easy-to-read reference of the currently (as of 2022-01-06) recommended terms maintained as part of the [Darwin Core standard](https://www.tdwg.org/standards/dwc/) and is maintained by the [Brazilian Network on Plant-Pollinator Interactions](https://www.rebipp.org.br/).
 
 This page is not part of the standard, but combines the normative term names and definitions with the non-normative comments and examples that are meant to help people to use the terms consistently. Capitalized terms, such as Occurrence, are [Darwin Core](http://dwc.tdwg.org) classes, which are special category terms used to group sets of terms for convenience. Comprehensive metadata for current and obsolete terms in human readable form are found in the document [List of PPI terms](../list/).
 
@@ -984,8 +984,8 @@ Recommended best practice is to use a controlled vocabulary.</td></tr>
 # Cite PPI
 To cite the document upon which this page is built, use the following:
 
-REBIPP. 2021. List of Plant-Pollinator Interactions vocabulary terms. Brazilian Network on Plant-Pollinator Interactions (REBIPP). <http://rs.rebipp.org.br/ppi/doc/list/>
+REBIPP. 2022. List of Plant-Pollinator Interactions vocabulary terms. Brazilian Network on Plant-Pollinator Interactions (REBIPP). <http://rs.rebipp.org.br/ppi/doc/list/>
 
 To cite this document specifically, use the following:
 
-REBIPP. 2021. Plant-Pollinator Interactions vocabulary quick reference guide. Brazilian Network on Plant-Pollinator Interactions (REBIPP). <https://ppi.rebipp.org.br/terms/>
+REBIPP. 2022. Plant-Pollinator Interactions vocabulary quick reference guide. Brazilian Network on Plant-Pollinator Interactions (REBIPP). <https://ppi.rebipp.org.br/terms/>

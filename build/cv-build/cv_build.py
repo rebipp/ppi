@@ -26,7 +26,7 @@ footerFileName = 'termlist-footer.md'
 outFileName = '../../docs/cv/index.md'
 
 # This is a Python list of the database names of the term lists to be included in the document.
-termLists = ['cv']
+termLists = ['ppicv']
 
 # NOTE! There may be problems unless every term list is of the same vocabulary type since the number of columns will differ
 # However, there probably aren't any circumstances where mixed types will be used to generate the same page.
