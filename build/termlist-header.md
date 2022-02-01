@@ -59,8 +59,8 @@ The following namespace abbreviations are used in this document:
 
 | abbreviation | IRI |
 | --- | --- |
-| dwc: | http://rs.rebipp.org.br/dwc/terms/ |
-| dwciri: | http://rs.rebipp.org.br/dwc/iri/ |
+| dwc: | http://rs.tdwg.org/dwc/terms/ |
+| dwciri: | http://rs.tdwg.org/dwc/iri/ |
 | dc: | http://purl.org/dc/elements/1.1/ |
 | dcterms: | http://purl.org/dc/terms/ |
 | ppi: | http://rs.rebipp.org.br/ppi/terms/ |
@@ -70,6 +70,6 @@ The following namespace abbreviations are used in this document:
 
 The terms in the Plant-Pollinator Interactions vocabulary are meant to be used as controlled vocabulary for the terms in [Darwin Core Standard](http://dwc.tdwg.org): `dwc:measurementType`, `dwc:measurementValue` and `dwciri:measurementType`. However, the terms could be used with other extensions like the [OBIS ExtendedMeasurementOrFact](https://obis.org/manual/dataformat/) providing a controlled vocabulary for `obis:measurementTypeID` and `obis:measurementValueID`.
 
-See [Section XXX of the Text Guide](../text/#XXX), [Section XXX of the XML Guide](../xml/#XXX) and [Section XXX of the RDF Guide](../rdf/#XXX) for details.
+See [PPI Text Guide](../text/), [PPI XML Guide](../xml/) and [PPI RDF Guide](../rdf/) for details.
 
 ## 3 Term indices

@@ -13,13 +13,13 @@ Part of Standard
 : <http://www.rebipp.org.br/standards/ppi/>
 
 This version
-: <http://rs.rebipp.org.br/dwc/terms/namespace/2018-08-26>
+: <http://rs.rebipp.org.br/ppi/terms/namespace/2021-12-03>
 
 Latest version
-: <http://rs.rebipp.org.br/dwc/terms/namespace/>
+: <http://rs.rebipp.org.br/ppi/terms/namespace/>
 
 Previous version
-: <http://rs.rebipp.org.br/dwc/terms/namespace/2013-09-23>
+: <http://rs.rebipp.org.br/ppi/terms/namespace/2021-12-03>
 
 Abstract
 : All terms in the Plant-Pollinator Interactions Vocabulary must be assigned a unique Uniform Resource Identifier (URI). For convenience, the term URIs that are assigned and managed by REBIPP are grouped into collections known as Plant-Pollinator Interactions namespaces. This document describes how term URIs are allocated by REBIPP and the policies associated with Plant-Pollinator Interactions namespaces.
