@@ -4,17 +4,17 @@ Plant-Pollinator Interactions is a standardized vocabulary maintained by the Bra
 
 # Documents
 
-- [List of terms](https://biocomp-usp.github.io/rebipp-data-standard/terms): comprehensive list of current terms.
-- [Distribution documents](/dist/): Simple CSV files to start using Darwin Core
+- [List of terms](https://ppi.rebipp.org.br/terms): comprehensive list of current terms.
+- [Distribution documents](/dist/): Simple CSV files to start using the Plant-Pollinator Interactions Vocabulary
 
 # Community
 
-- [How to Contribute](https://github.com/BioComp-USP/rebipp-data-standard/issues): discussions about the data standard and its terms.
+- [How to Contribute](https://github.com/rebipp/ppi/issues): discussions about the data standard and its terms.
 
 # Useful links
 
 - [Darwin Core terms](https://dwc.tdwg.org/terms/): list of current terms in Darwin Core.
 - [Darwin Core Text Guide](https://dwc.tdwg.org/text/): a guide of how to use Darwin Core within text files.
-- [Presentation - Community Review](https://docs.google.com/presentation/d/1AOwyXKl5YvovoH8uWdg1qIXYTJiLA9p8kYlscn73Wbc/edit?usp=sharing): presentation of the community review task.
-- [Recording of the Community Review Meeting]():  meeting recording on Jan, 18, 2021 (**in portuguese**).
+- [Presentation - Community Review](/rebipp-ppi-community-review.pdf): presentation of the community review task.
+- [Recording of the Community Review Meeting](/rebipp_community_review_meeting.mp4):  meeting recording on Jan, 18, 2021 (**in portuguese**).
 
