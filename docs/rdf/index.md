@@ -387,4 +387,4 @@ Here a graph in [RDF/XML syntax](http://www.w3.org/TR/rdf-syntax-grammar/):
 Here is the an image depicting the graph definied above:
 
 
-![Graph](example_rdf.png =x600)
+<img src="example_rdf.png"  width="600" alt="Graph"/>
