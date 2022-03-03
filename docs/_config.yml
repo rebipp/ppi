@@ -24,7 +24,7 @@ navbar:
     - text: Namespace policy
       href: namespace/
     - text: Questions & Answers (separate site)
-      href: https://github.com/rebipp/ppi-qa/blob/master/README.
+      href: https://github.com/rebipp/ppi/issues
   right:
   - text: GitHub
     href: https://github.com/rebipp/ppi
