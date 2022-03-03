@@ -25,7 +25,7 @@ Abstract
 : Guidelines for implementing Plant-Pollinator Interactions in Text files.
 
 Contributors
-: Jose A Salim (USP), Paula Zermoglio (VertNet), Debora Drucker (Embrapa), Filipi Soares (USP), Antonio M Saraiva (USP), John Wieczorek (VertNet)
+: Jose A Salim (Universidade de São Paulo), Paula Zermoglio (Universidad de Buenos Aires), Debora P Drucker (Embrapa Agricultura Digital), Filipi Soares (Universidade de São Paulo), Antonio M Saraiva (Universidade de São Paulo), John Wieczorek (VertNet)
 
 Creator
 : REBIPP Maintenance Group
@@ -36,8 +36,6 @@ Bibliographic citation
 ## 1 Introduction
 
 This document provides guidelines for formatting and sharing [PPI terms](http://rs.rebipp.org.br/ppi/terms) in _fielded text_ formats, such as one or more comma separated value (CSV) files. Data MAY be shared using an [XML](http://www.w3.org/XML/) metafile to describe its contents and formatting. A [Darwin Core Archive](https://ipt.gbif.org/manual/en/ipt/2.5/dwca-guide) is an example of an implementation of the Plant-Pollinator Interactions Text recommendation.
-
-![Usage](usage.png)
 
 More complex structure MAY be shared in multiple related files. The description of content and relationships between files can be achieved using the metafile. This guideline makes recommendations for the simple case of a _core_ file, upon which [Darwin Core](http://dwc.tdwg.org) [`dwc:Event`](http://rs.tdwg.org/dwc/terms/Event) class is used to represent an *interaction*, and multiple _extensions_, which are linked to records in that core file, documeting the occurrences of interacting organisms, their respective traits and the interactions outcomes. Specifically, extension records have a _many-to-one_ relationship with records in the core file. For example, a core file might contain interaction records, with one interaction per row in the file, while an extension file contains one or more traits or outcomes for those interactions, with one trait or outcome per row in the extension file, and with an identifier to the interaction for each trait or outcome row. This example would allow many traits or outcomes to be associated with each interaction.
 
@@ -51,7 +49,7 @@ The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL 
 
 ### 1.2 Simple example metafile content (non-normative)
 
-A simple comma separated values (CSV) data file named interactions.csv with the following content:
+A simple comma separated values (CSV) data file named *interactions.csv* with the following content:
 
 ```csv
 ID, interactionDate, interactionTime, decimalLatitude, decimalLongitude, country
@@ -164,8 +162,6 @@ The following example illustrates the use of the [Plant-Pollinator Interactions 
 
 The extension files are related to the core file by the `dwc:EventID` fields. This archive contains information about interaction events, the occurrences of interactiong organisms, the direction and nature (i.e. type) of the interactions and the traits and interactions outcomes.
 
-![Extension](extension.png)
-
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <archive xmlns="http://rs.tdwg.org/dwc/text/"
@@ -191,9 +187,9 @@ The extension files are related to the core file by the `dwc:EventID` fields. Th
             <location>occurrences.csv</location>
         </files>
         <coreid index="0" />
-        <field index="1" term="http://rs.tdwg.org/dwc/terms/occurrecenID"/>
-        <field index="2" term="http://rs.tdwg.org/dwc/terms/scientificaNameID"/>
-        <field index="3" term="http://rs.tdwg.org/dwc/terms/scientificaName"/>
+        <field index="1" term="http://rs.tdwg.org/dwc/terms/occurrenceID"/>
+        <field index="2" term="http://rs.tdwg.org/dwc/terms/scientificNameID"/>
+        <field index="3" term="http://rs.tdwg.org/dwc/terms/scientificName"/>
     </extension>
 
     <extension encoding="UTF-8" fieldsTerminatedBy="," linesTerminatedBy="\n" fieldsEnclosedBy='"' ignoreHeaderLines="1" rowType="http://rs.tdwg.org/dwc/terms/ResourceRelationship">
@@ -239,7 +235,12 @@ The `dwc:occurrenceID` allows circuvent the limitations of the star-schema and t
 
 The terms in the PPI vocabulary MUST be used as values for the terms `dwc:measurementType` and `obis:measurementTypeID`, while the terms in the PPI-CV MUST be used as values for the terms `dwc:measurementValue` and `obis:measurementValueID`. The main difference is that `dwc:measurementType` MUST be filled with the labels of the terms (e.g. `flowerShape`, `caste`, `resourceCollected`), while the `obis:measurementTypeID` MUST be filled with URI of the terms (e.g. [http://rs.rebipp.org.br/ppi/terms/flowerShape](http://rs.rebipp.org.br/ppi/terms/flowerShape), [http://rs.rebipp.org.br/ppi/terms/caste](http://rs.rebipp.org.br/ppi/terms/caste), [http://rs.rebipp.org.br/ppi/terms/resourceCollected](http://rs.rebipp.org.br/ppi/terms/resourceCollected)).
 
-The example bellow use the eMoF extension of representing the resource collected during the interaction (first row), two characteriscts of the plant (second and third rows) and the caste of a bee interacting with the plant (last row). **Note** that in the first row the _occurrenceID_ is empty since it is a measurement or fact of an interaction (second column). In the remain rows the _occurrenceID_ field contains the identifier of the occurrences in the ocurrences _extension_ file providing a link between the interaction (in the _core_ file), the occurrence (in the occurrence _extension_) and the measurement or fact.
+The example bellow use the eMoF extension of representing the resource collected during the interaction (first row), two characteriscts of the plant (second and third rows) and the caste of a bee interacting with the plant (last row).
+
+**Note** that in the first row the _occurrenceID_ is empty since it is a measurement or fact of an interaction (second column). In the remain rows the _occurrenceID_ field contains the identifier of the occurrences in the ocurrences _extension_ file providing a link between the interaction (in the _core_ file), the occurrence (in the occurrence _extension_) and the measurement or fact.
+
+
+*emof.csv*:
 
 ```csv
 eventID, occurrenceID, measurementID, measurementTypeID, measurementType, measurementValueID, measurementValue
@@ -249,4 +250,38 @@ eventID, occurrenceID, measurementID, measurementTypeID, measurementType, measur
 123,REBIPP:OCC:00102,REBIPP:MOF:0004,http://rs.rebipp.org.br/ppi/terms/caste,caste,http://rs.rebipp.org.br/ppicv/values/worker,worker
 ```
 
-### 3.3 The direction and type of the interactions (non-normative)
+can be described with the following extension in metafile:
+
+```xml
+<extension encoding="UTF-8" fieldsTerminatedBy="," linesTerminatedBy="\n" fieldsEnclosedBy='"' ignoreHeaderLines="1" rowType="http://rs.iobis.org/obis/terms/ExtendedMeasurementOrFact">
+        <files>
+            <location>emof.csv</location>
+        </files>
+        <coreid index="0" />
+        <field index="1" term="http://rs.tdwg.org/dwc/terms/occurrenceID"/>
+        <field index="2" term="http://rs.tdwg.org/dwc/terms/measurementID"/>
+        <field index="3" term="http://rs.tdwg.org/dwc/terms/measurementTypeID"/>
+        <field index="4" term="http://rs.tdwg.org/dwc/terms/measurementType"/>
+        <field index="5" term="http://rs.tdwg.org/dwc/terms/measurementValueID"/>
+        <field index="6" term="http://rs.tdwg.org/dwc/terms/measurementValue"/>
+    </extension>
+```
+
+### 3.3 The direction and type of the interactions
+
+In the Plant-Pollinator Interactions Text data schema the **direction** and the **type** of the interactions MUST be represented using the `dwc:ResourceRelationship` class. The terms `dwc:relationshipOfResource` and `dwc:relationshipOfResourceID` MUST be used to provide the type of the interactions (e.g. `visitsFlowersOf`, `http://purl.obolibrary.org/obo/RO_0002622`). Then, the terms `dwc:resourceID` and `dwc:relatedResourceID` MUST be filled with the identifiers of the `dwc:Occurrence`s which represent the interacting organisms. Each record of in the `dwc:ResourceRelationship` extension MUST be associated with a __core__ `dwc:Event` record (which represents the interaction event).
+
+The mandatory terms for the `dwc:ResourceRelationship` extension are:
+
+- `dwc:resourceID`: the subject of the interaction (ie. a `dwc:Occurrence`)
+- `dwc:relatedResourceID`: the object of the interaction (ie. a `dwc:Occurrence`)
+- `dwc:relationshipOfResource`: the literal value for the type of the interaction
+
+Additionally, each record in `dwc:ResourceRelationship` extension MAY have the following terms:
+
+- `dwc:relationshipOfResourceID`: the non-literal value for the type of the interaction (e.g. terms from [Relation Ontology](https://oborel.github.io/))
+- `dwc:resourceRelationshipID`: a unique identifier for the relationship
+- `dwc:relationshipAccordingTo`: the source (person, organization, publication, reference) establishing the relationship (aka interaction) between the two resources.
+- `dwc:relationshipEstablishedDate`: the date-time on which the relationship (aka interaction) between the two resources was established, especially when the date when the related `dwc:Event` was recorded is different from the date-time when the relationship was identified.
+- `dwc:relationshipRemarks`: comments or notes about the relationship between the two resources.
+
