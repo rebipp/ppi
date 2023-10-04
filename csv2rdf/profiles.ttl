@@ -1,0 +1,29 @@
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
+@prefix profiles: <http://www.opengis.net/def/metamodel/profiles/> .
+@prefix role: <http://www.w3.org/ns/dx/prof/role/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix shacl: <http://www.w3.org/ns/shacl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+profiles:vocprez_ogc a prof:Profile ;
+    prof:hasToken "vocprez_ogc"^^xsd:token ;
+    dct:description "OGC VocPrez SKOS profile" ;
+    rdfs:label "VocPrez OGC" ;
+    prof:isProfileOf profiles:skos_conceptscheme_ogc ;
+    prof:hasResource [
+        a prof:ResourceDescriptor ;
+        rdfs:label "SHACL Entailment" ;
+        dct:conformsTo shacl: ;
+        dct:format "text/turtle" ;
+        prof:hasArtifact <http://defs-dev.opengis.net/ogc-na/scripts/skos_vocprez.shapes.ttl> ;
+        prof:hasRole role:entailment
+    ], [
+        a prof:ResourceDescriptor ;
+        rdfs:label "SHACL Validation" ;
+        dct:conformsTo shacl: ;
+        dct:format "text/turtle" ;
+        prof:hasArtifact <http://defs-dev.opengis.net/ogc-na/scripts/vocprez.shapes.ttl> ;
+        prof:hasRole role:validation
+    ] ;
+.
