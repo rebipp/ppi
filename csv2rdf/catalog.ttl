@@ -19,7 +19,7 @@ _:properties-uplift a dcat:Dataset, dcfg:UpliftConfiguration ;
   dcfg:glob "**/term_versions.json" ;
   dcfg:hasUpliftDefinition [
     dcfg:order 1 ;
-    dcfg:file "properties-uplift.yml" ;
+    dcfg:file "csv2rdf/properties-uplift.yml" ;
   ] ;
 .
 
