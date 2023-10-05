@@ -1,0 +1,4 @@
+json-downloads:
+  - url: https://docs.google.com/spreadsheets/d/1zOGLWpTr784nTzBO-S_Es_WUyRsK7650/export?format=csv
+    dest: iso19156-3-examples.csv
+    object-diff: false

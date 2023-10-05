@@ -1,0 +1,53 @@
+name: Download and uplift
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 */3 * *'
+
+jobs:
+  download-and-uplift:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install git+https://github.com/opengeospatial/ogc-na-tools.git
+      - name: Process files
+        env:
+          DB_USERNAME: admin
+          DB_PASSWORD: ${{ secrets.UPLOAD_GRAPH_STORE_PASSWORD }}
+        run: |
+          # download from an external CSV file
+          # python -m ogc.na.download --spec .ogc/config.yml
+          #
+          # option to batch convert
+          #find . -name '*.csv' | while read CSV_FILE; do python -m ogc.na.ingest_json \
+          #  --skip-on-missing-context --json-ld --context csv2python.yml "${CSV_FILE}" > "${CSV_FILE}.json"
+          #done
+          # covert to json for one case
+          python -m ogc.na.ingest_json --json-ld --context csv2rdf/csv2python.yml "vocabulary/term_versions.csv" > csv2rdf/term_versions.json
+          # 
+          # now clean up json abd uplift to RDF with JSON-LD and perform any configured entailements and validations (as per profiles)
+          python -m ogc.na.ingest_json --batch --use-git-status --skip-on-missing-context \
+            --json-ld --ttl --work-dir . --domain-config csv2rdf/catalog.ttl
+
+          #
+          # skip pushing to triple-store..
+          #
+          #python -m ogc.na.update_vocabs -w . .ogc/catalog.ttl --use-git-status \
+          #  --base-uri https://raw.githubusercontent.com/${{github.repository}}/${{github.ref_name}} \
+          #  --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data
+      - name: Add and commit
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: "Files download and semantic uplift"
+          default_author: github_actions

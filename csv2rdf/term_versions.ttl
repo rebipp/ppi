@@ -1,0 +1,450 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix policy: <http://www.opengis.net/def/metamodel/ogc-na/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://rs.rebipp.org.br/ppi/terms/Animal> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "Animal" ;
+    skos:definition "Any attribute of a particular animal or a definied group of animals individuals" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:prefLabel "Animal" .
+
+<http://rs.rebipp.org.br/ppi/terms/Flower> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "Flower" ;
+    skos:definition "Any attribute of a particular flower or a definied group of flowers " ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:prefLabel "Flower" .
+
+<http://rs.rebipp.org.br/ppi/terms/Interaction> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "Interaction" ;
+    skos:definition "An interaction event that occurs at some location during some time." ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:prefLabel "Interaction" .
+
+<http://rs.rebipp.org.br/ppi/terms/NectarDynamics> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "NectarDynamics" ;
+    skos:definition "The measurements of nectar dynamics" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "A nectar dynamics measurement is related to the plant occurrence(s) " ;
+    skos:prefLabel "Nectar Dynamics" .
+
+<http://rs.rebipp.org.br/ppi/terms/Plant> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "Plant" ;
+    skos:definition "Any attribute of a particular plant or a defined group of plants inviduals" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:prefLabel "Plant" .
+
+<http://rs.rebipp.org.br/ppi/terms/ReproductiveSuccess> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "ReproductiveSuccess" ;
+    skos:definition "A reproductive success measurement as a result or a effect of the interaction(s) on the subject or object of the interaction" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "An outcome is related to one or more interactions, but limited to the same subject or object of the related interactions (e.g. a dwc:Occurrence or a dwc:Taxon)" ;
+    skos:prefLabel "Reproductive Success" .
+
+<http://rs.rebipp.org.br/ppi/terms/accumlatedNectarVolumeInMicroliters> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "accumlatedNectarVolumeInMicroliters" ;
+    skos:definition "The total volume in microliters of nectar accumulated by the flower(s)" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "The total volume of nectar should be provided for flowers which were not exposed to floral visitors during all their longevity. If reporting this value, the `accumulatedNectarHours` should also be provided." ;
+    skos:prefLabel "Accumlated Nectar Volume In Microliters" .
+
+<http://rs.rebipp.org.br/ppi/terms/accumulatedNectarConcentration> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "accumulatedNectarConcentration" ;
+    skos:definition "The concentration of the nectar, in percentage of sugar, accumulated by the flower(s)" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "The accumulated nectar concentration should be provided for flowers which were not exposed to floral visitors during all their longevity. If reporting this value, the `accumulatedNectarHours` should also be provided" ;
+    skos:prefLabel "Accumulated Nectar Concentration" .
+
+<http://rs.rebipp.org.br/ppi/terms/accumulatedNectarFlowers> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "accumulatedNectarFlowers" ;
+    skos:definition "The total number of flowers which the accumulated nectar measurements were made" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "The flowers should be prevented from visitation (not exposed to floral visitors) during all their logenvity" ;
+    skos:prefLabel "Accumulated Nectar Flowers" .
+
+<http://rs.rebipp.org.br/ppi/terms/accumulatedNectarHours> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "accumulatedNectarHours" ;
+    skos:definition "The time in hours in which the nectar was let to accumulated in the flower(s)" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:prefLabel "Accumulated Nectar Hours" .
+
+<http://rs.rebipp.org.br/ppi/terms/animalPlaceOfContact> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "animalPlaceOfContact" ;
+    skos:definition "A list (concatenated and separated) of the animal body parts that contact the plant during the interaction" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "Recommended best practice is to separate the values in a list with space vertical bar space ( `|` ) and to use a controlled vocabulary" ;
+    skos:prefLabel "Animal Place Of Contact" .
+
+<http://rs.rebipp.org.br/ppi/terms/antherDehiscenceType> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "antherDehiscenceType" ;
+    skos:definition "The physical mechanism of anther dehiscence (release of the pollen grains)" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "Recommended best practice is to use a controlled vocabulary" ;
+    skos:prefLabel "Anther Dehiscence Type" .
+
+<http://rs.rebipp.org.br/ppi/terms/antherPollenGrainsQuantity> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "antherPollenGrainsQuantity" ;
+    skos:definition "The total number of pollen grains in the anther(s) of a flower" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "For flowers with multiple anthers the number provided should be the sum of pollen grains in all anthers" ;
+    skos:prefLabel "Anther Pollen Grains Quantity" .
+
+<http://rs.rebipp.org.br/ppi/terms/apomiticSystemEmbryoOrigin> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "apomiticSystemEmbryoOrigin" ;
+    skos:definition "The general mode of apomixis embryo origin of a plant" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note """Recommended best practice is to use a controlled vocabulary.
+""" ;
+    skos:prefLabel "Apomitic System Embryo Origin" .
+
+<http://rs.rebipp.org.br/ppi/terms/apomiticSystemFertilization> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "apomiticSystemFertilization" ;
+    skos:definition "The general mode of apomixis endosperm development of a plant" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note """Recommended best practice is to use a controlled vocabulary.
+""" ;
+    skos:prefLabel "Apomitic System Fertilization" .
+
+<http://rs.rebipp.org.br/ppi/terms/apomiticSystemReproduction> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "apomiticSystemReproduction" ;
+    skos:definition "The general mode of apomixis reproduction of a plant" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note """Recommended best practice is to use a controlled vocabulary.
+""" ;
+    skos:prefLabel "Apomitic System Reproduction" .
+
+<http://rs.rebipp.org.br/ppi/terms/caste> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "caste" ;
+    skos:definition "The society division that is specialized in the function it performs and is distinguished by anatomical or morphological features from other individuals of in the society" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "Recommended best pratices is to use a controlled vocabulary" ;
+    skos:prefLabel "Caste" .
+
+<http://rs.rebipp.org.br/ppi/terms/coloredFlowerStructure> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "coloredFlowerStructure" ;
+    skos:definition "The predominant colored structure(s) of the flower(s)" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note """Recommended best practice is to separate the values in a list with space vertical bar space ( | ).
+
+Recommended best practice is to use a controlled vocabulary.
+""" ;
+    skos:prefLabel "Colored Flower Structure" .
+
+<http://rs.rebipp.org.br/ppi/terms/floralAttractants> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "floralAttractants" ;
+    skos:definition "Types of attractants (visual, chemical or tactile) present in the flowers that floral visitors may use to locate them and their resources" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "Recommended best practice is to separate the values in a list with space vertical bar space ( | ) and to use a controlled vocabulary" ;
+    skos:prefLabel "Floral Attractants" .
+
+<http://rs.rebipp.org.br/ppi/terms/floralSymmetry> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "floralSymmetry" ;
+    skos:definition "The symmetry describing whether, and how, a flower, in particular its perianth, can be divided into two or more identical or mirror-image parts." ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "Recommended best practice is to use a controlled vocabulary such as the Phenotype and Trait Ontology" ;
+    skos:prefLabel "Floral Symmetry" .
+
+<http://rs.rebipp.org.br/ppi/terms/floralSystem> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "floralSystem" ;
+    skos:definition "The system by which bisexual flowers optimize their reproductive success, through mechanisms that promote self- or cross-pollination" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note """It can be a morphological, temporal or movement-based mechanism.
+Recommended best practice is to use a controlled vocabulary.""" ;
+    skos:prefLabel "Floral System" .
+
+<http://rs.rebipp.org.br/ppi/terms/flowerAbundance> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "flowerAbundance" ;
+    skos:definition "The number of open flowers or inflorescences on the plant" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "If it is an estimate then you should describe the accuracy of the measurement using http://rs.tdwg.org/dwc/terms/measurementAccuracy" ;
+    skos:prefLabel "Flower Abundance" .
+
+<http://rs.rebipp.org.br/ppi/terms/flowerColor> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "flowerColor" ;
+    skos:definition "The predominant color(s) of the flower(s)" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note """Recommended best practice is to separate the values with space vertical bar space ( | ).
+
+Recommended best practice is to use a controlled vocabulary.""" ;
+    skos:prefLabel "Flower Color" .
+
+<http://rs.rebipp.org.br/ppi/terms/flowerLongevity> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "flowerLongevity" ;
+    skos:definition "The total amount of hours comprising the time between flower opening and flower senescence" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "A flower is considered opened when its petals are fully open regardless of anther maturation and stigma receptivity, and flower senescence is when floral parts begin to wilt and fall off or the ovary starts to develop into fruit" ;
+    skos:prefLabel "Flower Longevity" .
+
+<http://rs.rebipp.org.br/ppi/terms/flowerOpeningPeriod> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "flowerOpeningPeriod" ;
+    skos:definition "The time or interval during which a chasmogamous flower opens exposing its reproductive parts" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "Recommended best practice is to use a time interval that conforms to ISO  8601-1:2019." ;
+    skos:prefLabel "Flower Opening Period" .
+
+<http://rs.rebipp.org.br/ppi/terms/flowerOpeningType> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "flowerOpeningType" ;
+    skos:definition "The type of flower describing whether the flower's corolla opens or not, exposing its reproductive parts" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "Recommended best practice is to use a controlled vocabulary." ;
+    skos:prefLabel "Flower Opening Type" .
+
+<http://rs.rebipp.org.br/ppi/terms/flowerOrientation> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "flowerOrientation" ;
+    skos:definition "The orientation (presentation) of the flower with respect to the flower or inflorescence main axis" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "Recommended best practice is to use a controlled vocabulary." ;
+    skos:prefLabel "Flower Orientation" .
+
+<http://rs.rebipp.org.br/ppi/terms/flowerPlaceOfContact> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "flowerPlaceOfContact" ;
+    skos:definition "A list (concatenated and separated) of flower parts touched by the animal during the interaction" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note """Recommended best practice is to separate the values in a list with space vertical bar space ( `|` ) and to use a controlled vocabulary
+""" ;
+    skos:prefLabel "Flower Place Of Contact" .
+
+<http://rs.rebipp.org.br/ppi/terms/flowerShape> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "flowerShape" ;
+    skos:definition "The overall shape of the flowers" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "Recommended best practice is to use a controlled vocabulary." ;
+    skos:prefLabel "Flower Shape" .
+
+<http://rs.rebipp.org.br/ppi/terms/fruitMassInGrams> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "fruitMassInGrams" ;
+    skos:definition "The total mass in grams of the fruit(s)" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "If reporting this value, the `fruitSet` should also be provided." ;
+    skos:prefLabel "Fruit Mass In Grams" .
+
+<http://rs.rebipp.org.br/ppi/terms/fruitSet> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "fruitSet" ;
+    skos:definition "The total number of mature fruits of the exposed flower(s)" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "If reporting this value, the `numberOfExposedFlowers` should also be provided" ;
+    skos:prefLabel "Fruit Set" .
+
+<http://rs.rebipp.org.br/ppi/terms/functionalFlowerLifespanInHours> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "functionalFlowerLifespanInHours" ;
+    skos:definition "The total amount of hours during which a flower is sexually functional" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "The period of time when stigma is receptive to the germination of pollen grains, ovules are receptive to the pollen tubes or anthers present viable pollen grains" ;
+    skos:prefLabel "Functional Flower Lifespan In Hours" .
+
+<http://rs.rebipp.org.br/ppi/terms/humanUse> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "humanUse" ;
+    skos:definition "Ways in which species are utilized by people, including cultural use" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note """Recommended best practice is to use a controlled vocabulary.
+""" ;
+    skos:prefLabel "Human Use" .
+
+<http://rs.rebipp.org.br/ppi/terms/matingSystem> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "matingSystem" ;
+    skos:definition "A list (concatenated and separated) of the modes of gene transfer from one generation to the next through sexual reproduction" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "Recommended best practice is to separate the values in a list with space vertical bar space ( | ) and to use a controlled vocabulary." ;
+    skos:prefLabel "Mating System" .
+
+<http://rs.rebipp.org.br/ppi/terms/nectarCollectingBodyPart> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "nectarCollectingBodyPart" ;
+    skos:definition "The animal body part used to collect nectar from the plant nectaries" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "The plant nectaries can be floral or extrafloral nectaries. Recommended best practice is to use a controlled vocabulary such as Uberon or the Hymenoptera Anatomy Ontology" ;
+    skos:prefLabel "Nectar Collecting Body Part" .
+
+<http://rs.rebipp.org.br/ppi/terms/nectarCollectingBodyPartLengthInMilimiters> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "nectarCollectingBodyPartLengthInMilimiters" ;
+    skos:definition "The length in millimeters of the body part used to collect nectar from the plant nectaries" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "If reporting this value, the `nectarCollectingBodyPart` should also be provided." ;
+    skos:prefLabel "Nectar Collecting Body Part Length In Milimiters" .
+
+<http://rs.rebipp.org.br/ppi/terms/numberOfConspecificPollenGrains> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "numberOfConspecificPollenGrains" ;
+    skos:definition "The total number of conspecific pollen grains deposited on the stigma(s) of the visited flower(s)" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "The pollen grains may have been deposited at the end of the flower(s) anthesis by multiple floral visitors " ;
+    skos:prefLabel "Number Of Conspecific Pollen Grains" .
+
+<http://rs.rebipp.org.br/ppi/terms/numberOfExposedFlowers> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "numberOfExposedFlowers" ;
+    skos:definition "The total number of flowers exposed to floral visitors" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "The exposed flowers are the flowers monitored to measure the reproductive success of the plant(s). For the total number of flowers available to floral visitors (including flowers unmonitored) use `flowerAbundance`." ;
+    skos:prefLabel "Number Of Exposed Flowers" .
+
+<http://rs.rebipp.org.br/ppi/terms/numberOfFertilizedOvules> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "numberOfFertilizedOvules" ;
+    skos:definition "The total number of fertilized ovules in the visited flower(s)" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "The ovules may have been fertilized as a result of multiple floral visits" ;
+    skos:prefLabel "Number Of Fertilized Ovules" .
+
+<http://rs.rebipp.org.br/ppi/terms/numberOfHeterospecificPollenGrains> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "numberOfHeterospecificPollenGrains" ;
+    skos:definition "The total number of heterospecific pollen grains deposited on a the stigma(s) of the visited flower(s)" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "The pollen grains may have been deposited at the end of the flower(s) anthesis by multiple floral visitors " ;
+    skos:prefLabel "Number Of Heterospecific Pollen Grains" .
+
+<http://rs.rebipp.org.br/ppi/terms/numberOfPollenTubes> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "numberOfPollenTubes" ;
+    skos:definition "The total number of pollen tubes growing in the style(s) of the visited flower(s)" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "The flower(s) may have been exposed by multiple floral visitors. The number should include pollen tubes growing from all styles of the flower(s)" ;
+    skos:prefLabel "Number Of Pollen Tubes" .
+
+<http://rs.rebipp.org.br/ppi/terms/numberOfRemovedPollenGrains> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "numberOfRemovedPollenGrains" ;
+    skos:definition "The total number of pollen grains removed from the anther(s) of the visited flower(s)" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "The pollen grains may have been removed by multiple floral visitors. The number should include pollen grains from all anthers of the flower(s)" ;
+    skos:prefLabel "Number Of Removed Pollen Grains" .
+
+<http://rs.rebipp.org.br/ppi/terms/ovuleQuantity> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "ovuleQuantity" ;
+    skos:definition "The total amount of ovules in a flower" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:prefLabel "Ovule Quantity" .
+
+<http://rs.rebipp.org.br/ppi/terms/plantHabit> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "plantHabit" ;
+    skos:definition "The general appearance, characteristic form, or mode of growth of the plant" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:prefLabel "Plant Habit" .
+
+<http://rs.rebipp.org.br/ppi/terms/resourceCollected> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "resourceCollected" ;
+    skos:definition "A list (concatenated and separated) of floral resources used or removed from the visited flower(s) during the interaction" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "Recommended best practice is to separate the values in a list with space vertical bar space ( `|` ) and to use a controlled vocabulary" ;
+    skos:prefLabel "Resource Collected" .
+
+<http://rs.rebipp.org.br/ppi/terms/seedMassInMiligrams> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "seedMassInMiligrams" ;
+    skos:definition "The total mass in miligrams of the seeds of mature fruit(s)" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "If reporting this value, the `seedSet` should also be provided." ;
+    skos:prefLabel "Seed Mass In Miligrams" .
+
+<http://rs.rebipp.org.br/ppi/terms/seedSet> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "seedSet" ;
+    skos:definition "The total number of seeds of mature fruit(s)" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "If reporting this value, the `fruitSet` should also be provided." ;
+    skos:prefLabel "Seed Set" .
+
+<http://rs.rebipp.org.br/ppi/terms/selfIncompatibilityType> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "selfIncompatibilityType" ;
+    skos:definition "The type or class of self-incompatibility system of the plant species" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "Recommended best practice is to use a controlled vocabulary. If the plant has no self-incompatibility system use the value `absent`." ;
+    skos:prefLabel "Self Incompatibility Type" .
+
+<http://rs.rebipp.org.br/ppi/terms/sexualSystem> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "sexualSystem" ;
+    skos:definition "The distribution of floral types within and among the individuals of the same population" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "The gender expression is based in the presence and distribution of fertile whorls within the flower. Recommended best practice is to use a controlled vocabulary" ;
+    skos:prefLabel "Sexual System" .
+
+<http://rs.rebipp.org.br/ppi/terms/stigmaticAreaInSquareMilimiters> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "stigmaticAreaInSquareMilimiters" ;
+    skos:definition "The total surface area in square millimeters of the stigma of a flower" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:prefLabel "Stigmatic Area In Square Milimiters" .
+
+<http://rs.rebipp.org.br/ppi/terms/styleLengthInMilimiters> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "styleLengthInMilimiters" ;
+    skos:definition "The length in milimiters from the base to the tip of the style of a flower" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:prefLabel "Style Length In Milimiters" .
+
+<http://rs.rebipp.org.br/ppi/terms/visitedFlowerSex> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "visitedFlowerSex" ;
+    skos:definition "The sex of the visited flower" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:note "Recommended best practice is to use a controlled vocabulary" ;
+    skos:prefLabel "Visited Flower Sex" .
+
+<http://rs.rebipp.org.br/ppi/terms/visitedFlowersQuantity> a skos:Concept ;
+    policy:status <http://www.opengis.net/def/status/recommended> ;
+    skos:altLabel "visitedFlowersQuantity" ;
+    skos:definition "The total number of flowers visited during the interaction" ;
+    skos:inScheme <http://rs.rebipp.org.br/ppi/terms/version/> ;
+    skos:prefLabel "Visited Flowers Quantity" .
+
+<http://rs.rebipp.org.br/ppi/terms/version/> a skos:ConceptScheme ;
+    skos:prefLabel "PPI Terms" .
+
+[] a prov:Activity ;
+    prov:endedAtTime "2023-10-04T17:49:59.479593"^^xsd:dateTime ;
+    prov:startedAtTime "2023-10-04T17:49:59.240820"^^xsd:dateTime ;
+    prov:used [ a prov:Entity ;
+            dct:format "application/json" ;
+            dct:hasVersion "git:81db74b528c4e060a0cd109dc03fdc37fabd5433" ;
+            rdfs:seeAlso <file:///home/runner/work/uplift-ppi/uplift-ppi/csv2rdf/term_versions.json> ] ;
+    prov:wasAssociatedWith [ a prov:Agent,
+                schema:SoftwareApplication ;
+            rdfs:label "OGC-NA tools" ;
+            dct:hasVersion "0.3.14" ;
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
+    prov:wasInformedBy [ dct:identifier "c183a534-78c7-43df-828a-b0163cf09ba3" ] .
+

@@ -1,0 +1,52 @@
+transform:
+  # Keep data only
+  - '.data'
+  # Set fields with empty or '-' value to null
+  - 'walk(if type == "object" then with_entries(if (.value | test("^\\s*-?\\s*$")) then .value = null else . end) else . end)'
+  # Remove colons in field names with spaces
+  - 'walk(if type == "object" then with_entries(.key |= sub(" ?: ?"; " ")) else . end)'
+  # Add ConceptScheme
+  - |
+    {
+      "@id": "http://rs.rebipp.org.br/ppi/terms/version/",
+      "@type": "skos:ConceptScheme",
+      "skos:prefLabel": "PPI Terms",
+      "concepts": .
+    }
+
+types:
+  '$.concepts[*]': skos:Concept
+
+# {
+#       "iri": "http://rs.rebipp.org.br/ppi/terms/version/Animal-2021-12-03",
+#       "term_localName": "Animal",
+#       "label": "Animal",
+#       "definition": "Any attribute of a particular animal or a definied group of animals individuals",
+#       "comments": "",
+#       "examples": "The caste of a bee",
+#       "organized_in": "",
+#       "issued": "2021-12-03",
+#       "status": "recommended",
+#       "replaces": "",
+#       "rdf_type": "http://www.w3.org/2000/01/rdf-schema#Class",
+#       "term_iri": "http://rs.rebipp.org.br/ppi/terms/Animal",
+#       "flags": "simple"
+#     },
+
+context:
+  $:
+    skos: http://www.w3.org/2004/02/skos/core#
+    dct: http://purl.org/dc/terms/
+    policy: http://www.opengis.net/def/metamodel/ogc-na/
+    term_iri: '@id'
+    label: skos:prefLabel
+    term_localName: skos:altLabel
+    definition: skos:definition
+    comments: skos:note
+    status:
+      '@id': policy:status
+      '@type': '@id'
+      '@context':
+        '@base': http://www.opengis.net/def/status/
+    concepts:
+      '@reverse': skos:inScheme
