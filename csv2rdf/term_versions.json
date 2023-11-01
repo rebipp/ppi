@@ -9,7 +9,8 @@
         "delimiter": ",",
         "quotechar": "\"",
         "skip-empty-rows": true,
-        "trim-values": false
+        "trim-values": false,
+        "charset": "utf-8"
       }
     },
     "filename": "vocabulary/term_versions.csv",

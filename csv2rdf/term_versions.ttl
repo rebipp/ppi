@@ -435,16 +435,16 @@ Recommended best practice is to use a controlled vocabulary.""" ;
     skos:prefLabel "PPI Terms" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2023-10-04T17:49:59.479593"^^xsd:dateTime ;
-    prov:startedAtTime "2023-10-04T17:49:59.240820"^^xsd:dateTime ;
+    prov:endedAtTime "2023-11-01T03:07:59.713719"^^xsd:dateTime ;
+    prov:startedAtTime "2023-11-01T03:07:59.429986"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:81db74b528c4e060a0cd109dc03fdc37fabd5433" ;
-            rdfs:seeAlso <file:///home/runner/work/uplift-ppi/uplift-ppi/csv2rdf/term_versions.json> ] ;
+            dct:hasVersion "git:8e3f856f6b16ac9d8cb4356c0ae1c4408d8209f7" ;
+            rdfs:seeAlso <file:///home/runner/work/ppi/ppi/csv2rdf/term_versions.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.3.14" ;
+            dct:hasVersion "0.3.20" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "c183a534-78c7-43df-828a-b0163cf09ba3" ] .
+    prov:wasInformedBy [ dct:identifier "07a59d3c-37d1-495b-bbd2-554183ba5eb2" ] .
 
