@@ -17,4 +17,3 @@ Plant-Pollinator Interactions is a standardized vocabulary maintained by the Bra
 - [Darwin Core Text Guide](https://dwc.tdwg.org/text/): a guide of how to use Darwin Core within text files.
 - [Presentation - Community Review](/rebipp-ppi-community-review.pdf): presentation of the community review task.
 - [Recording of the Community Review Meeting](/rebipp_community_review_meeting.mp4):  meeting recording on Jan, 18, 2021 (**in portuguese**).
-
